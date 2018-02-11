@@ -14,7 +14,6 @@
     "react/prefer-stateless-function": "off",
     "linebreak-style": "off",
     "import/no-extraneous-dependencies": "off",
-    "semi": ["error", "never"],
-    "comma-dangle": ["error", "always"]
+    "semi": ["error", "never"]
   }
 }
