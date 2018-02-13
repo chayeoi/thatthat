@@ -1,5 +1,12 @@
-import { combineReducers } from 'redux'
+import { createStore, combineReducers, applyMiddleware } from 'redux'
+import thunkMiddleware from 'redux-thunk'
+import * as modules from './modules'
 
-export default combineReducers({
-
+const reducer = combineReducers({
+  ...modules,
 })
+
+export default createStore(
+  reducer,
+  applyMiddleware(thunkMiddleware),
+)
