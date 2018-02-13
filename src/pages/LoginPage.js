@@ -6,6 +6,7 @@ import { loginBg } from 'assets/img'
 
 const Wrapper = styled.div`
   height: 100vh;
+  overflow: hidden;
   &::before {
     content: '';
     position: absolute;
@@ -17,7 +18,7 @@ const Wrapper = styled.div`
     background-size: cover;
   }
 `
-// XXX: Header에 margin-top을 설정함으로써 Wrapper가 하단으로 밀려나는 문제 수정 요망
+
 const TopMarginedHeader = styled(Header)`
   margin-top: 3rem !important;
   margin-bottom: -3rem !important;
@@ -41,7 +42,7 @@ export default class LoginPage extends Component {
           inverted
           textAlign="center"
         />
-        <CenteredGrid columns={3} doubling centered divided container>
+        <CenteredGrid columns={3} doubling stackable centered divided container>
           <Grid.Column>
             <LoginButton />
           </Grid.Column>
