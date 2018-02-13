@@ -1,21 +1,27 @@
 import React, { Component } from 'react'
-import { Grid, Button, Icon } from 'semantic-ui-react'
+import { Grid, Button, Icon, Segment } from 'semantic-ui-react'
 
 
 export default class LoginButton extends Component {
   render() {
     return (
-      <Grid centered columns={4} divided>
+      <Grid columns={1} centered>
         <Grid.Column>
-          <Button fluid color="facebook">
-            <Icon name="facebook" /> Facebook
-          </Button>
-          <Button fluid color="twitter">
-            <Icon name="twitter" /> Twitter
-          </Button>
-          <Button fluid color="google plus">
-            <Icon name="google plus" /> Google Plus
-          </Button>
+          <Segment attached="top">
+            <Button fluid color="facebook">
+              <Icon name="facebook" /> Facebook
+            </Button>
+          </Segment>
+          <Segment attached>
+            <Button fluid color="twitter">
+              <Icon name="twitter" /> Twitter
+            </Button>
+          </Segment>
+          <Segment attached="bottom">
+            <Button fluid color="google plus">
+              <Icon name="google plus" /> Google Plus
+            </Button>
+          </Segment>
         </Grid.Column>
       </Grid>
     )
