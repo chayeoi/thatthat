@@ -59,3 +59,6 @@ npm start
 ### Rules for Collaboration
 
 - [Git & Github](https://github.com/YeonBong/thatthat/wiki/Rules-for-Collaboration-(Git))
+
+### Firebase Datebase Structure
+- [Firebase 데이터베이스 구조](https://github.com/YeonBong/thatthat/wiki/Database)
