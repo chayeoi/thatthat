@@ -21,7 +21,6 @@ const Wrapper = styled.div`
 
 const TopMarginedHeader = styled(Header)`
   margin-top: 3rem !important;
-  margin-bottom: -3rem !important;
   font-size: 4em !important;
   font-weight: normal;
 `
@@ -30,6 +29,7 @@ const CenteredGrid = styled(Grid)`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  background-color: yellow;
 `
 
 const LoginPage = () => (
@@ -40,7 +40,7 @@ const LoginPage = () => (
       inverted
       textAlign="center"
     />
-    <CenteredGrid columns={3} doubling stackable centered divided container>
+    <CenteredGrid centered container>
       <Grid.Column>
         <LoginButtonContainer />
       </Grid.Column>
