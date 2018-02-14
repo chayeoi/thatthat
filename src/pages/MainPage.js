@@ -1,8 +1,9 @@
 import React from 'react'
+import { CategoryContainer } from 'containers'
 
 const MainPage = () => (
   <div>
-    Main Page
+    <CategoryContainer />
   </div>
 )
 
