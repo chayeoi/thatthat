@@ -29,7 +29,6 @@ export default (state = initialState, action) => {
 }
 
 // Thunks
-// XXX: REDIRECT_TO_MAIN 액션을 dispatch했음에도 LoginButtonContainer가 다시 렌더링되지 않는 문제
 export const loginWithFacebook = () => async (dispatch) => {
   const provider = new firebase.auth.FacebookAuthProvider()
   await firebase.auth().signInWithPopup(provider)

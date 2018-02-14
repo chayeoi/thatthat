@@ -25,7 +25,7 @@ class LoginButtonContainer extends Component {
 
 export default connect(
   state => ({
-    redirectToMain: state.auth.rediectToMain,
+    redirectToMain: state.auth.redirectToMain,
   }),
   dispatch => ({
     onFacebookLogin: () => dispatch(loginWithFacebook()),
