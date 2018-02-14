@@ -29,7 +29,6 @@ const CenteredGrid = styled(Grid)`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background-color: yellow;
 `
 
 const LoginPage = () => (
