@@ -14,27 +14,27 @@ const categories = [
     name: '프로그래밍',
     link: {
       as: Link,
-      to: '/programming',
+      to: '/courses/programming',
     },
   },
   {
     name: '디자인',
     link: {
       as: Link,
-      to: '/design',
+      to: '/courses/design',
     },
   },
   {
     name: '기획',
     link: {
       as: Link,
-      to: '/plan-making',
+      to: '/courses/planMaking',
     },
   },
 ]
 
 export default class CategoryListContainer extends Component {
-  state = { activeItem: 'home' }
+  state = { activeItem: '전체' }
 
   handleCategoryClick = (e, { name }) => {
     this.setState({ activeItem: name })
