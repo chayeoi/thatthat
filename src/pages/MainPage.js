@@ -9,7 +9,7 @@ const MainPage = () => (
   <React.Fragment>
     <CategoryListContainer />
     <Route exact path="/" component={CourseListContainer} />
-    <Route path="/:category" component={CourseListContainer} />
+    <Route path="/courses/:category" component={CourseListContainer} />
   </React.Fragment>
 )
 
