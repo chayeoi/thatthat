@@ -12,13 +12,9 @@ class LoginButtonContainer extends Component {
   render() {
     const { redirectToMain, ...rest } = this.props
     return (
-      <React.Fragment>
-        {
-          redirectToMain ?
-            <Redirect to="/" />
-          : <LoginButton {...rest} />
-        }
-      </React.Fragment>
+      redirectToMain ?
+        <Redirect to="/" />
+        : <LoginButton {...rest} />
     )
   }
 }
