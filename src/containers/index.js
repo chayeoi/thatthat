@@ -1,7 +1,9 @@
 import LoginButtonContainer from './LoginButtonContainer'
-import CategoryContainer from './CategoryContainer'
+import CategoryListContainer from './CategoryListContainer'
+import CourseListContainer from './CourseListContainer'
 
 export {
   LoginButtonContainer,
-  CategoryContainer,
+  CategoryListContainer,
+  CourseListContainer,
 }

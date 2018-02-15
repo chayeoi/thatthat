@@ -1,7 +1,11 @@
 import LoginButton from './LoginButton'
-import Category from './Category'
+import CategoryList from './CategoryList'
+import CourseList from './CourseList'
+import CourseCard from './CourseCard'
 
 export {
   LoginButton,
-  Category,
+  CategoryList,
+  CourseList,
+  CourseCard,
 }
