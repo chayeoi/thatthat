@@ -1,0 +1,59 @@
+{
+  "courses": {
+    "programming": {
+      "course1": {
+        "organization": "패스트캠퍼스",
+        "class": "웹 프론트엔드 스쿨",
+        "likeCount": 15,
+        "reviewCount": 21,
+        "ratingAvg": 3.5
+      },
+      "course2": {
+        "organization": "에이콘 아카데미",
+        "class": "자바 웹 개발자 양성 과정",
+        "likeCount": 5,
+        "reviewCount": 13,
+        "ratingAvg": 3
+      },
+      "course3": {
+        "organization": "멀티캠퍼스",
+        "class": "빅데이터 전문가 양성 과정",
+        "likeCount": 16,
+        "reviewCount": 17,
+        "ratingAvg": 4
+      }
+    },
+    "design": {
+      "course4": {
+        "organization": "Remain",
+        "class": "웹 퍼블리싱 전문 교육",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2
+      },
+      "course5": {
+        "organization": "디자인캠퍼스",
+        "class": "일러스트레이터 3주만에 끝내기",
+        "likeCount": 7,
+        "reviewCount": 3,
+        "ratingAvg": 3.9
+      }
+    },
+    "planMaking": {
+      "course6": {
+        "organization": "패스트캠퍼스",
+        "class": "웹 서비스 기획 스쿨",
+        "likeCount": 13,
+        "reviewCount": 11,
+        "ratingAvg": 3.7
+      },
+      "course7": {
+        "organization": "멀티캠퍼스",
+        "class": "실전 마케팅 전략",
+        "likeCount": 7,
+        "reviewCount": 9,
+        "ratingAvg": 4.5
+      }
+    }
+  }
+}
