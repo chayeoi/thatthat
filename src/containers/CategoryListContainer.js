@@ -1,32 +1,39 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { CategoryList } from 'components'
 
-const links = [
-  {
-    as: Link,
-    to: '/programming',
-  },
-  {
-    as: Link,
-    to: '/design',
-  },
-  {
-    as: Link,
-    to: '/plan-making',
-  },
-]
-
 const categories = [
-  '전체',
-  '프로그래밍',
-  '디자인',
-  '기획',
-  '마케팅',
+  {
+    name: '전체',
+    link: {
+      as: Link,
+      to: '/',
+    },
+  },
+  {
+    name: '프로그래밍',
+    link: {
+      as: Link,
+      to: '/programming',
+    },
+  },
+  {
+    name: '디자인',
+    link: {
+      as: Link,
+      to: '/design',
+    },
+  },
+  {
+    name: '기획',
+    link: {
+      as: Link,
+      to: '/plan-making',
+    },
+  },
 ]
 
-class CategoryListContainer extends Component {
+export default class CategoryListContainer extends Component {
   state = { activeItem: 'home' }
 
   handleCategoryClick = (e, { name }) => {
@@ -44,8 +51,3 @@ class CategoryListContainer extends Component {
     )
   }
 }
-
-export default connect(
-  state => ({}),
-  dispatch => ({}),
-)(CategoryListContainer)

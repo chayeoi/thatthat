@@ -11,10 +11,11 @@ const CategoryList = ({ onCategoryClick, activeItem, categories }) => (
     <Menu pointing secondary color="red">
       {categories.map(category => (
         <Menu.Item
-          key={category}
-          name={category}
-          active={activeItem === category}
+          key={category.name}
+          name={category.name}
+          active={activeItem === category.name}
           onClick={onCategoryClick}
+          {...category.link}
         />
       ))}
     </Menu>

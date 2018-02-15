@@ -6,12 +6,11 @@ import {
 } from 'containers'
 
 const MainPage = () => (
-  <div>
+  <React.Fragment>
     <CategoryListContainer />
     <Route exact path="/" component={CourseListContainer} />
-    <Route path="/programming" component={CourseListContainer} />
-    <Route path="/design" component={CourseListContainer} />
-  </div>
+    <Route path="/:category" component={CourseListContainer} />
+  </React.Fragment>
 )
 
 export default MainPage

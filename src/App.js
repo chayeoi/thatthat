@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
   Route,
+  Switch,
 } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { LoginPage, MainPage } from 'pages'
@@ -12,10 +13,10 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <React.Fragment>
-            <Route exact path="/" component={MainPage} />
+          <Switch>
             <Route path="/login" component={LoginPage} />
-          </React.Fragment>
+            <Route path="/" component={MainPage} />
+          </Switch>
         </Router>
       </Provider>
     )
