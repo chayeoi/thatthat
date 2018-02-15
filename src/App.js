@@ -12,10 +12,10 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div>
+          <React.Fragment>
             <Route exact path="/" component={MainPage} />
             <Route path="/login" component={LoginPage} />
-          </div>
+          </React.Fragment>
         </Router>
       </Provider>
     )
