@@ -27,7 +27,7 @@ const CourseCard = ({ course }) => {
     ratingAvg,
   } = course
   return (
-    <Segment as={Link} to={`/courseInfo/${id}`}>
+    <Segment as={Link} to={`/course/${id}/info`}>
       <Grid>
         <Grid.Column width={4} color="blue" textAlign="center">
           <Image src={loginBg} size="small" />
