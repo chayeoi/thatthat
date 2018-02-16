@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 450px !important;
+  max-width: 450px;
 `
 
 export default class LoginButton extends Component {
