@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { CourseCard } from 'components'
 
-export default class CourseList extends Component {
-  render() {
-    return (
-      <h2>
-        I am CourseList
-      </h2>
+const CourseList = ({ courses }) => (
+  <React.Fragment>
+    {courses.map(course => (
+      <CourseCard key={course.id} course={course} />
+    ))}
+  </React.Fragment>
+)
 
-    )
-  }
-}
+export default CourseList

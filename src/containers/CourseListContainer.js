@@ -16,11 +16,9 @@ class CourseListContainer extends Component {
   render() {
     const { courses } = this.props
     return (
-      <div>
-        {courses.map(course => (
-          <CourseList key={course.id} course={course} />
-        ))}
-      </div>
+      <React.Fragment>
+        <CourseList courses={courses} />
+      </React.Fragment>
     )
   }
 }
