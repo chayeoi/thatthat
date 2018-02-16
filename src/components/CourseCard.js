@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import {
@@ -27,8 +27,8 @@ const CourseCard = ({ course }) => {
     ratingAvg,
   } = course
   return (
-    <Segment as={Link} to={`/course/${id}/info`}>
-      <Grid>
+    <Segment as="li">
+      <Grid as={Link} to={`/course/${id}/info`}>
         <Grid.Column width={4} color="blue" textAlign="center">
           <Image src={loginBg} size="small" />
         </Grid.Column>
