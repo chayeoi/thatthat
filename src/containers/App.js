@@ -2,28 +2,21 @@ import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
   Route,
+  Switch,
 } from 'react-router-dom'
-import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import thunkMiddleware from 'redux-thunk'
-
-import reducer from 'ducks'
-import { LoginPage } from 'pages'
-
-
-const store = createStore(
-  reducer,
-  applyMiddleware(thunkMiddleware),
-)
+import { LoginPage, MainPage } from 'pages'
+import store from 'ducks'
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <Router>
-          <div>
+          <Switch>
             <Route path="/login" component={LoginPage} />
-          </div>
+            <Route path="/" component={MainPage} />
+          </Switch>
         </Router>
       </Provider>
     )

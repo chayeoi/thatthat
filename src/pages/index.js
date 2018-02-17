@@ -1,3 +1,7 @@
+import MainPage from './MainPage'
 import LoginPage from './LoginPage'
 
-export { LoginPage }
+export {
+  MainPage,
+  LoginPage,
+}

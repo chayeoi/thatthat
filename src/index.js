@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import * as firebase from 'firebase'
 import 'semantic-ui-css/semantic.min.css'
 import './index.css'
-import App from './App'
+import { App } from 'containers'
 import registerServiceWorker from './registerServiceWorker'
 
 const config = {

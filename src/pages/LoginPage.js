@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Grid, Header } from 'semantic-ui-react'
 import styled from 'styled-components'
-import { LoginButton } from 'components'
+import { LoginButtonContainer } from 'containers'
 import { loginBg } from 'assets/img'
 
 const Wrapper = styled.div`
@@ -21,7 +21,6 @@ const Wrapper = styled.div`
 
 const TopMarginedHeader = styled(Header)`
   margin-top: 3rem !important;
-  margin-bottom: -3rem !important;
   font-size: 4em !important;
   font-weight: normal;
 `
@@ -32,22 +31,20 @@ const CenteredGrid = styled(Grid)`
   transform: translateY(-50%);
 `
 
-export default class LoginPage extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <TopMarginedHeader
-          as="h1"
-          content="ThatThat"
-          inverted
-          textAlign="center"
-        />
-        <CenteredGrid columns={3} doubling stackable centered divided container>
-          <Grid.Column>
-            <LoginButton />
-          </Grid.Column>
-        </CenteredGrid>
-      </Wrapper>
-    )
-  }
-}
+const LoginPage = () => (
+  <Wrapper>
+    <TopMarginedHeader
+      as="h1"
+      content="ThatThat"
+      inverted
+      textAlign="center"
+    />
+    <CenteredGrid centered container>
+      <Grid.Column>
+        <LoginButtonContainer />
+      </Grid.Column>
+    </CenteredGrid>
+  </Wrapper>
+)
+
+export default LoginPage
