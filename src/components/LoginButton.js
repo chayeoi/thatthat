@@ -7,33 +7,24 @@ const Wrapper = styled.div`
   max-width: 450px;
 `
 
-export default class LoginButton extends Component {
-  static defaultProps = {
-    onFacebookLogin: () => {},
-    onTwitterLogin: () => {},
-    onGoogleLogin: () => {},
-  }
+const LoginButton = ({ onFacebookLogin, onTwitterLogin, onGoogleLogin }) => (
+  <Wrapper>
+    <Segment attached="top">
+      <Button fluid color="facebook" onClick={onFacebookLogin}>
+        <Icon name="facebook" /> Facebook
+      </Button>
+    </Segment>
+    <Segment attached>
+      <Button fluid color="twitter" onClick={onTwitterLogin}>
+        <Icon name="twitter" /> Twitter
+      </Button>
+    </Segment>
+    <Segment attached="bottom">
+      <Button fluid color="google plus" onClick={onGoogleLogin}>
+        <Icon name="google plus" /> Google Plus
+      </Button>
+    </Segment>
+  </Wrapper>
+)
 
-  render() {
-    const { onFacebookLogin, onTwitterLogin, onGoogleLogin } = this.props
-    return (
-      <Wrapper>
-        <Segment attached="top">
-          <Button fluid color="facebook" onClick={onFacebookLogin}>
-            <Icon name="facebook" /> Facebook
-          </Button>
-        </Segment>
-        <Segment attached>
-          <Button fluid color="twitter" onClick={onTwitterLogin}>
-            <Icon name="twitter" /> Twitter
-          </Button>
-        </Segment>
-        <Segment attached="bottom">
-          <Button fluid color="google plus" onClick={onGoogleLogin}>
-            <Icon name="google plus" /> Google Plus
-          </Button>
-        </Segment>
-      </Wrapper>
-    )
-  }
-}
+export default LoginButton

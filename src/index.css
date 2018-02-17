@@ -1,5 +1,11 @@
-body {
+body,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+ol, ul {
+	list-style: none;
 }

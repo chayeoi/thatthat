@@ -9,6 +9,9 @@ import {
 } from 'ducks/modules/auth'
 
 class LoginButtonContainer extends Component {
+  static defaultProps = {
+    redirectToMain: false,
+  }
   render() {
     const { redirectToMain, ...rest } = this.props
     return (
