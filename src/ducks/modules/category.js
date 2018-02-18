@@ -48,11 +48,11 @@ export const loadCourseList = category => async (dispatch) => {
   } else {
     const snapshot = await firebase.database().ref('courses').once('value')
     const result = snapshot.val()
-    const categories = {}
-    for (const category of Object.values(result)) {
-      Object.assign(categories, category)
-    }
-    const courses = Object.entries(categories).map(([id, course]) => ({
+    const rawCourses = Object.values(result).reduce((acc, cur) => ({
+      ...acc,
+      ...cur,
+    }), {})
+    const courses = Object.entries(rawCourses).map(([id, course]) => ({
       id,
       ...course,
     }))
