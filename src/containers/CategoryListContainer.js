@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { CategoryList } from 'components'
 
@@ -33,21 +33,8 @@ const categories = [
   },
 ]
 
-export default class CategoryListContainer extends Component {
-  state = { activeItem: '전체' }
+const CategoryListContainer = () => (
+  <CategoryList categories={categories} />
+)
 
-  handleCategoryClick = (e, { name }) => {
-    this.setState({ activeItem: name })
-  }
-
-  render() {
-    const { activeItem } = this.state
-    return (
-      <CategoryList
-        onCategoryClick={this.handleCategoryClick}
-        activeItem={activeItem}
-        categories={categories}
-      />
-    )
-  }
-}
+export default CategoryListContainer

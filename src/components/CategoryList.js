@@ -1,25 +1,32 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 
-const Wrapper = styled.div`
-  text-align: center;
-`
+export default class CategoryList extends Component {
+  state = {
+    activeItem: this.props.categories[0].name,
+  }
 
-const CategoryList = ({ onCategoryClick, activeItem, categories }) => (
-  <Wrapper>
-    <Menu pointing secondary color="red">
-      {categories.map(category => (
-        <Menu.Item
-          key={category.name}
-          name={category.name}
-          active={activeItem === category.name}
-          onClick={onCategoryClick}
-          {...category.link}
-        />
-      ))}
-    </Menu>
-  </Wrapper>
-)
+  handleCategoryClick = (e, { name }) => {
+    this.setState({ activeItem: name })
+  }
 
-export default CategoryList
+  render() {
+    const { activeItem } = this.state
+    const { categories } = this.props
+    return (
+      <div>
+        <Menu pointing secondary color="red">
+          {categories.map(category => (
+            <Menu.Item
+              key={category.name}
+              name={category.name}
+              active={activeItem === category.name}
+              onClick={this.handleCategoryClick}
+              {...category.link}
+            />
+          ))}
+        </Menu>
+      </div>
+    )
+  }
+}
