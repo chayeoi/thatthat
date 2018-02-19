@@ -13,6 +13,10 @@ class CourseListContainer extends Component {
     this.props.onMount()
   }
 
+  // componentWillReceiveProps(nextProps) {
+  //   nextProps.onMount()
+  // }
+
   render() {
     const { courses } = this.props
     return (
