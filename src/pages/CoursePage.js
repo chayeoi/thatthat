@@ -1,10 +1,20 @@
 import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+import {
+  CategoryListContainer,
+  CourseListContainer,
+} from 'containers'
+import { MainMenu } from 'components'
 
-const CoursePage = () => (
-  <div>
-    I am CoursePage.
-  </div>
+const MainPage = () => (
+  <React.Fragment>
+    <MainMenu />
+    <CategoryListContainer />
+    <Switch>
+      <Route path="/courses" component={CourseListContainer} />
+      <Route path="/courses/:category" component={CourseListContainer} />
+    </Switch>
+  </React.Fragment>
 )
 
-export default CoursePage
-
+export default MainPage

@@ -11,6 +11,7 @@ import {
   MainPage,
   MyPage,
   NotFoundPage,
+  CoursePage,
 } from 'pages'
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={MainPage} />
             <Route path="/login" component={LoginPage} />
+            <Route path="/courses" component={CoursePage} />
             <Route path="/mypage" component={MyPage} />
             <Route component={NotFoundPage} />
           </Switch>
