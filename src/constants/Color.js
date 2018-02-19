@@ -1,1 +1,1 @@
-export const MAIN_RED = '#ed234b'
+export const MAIN_COLOR = '#ed234b'
