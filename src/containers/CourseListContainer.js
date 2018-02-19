@@ -8,14 +8,18 @@ class CourseListContainer extends Component {
     courses: [],
     onMount: () => {},
   }
-  // XXX: 특정 카테고리를 클릭했을 때 각 카테고리에 맞는 새 데이터를 불러오지 못하고 있다.
+
   componentDidMount() {
     this.props.onMount()
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   nextProps.onMount()
-  // }
+  componentWillReceiveProps(nextProps) {
+    const { url: currentUrl } = this.props.match
+    const { url: nextUrl } = nextProps.match
+    if (currentUrl !== nextUrl) {
+      this.props.onMount()
+    }
+  }
 
   render() {
     const { courses } = this.props
