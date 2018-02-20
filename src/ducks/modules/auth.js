@@ -1,15 +1,15 @@
 import * as firebase from 'firebase'
 
 // Actions
-export const REDIRECT_TO_MAIN = 'auth/REDIRECT_TO_MAIN'
-export const LOGOUT = 'auth/LOGOUT'
+const REDIRECT_TO_MAIN = 'auth/REDIRECT_TO_MAIN'
+const REDIRECT_TO_LOGIN = 'auth/REDIRECT_TO_LOGIN'
 
 // Action Creators
 export const redirectToMain = () => ({
   type: REDIRECT_TO_MAIN,
 })
-export const logout = () => ({
-  type: LOGOUT,
+export const redirectToLogin = () => ({
+  type: REDIRECT_TO_LOGIN,
 })
 
 // Reducer
@@ -22,6 +22,10 @@ export default (state = initialState, action) => {
     case REDIRECT_TO_MAIN:
       return {
         redirectToMain: true,
+      }
+    case REDIRECT_TO_LOGIN:
+      return {
+        redirectToLogin: true,
       }
     default:
       return state
@@ -43,4 +47,8 @@ export const loginWithGoogle = () => async (dispatch) => {
   const provider = new firebase.auth.GoogleAuthProvider()
   await firebase.auth().signInWithPopup(provider)
   dispatch(redirectToMain())
+}
+export const logout = () => async (dispatch) => {
+  await firebase.auth().signOut()
+  dispatch(redirectToLogin())
 }
