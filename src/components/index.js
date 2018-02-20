@@ -4,6 +4,7 @@ import CategoryList from './CategoryList'
 import CourseList from './CourseList'
 import CourseCard from './CourseCard'
 import MainMenu from './MainMenu'
+import UserInfo from './UserInfo'
 
 export {
   LoginButton,
@@ -12,4 +13,5 @@ export {
   CourseList,
   CourseCard,
   MainMenu,
+  UserInfo,
 }

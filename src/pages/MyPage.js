@@ -1,10 +1,11 @@
 import React from 'react'
 import { MainMenu } from 'components'
+import { UserInfoContainer } from  'containers'
 
 const MyPage = () => (
   <React.Fragment>
     <MainMenu />
-  마이페이지
+    <UserInfoContainer />
   </React.Fragment>
 )
 
