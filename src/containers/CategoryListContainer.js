@@ -7,7 +7,7 @@ const categories = [
     name: '전체',
     link: {
       as: Link,
-      to: '/',
+      to: '/courses',
     },
   },
   {

@@ -1,11 +1,17 @@
 import React from 'react'
 import { MainMenu } from 'components'
+import {
+  UserInfoContainer,
+  LogoutButtonContainer,
+} from 'containers'
+import { withAuth } from 'hocs'
 
 const MyPage = () => (
   <React.Fragment>
     <MainMenu />
-  마이페이지
+    <UserInfoContainer />
+    <LogoutButtonContainer />
   </React.Fragment>
 )
 
-export default MyPage
+export default withAuth(MyPage)

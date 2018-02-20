@@ -22,3 +22,7 @@ yarn-error.log*
 
 # firebase
 .firebaserc
+
+# VisualStudioCode
+.vscode/*
+.history
