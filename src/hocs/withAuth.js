@@ -37,7 +37,7 @@ const withAuth = WrappedComponent => (
       return (
         <React.Fragment>
           {isLoading && <Loader />}
-          {redirectToLogin && <Redirect />}
+          {redirectToLogin && <Redirect to="/login" />}
           {!(isLoading || redirectToLogin) && <WrappedComponent {...this.props} />}
         </React.Fragment>
       )
