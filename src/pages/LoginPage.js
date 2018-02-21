@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Header } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { LoginButtonContainer } from 'containers'
-import { loginBg } from 'assets/img'
+import { loginBg } from 'assets/videos'
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: #fff url(${loginBg}) no-repeat;
+    background-color: #ff3333;
     background-size: cover;
   }
 `
