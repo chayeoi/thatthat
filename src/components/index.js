@@ -5,6 +5,7 @@ import CourseList from './CourseList'
 import CourseCard from './CourseCard'
 import MainMenu from './MainMenu'
 import UserInfo from './UserInfo'
+import MyPageTab from './MyPageTab'
 
 export {
   LoginButton,
@@ -14,4 +15,5 @@ export {
   CourseCard,
   MainMenu,
   UserInfo,
+  MyPageTab,
 }
