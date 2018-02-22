@@ -1,8 +1,12 @@
 import React from 'react'
 import { Grid, Header } from 'semantic-ui-react'
 import styled from 'styled-components'
-import { LoginButtonContainer } from 'containers'
-import { loginBg } from 'assets/videos'
+import {
+  LoginButtonContainer,
+  FooterContainer,
+} from 'containers'
+import { loginBg } from 'assets/images'
+import { FONT_COLOR } from 'constants/Color'
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -14,54 +18,46 @@ const Wrapper = styled.div`
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: #ff3333;
+    background: #fff url(${loginBg}) no-repeat;
+    background-size: cover;
   }
 `
 
-const TopMarginedHeader = styled(Header)`
-  margin-top: 3rem !important;
-  font-size: 4em !important;
-  font-weight: normal;
-`
-
-const CenteredGrid = styled(Grid)`
+const ContentWrapper = styled.div`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 `
 
-const VideoWrapper = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  overflow: hidden;
+const MainHeader = styled(Header)`
+  font-size: 4em !important;
+  font-weight: normal;
+  color: ${FONT_COLOR} !important;
 `
 
-const BackgroundVideo = styled.video`
-  height: 150%;
+const SubHeader = styled(Header)`
+font-weight: 300 !important;
+  color: ${FONT_COLOR} !important;
+`
+
+const TopMarginedGrid = styled(Grid)`
+  margin-top: 3rem !important;
 `
 
 const LoginPage = () => (
   <Wrapper>
-    <TopMarginedHeader
-      as="h1"
-      content="댓댓"
-      inverted
-      textAlign="center"
-    />
-    <CenteredGrid centered container>
-      <Grid.Column>
-        <LoginButtonContainer />
-      </Grid.Column>
-    </CenteredGrid>
-    <VideoWrapper>
-      <BackgroundVideo id="background-video" loop autoPlay>
-        <source src={loginBg} type="video/mp4" />
-        <source src={loginBg} type="video/ogg" />
-      </BackgroundVideo>
-    </VideoWrapper>
+    <ContentWrapper>
+      <header>
+        <MainHeader as="h1" content="THATTHAT" textAlign="center" />
+        <SubHeader as="h2" content="IT 학원 강의 리뷰 플랫폼" textAlign="center" />
+      </header>
+      <TopMarginedGrid centered container>
+        <Grid.Column>
+          <LoginButtonContainer />
+        </Grid.Column>
+      </TopMarginedGrid>
+      <FooterContainer />
+    </ContentWrapper>
   </Wrapper>
 )
 

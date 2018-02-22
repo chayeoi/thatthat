@@ -1,3 +1,4 @@
 import courseImg from './courseImg.jpg'
+import loginBg from './loginBg.jpg'
 
-export { courseImg }
+export { courseImg, loginBg }
