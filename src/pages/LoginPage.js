@@ -6,7 +6,7 @@ import {
   FooterContainer,
 } from 'containers'
 import { loginBg } from 'assets/images'
-import { FONT_COLOR } from 'constants/Color'
+import { FONT_COLOR } from 'constants/color'
 
 const Wrapper = styled.div`
   height: 100vh;
