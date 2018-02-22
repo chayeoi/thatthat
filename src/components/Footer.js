@@ -16,7 +16,7 @@ const Footer = ({ url }) => (
   <footer>
     <ContentWrapper>
       <StyledLink to={url}>
-        THATTHAT 소개
+        댓댓 서비스 소개
       </StyledLink>
     </ContentWrapper>
   </footer>
