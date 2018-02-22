@@ -5,6 +5,7 @@ import CategoryListContainer from './CategoryListContainer'
 import CourseListContainer from './CourseListContainer'
 import UserInfoContainer from './UserInfoContainer'
 import MyPageTabContainer from './MyPageTabContainer'
+import FooterContainer from './FooterContainer'
 
 export {
   App,
@@ -14,4 +15,5 @@ export {
   CourseListContainer,
   UserInfoContainer,
   MyPageTabContainer,
+  FooterContainer,
 }

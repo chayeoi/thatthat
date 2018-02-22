@@ -6,6 +6,7 @@ import CourseCard from './CourseCard'
 import MainMenu from './MainMenu'
 import UserInfo from './UserInfo'
 import MyPageTab from './MyPageTab'
+import Footer from './Footer'
 
 export {
   LoginButton,
@@ -16,4 +17,5 @@ export {
   MainMenu,
   UserInfo,
   MyPageTab,
+  Footer,
 }
