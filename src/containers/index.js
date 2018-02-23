@@ -4,6 +4,7 @@ import LogoutButtonContainer from './LogoutButtonContainer'
 import CategoryListContainer from './CategoryListContainer'
 import CourseListContainer from './CourseListContainer'
 import UserInfoContainer from './UserInfoContainer'
+import CourseDetailContainer from './CourseDetailContainer'
 
 export {
   App,
@@ -12,4 +13,5 @@ export {
   CategoryListContainer,
   CourseListContainer,
   UserInfoContainer,
+  CourseDetailContainer,
 }
