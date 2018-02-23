@@ -1,1 +1,5 @@
 export const MAIN_COLOR = '#ed234b'
+export const GRAY2 = '#e9ecef'
+export const GRAY6 = '#868e96'
+export const GRAY8 = '#343a40'
+export const GRAY9 = '#212529'
