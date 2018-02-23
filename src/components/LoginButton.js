@@ -1,29 +1,36 @@
 import React from 'react'
-import { Button, Icon, Segment } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 450px;
 `
+const PaddedWrapper = styled.div`
+  padding: 10px 20px;
+`
+
+const RoughButton = styled(Button)`
+  border-radius: 0 !important;
+`
 
 const LoginButton = ({ onFacebookLogin, onTwitterLogin, onGoogleLogin }) => (
   <Wrapper>
-    <Segment attached="top">
-      <Button fluid color="facebook" onClick={onFacebookLogin}>
-        <Icon name="facebook" /> Facebook
-      </Button>
-    </Segment>
-    <Segment attached>
-      <Button fluid color="twitter" onClick={onTwitterLogin}>
-        <Icon name="twitter" /> Twitter
-      </Button>
-    </Segment>
-    <Segment attached="bottom">
-      <Button fluid color="google plus" onClick={onGoogleLogin}>
-        <Icon name="google plus" /> Google Plus
-      </Button>
-    </Segment>
+    <PaddedWrapper>
+      <RoughButton fluid color="blue" onClick={onFacebookLogin}>
+        <Icon name="facebook" /> Facebook 로그인
+      </RoughButton>
+    </PaddedWrapper>
+    <PaddedWrapper>
+      <RoughButton fluid color="teal" onClick={onTwitterLogin}>
+        <Icon name="twitter" /> Twitter 로그인
+      </RoughButton>
+    </PaddedWrapper>
+    <PaddedWrapper>
+      <RoughButton fluid color="red" onClick={onGoogleLogin}>
+        <Icon name="google plus" /> Google Plus 로그인
+      </RoughButton>
+    </PaddedWrapper>
   </Wrapper>
 )
 
