@@ -7,7 +7,7 @@ import {
 } from 'containers'
 import { withAuth } from 'hocs'
 
-const MainPage = () => (
+const CoursePage = () => (
   <React.Fragment>
     <MainMenu />
     <CategoryListContainer />
@@ -18,4 +18,4 @@ const MainPage = () => (
   </React.Fragment>
 )
 
-export default withAuth(MainPage)
+export default withAuth(CoursePage)

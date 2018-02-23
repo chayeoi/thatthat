@@ -7,11 +7,12 @@ import {
 import { Provider } from 'react-redux'
 import store from 'ducks'
 import {
-  LoginPage,
   MainPage,
-  MyPage,
-  NotFoundPage,
+  LoginPage,
   CoursePage,
+  MyPage,
+  AboutPage,
+  NotFoundPage,
   CourseDetailPage,
 } from 'pages'
 
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path="/courses" component={CoursePage} />
             <Route path="/course/:id/:tab" component={CourseDetailPage} />
             <Route path="/mypage" component={MyPage} />
+            <Route path="/about" component={AboutPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Router>

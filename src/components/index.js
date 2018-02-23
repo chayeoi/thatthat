@@ -8,6 +8,8 @@ import CourseTab from './CourseTab'
 import CourseInfo from './CourseInfo'
 import CourseReview from './CourseReview'
 import UserInfo from './UserInfo'
+import MyPageTab from './MyPageTab'
+import Footer from './Footer'
 
 export {
   LoginButton,
@@ -20,4 +22,6 @@ export {
   CourseInfo,
   CourseReview,
   UserInfo,
+  MyPageTab,
+  Footer,
 }

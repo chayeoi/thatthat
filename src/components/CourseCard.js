@@ -9,7 +9,7 @@ import {
   Rating,
   Statistic,
 } from 'semantic-ui-react'
-import { loginBg } from '../assets/img'
+import { courseImg } from '../assets/images'
 
 const StyledRating = styled(Rating)`
   & .active::before {
@@ -30,7 +30,7 @@ const CourseCard = ({ course }) => {
     <Segment as="li">
       <Grid as={Link} to={`/course/${id}/info`}>
         <Grid.Column width={4} color="blue" textAlign="center">
-          <Image src={loginBg} size="small" />
+          <Image src={courseImg} size="small" />
         </Grid.Column>
         <Grid.Column width={12} color="green">
           <Header sub content={organization} size="huge" />

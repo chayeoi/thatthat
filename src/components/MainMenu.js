@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { Menu, Icon } from 'semantic-ui-react'
-import { MAIN_COLOR } from 'constants/Color'
+import { MAIN_COLOR } from 'constants/color'
 
 const Wrapper = styled.div`
   text-align: center;

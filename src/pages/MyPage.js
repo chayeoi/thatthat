@@ -3,6 +3,7 @@ import { MainMenu } from 'components'
 import {
   UserInfoContainer,
   LogoutButtonContainer,
+  MyPageTabContainer,
 } from 'containers'
 import { withAuth } from 'hocs'
 
@@ -11,6 +12,7 @@ const MyPage = () => (
     <MainMenu />
     <UserInfoContainer />
     <LogoutButtonContainer />
+    <MyPageTabContainer />
   </React.Fragment>
 )
 
