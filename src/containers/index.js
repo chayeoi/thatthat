@@ -1,7 +1,7 @@
 import App from './App'
 import LoginButtonContainer from './LoginButtonContainer'
 import LogoutButtonContainer from './LogoutButtonContainer'
-import CategoryListContainer from './CategoryListContainer'
+import CategoryTabContainer from './CategoryTabContainer'
 import CourseListContainer from './CourseListContainer'
 import UserInfoContainer from './UserInfoContainer'
 import MyPageTabContainer from './MyPageTabContainer'
@@ -11,7 +11,7 @@ export {
   App,
   LoginButtonContainer,
   LogoutButtonContainer,
-  CategoryListContainer,
+  CategoryTabContainer,
   CourseListContainer,
   UserInfoContainer,
   MyPageTabContainer,

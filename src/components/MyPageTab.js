@@ -6,7 +6,7 @@ export default class MyPageTab extends Component {
     activeItem: this.props.lists[0].name,
   }
 
-  handleTabClick = (e, { name }) => {
+  handleClick = (e, { name }) => {
     this.setState({ activeItem: name })
   }
 
@@ -21,7 +21,7 @@ export default class MyPageTab extends Component {
               key={list.name}
               name={list.name}
               active={activeItem === list.name}
-              onClick={this.handleTabClick}
+              onClick={this.handleClick}
               {...list.link}
             />
           ))}
