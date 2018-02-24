@@ -19,8 +19,8 @@ const tabs = [
   },
 ]
 
-const CoureseTabContainer = () => (
+const CourseTabContainer = () => (
   <CourseTab tabs={tabs} />
 )
 
-export default CoureseTabContainer
+export default CourseTabContainer

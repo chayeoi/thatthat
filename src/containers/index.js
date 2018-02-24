@@ -7,6 +7,8 @@ import UserInfoContainer from './UserInfoContainer'
 import CourseDetailContainer from './CourseDetailContainer'
 import MyPageTabContainer from './MyPageTabContainer'
 import FooterContainer from './FooterContainer'
+import CourseInfoContainer from './CourseInfoContainer'
+import CourseReviewContainer from './CourseReviewContainer'
 
 export {
   App,
@@ -18,4 +20,6 @@ export {
   CourseDetailContainer,
   MyPageTabContainer,
   FooterContainer,
+  CourseInfoContainer,
+  CourseReviewContainer,
 }
