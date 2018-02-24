@@ -7,6 +7,53 @@
       "course7": true
     }
   },
+  "myReviews": {
+    "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
+      "course1": {
+        "review1": true,
+        "review2": true
+      },
+      "course2": {
+        "review3": true,
+        "review4": true
+      },
+      "course3": {
+        "review5": true
+      }
+    }
+  },
+  "reviews": {
+    "review1": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course1",
+      "rating": 3.5,
+      "content": "정말 입문을 하는데 필요한 부분이 다 담겨져 있어서 좋았습니다!"
+    },
+    "review2": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course1",
+      "rating": 4.7,
+      "content": "자바스크립트 공부하면서 정말 많이 헷갈리던 부분이 많았는데… 대부분 해소가 되었습니다. 이런 강의자료가 나오기까지 강사님의 고민과 학습이 정말 많았으리라 생각됩니다. 많은 도움이 되었습니다. 그러나, 강의중 말의 속도가 다소 빠르다는 느낌이 듭니다. 그래서 자꾸 멈추면서 이해하고 넘어가는 부분이 있어 흐름이 조금씩 깨지고는 했습니다. 물론 저의 이해력이 낮아서 그런 문제가 있기도 합니다. 다른 언어에 있어서도 이런 강의가 있으면 좋을 것 같습니다."
+    },
+    "review3": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course2",
+      "rating": 2.8,
+      "content": "이미알고있는내용인데 가끔가다가 정말쉬운것도 까먹을때가 많아요 ㅠㅠ 이거 강좌한번이면 끝 ㅎㅎㅎㅎ"
+    },
+    "review4": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course2",
+      "rating": 3,
+      "content": "TDD에 대해 정확히 몰랐는데 강의 통해서 많이 배우고 갑니다."
+    },
+    "review5": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course3",
+      "rating": 3.3,
+      "content": "책 보고 혼자 하는것보다 훨씬 기억하기 수월했고 리마인드하는 느낌으로 들었습니다."
+    }
+  },
   "courses": {
     "programming": {
       "course1": {
