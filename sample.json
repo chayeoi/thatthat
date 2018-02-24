@@ -15,30 +15,18 @@
   },
   "myReviews": {
     "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
-      "course1": {
-        "review1": true,
-        "review2": true
-      },
-      "course2": {
-        "review3": true,
-        "review4": true
-      },
-      "course3": {
-        "review5": true
-      }
+      "review1": true,
+      "review2": true,
+      "review3": true,
+      "review4": true,
+      "review5": true
     },
     "nLcC8OgGSfhya0Ev5efQmOfJ46k1": {
-      "course1": {
-        "review6": true,
-        "review7": true
-      },
-      "course4": {
-        "review8": true,
-        "review9": true
-      },
-      "course6": {
-        "review10": true
-      }
+      "review6": true,
+      "review7": true,
+      "review8": true,
+      "review9": true,
+      "review10": true
     }
   },
   "reviews": {
