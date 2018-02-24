@@ -5,6 +5,12 @@
       "course2": true,
       "course5": true,
       "course7": true
+    },
+    "nLcC8OgGSfhya0Ev5efQmOfJ46k1": {
+      "course1": true,
+      "course3": true,
+      "course5": true,
+      "course6": true
     }
   },
   "myReviews": {
@@ -19,6 +25,19 @@
       },
       "course3": {
         "review5": true
+      }
+    },
+    "nLcC8OgGSfhya0Ev5efQmOfJ46k1": {
+      "course1": {
+        "review6": true,
+        "review7": true
+      },
+      "course4": {
+        "review8": true,
+        "review9": true
+      },
+      "course6": {
+        "review10": true
       }
     }
   },
@@ -52,6 +71,36 @@
       "courseKey": "course3",
       "rating": 3.3,
       "content": "책 보고 혼자 하는것보다 훨씬 기억하기 수월했고 리마인드하는 느낌으로 들었습니다."
+    },
+    "review6": {
+      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "courseKey": "course1",
+      "rating": 3.7,
+      "content": "너무 알차고 강의 설명도 친절하고 좋아요. 단축키 같은것도 계속해서 말해주셔서 기억하기 쉽구요."
+    },
+    "review7": {
+      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "courseKey": "course1",
+      "rating": 2,
+      "content": "고급강좌가필요합니다~"
+    },
+    "review8": {
+      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "courseKey": "course4",
+      "rating": 4,
+      "content": "다른 개발경력이 있어서.. ios앱을 책들과 유튜브로 독학 했었습니다. 다른건 비슷하게 했는데.. UI에서 오토레이아웃은 아쉬움이 많았습니다. Ui조절도 Code로 보강하고.. 이 강의로 아쉬움이 다 없어지네요. 강추 입니다."
+    },
+    "review9": {
+      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "courseKey": "course4",
+      "rating": 5,
+      "content": "유익한 내용이었습니다. 강의 진행이 조금 더 매끄러워진다면 더욱 좋을 것 같아요. 감사합니다."
+    },
+    "review10": {
+      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "courseKey": "course6",
+      "rating": 4.7,
+      "content": "좋은 강의 감사합니다."
     }
   },
   "courses": {
