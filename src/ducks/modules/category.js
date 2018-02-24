@@ -52,8 +52,8 @@ export const loadCourseList = category => async (dispatch) => {
       ...acc,
       ...cur,
     }), {})
-    const courses = Object.entries(rawCourses).map(([id, course]) => ({
-      id,
+    const courses = Object.entries(rawCourses).map(([courseKey, course]) => ({
+      courseKey,
       ...course,
     }))
     dispatch(completeLoading(courses))

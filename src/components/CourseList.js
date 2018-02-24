@@ -4,7 +4,7 @@ import { CourseCard } from 'components'
 const CourseList = ({ courses }) => (
   <ul>
     {courses.map(course => (
-      <CourseCard key={course.id} course={course} />
+      <CourseCard key={course.courseKey} course={course} />
     ))}
   </ul>
 )

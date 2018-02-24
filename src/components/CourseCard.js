@@ -19,7 +19,7 @@ const StyledRating = styled(Rating)`
 
 const CourseCard = ({ course }) => {
   const {
-    id,
+    courseKey,
     organization,
     className,
     likeCount,
@@ -28,7 +28,7 @@ const CourseCard = ({ course }) => {
   } = course
   return (
     <Segment as="li">
-      <Grid as={Link} to={`/course/${id}/info`}>
+      <Grid as={Link} to={`/course/${courseKey}/info`}>
         <Grid.Column width={4} color="blue" textAlign="center">
           <Image src={courseImg} size="small" />
         </Grid.Column>
