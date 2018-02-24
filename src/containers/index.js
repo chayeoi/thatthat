@@ -4,11 +4,11 @@ import LogoutButtonContainer from './LogoutButtonContainer'
 import CategoryListContainer from './CategoryListContainer'
 import CourseListContainer from './CourseListContainer'
 import UserInfoContainer from './UserInfoContainer'
-import CourseDetailContainer from './CourseDetailContainer'
 import MyPageTabContainer from './MyPageTabContainer'
 import FooterContainer from './FooterContainer'
 import CourseInfoContainer from './CourseInfoContainer'
 import CourseReviewContainer from './CourseReviewContainer'
+import CourseTabContainer from './CourseTabContainer'
 
 export {
   App,
@@ -17,9 +17,9 @@ export {
   CategoryListContainer,
   CourseListContainer,
   UserInfoContainer,
-  CourseDetailContainer,
   MyPageTabContainer,
   FooterContainer,
   CourseInfoContainer,
   CourseReviewContainer,
+  CourseTabContainer,
 }
