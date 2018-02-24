@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import CategoryList from '../src/components/CategoryList'
+import CategoryTab from '../src/components/CategoryTab'
 
 const categories = [
   {
@@ -35,7 +35,7 @@ const categories = [
 
 storiesOf('CategoryList', module)
   .add('default', () => (
-    <CategoryList
+    <CategoryTab
       categories={categories}
     />
   ))
