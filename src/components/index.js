@@ -1,9 +1,12 @@
 import LoginButton from './LoginButton'
 import LogoutButton from './LogoutButton'
 import CategoryTab from './CategoryTab'
+import MainMenu from './MainMenu'
 import CourseList from './CourseList'
 import CourseCard from './CourseCard'
-import MainMenu from './MainMenu'
+import CourseTab from './CourseTab'
+import CourseInfo from './CourseInfo'
+import CourseReview from './CourseReview'
 import UserInfo from './UserInfo'
 import MyPageTab from './MyPageTab'
 import Footer from './Footer'
@@ -14,9 +17,12 @@ export {
   LoginButton,
   LogoutButton,
   CategoryTab,
+  MainMenu,
   CourseList,
   CourseCard,
-  MainMenu,
+  CourseTab,
+  CourseInfo,
+  CourseReview,
   UserInfo,
   MyPageTab,
   Footer,

@@ -4,6 +4,7 @@ import CoursePage from './CoursePage'
 import MyPage from './MyPage'
 import AboutPage from './AboutPage'
 import NotFoundPage from './NotFoundPage'
+import CourseDetailPage from './CourseDetailPage'
 
 export {
   MainPage,
@@ -12,4 +13,5 @@ export {
   MyPage,
   AboutPage,
   NotFoundPage,
+  CourseDetailPage,
 }
