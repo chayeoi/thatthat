@@ -6,6 +6,9 @@ import CourseListContainer from './CourseListContainer'
 import UserInfoContainer from './UserInfoContainer'
 import MyPageTabContainer from './MyPageTabContainer'
 import FooterContainer from './FooterContainer'
+import MyLikeListContainer from './MyLikeListContainer'
+import MyReviewListContainer from './MyReviewListContainer'
+
 
 export {
   App,
@@ -16,4 +19,6 @@ export {
   UserInfoContainer,
   MyPageTabContainer,
   FooterContainer,
+  MyLikeListContainer,
+  MyReviewListContainer,
 }

@@ -1,4 +1,12 @@
 {
+  "myLikes": {
+    "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
+      "course1": true,
+      "course2": true,
+      "course5": true,
+      "course7": true
+    }
+  },
   "courses": {
     "programming": {
       "course1": {
@@ -55,5 +63,14 @@
         "ratingAvg": 4.5
       }
     }
+  },
+  "category": {
+    "course1": "programming",
+    "course2": "programming",
+    "course3": "programming",
+    "course4": "design",
+    "course5": "design",
+    "course6": "planMaking",
+    "course7": "planMaking"
   }
 }

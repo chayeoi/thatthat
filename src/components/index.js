@@ -7,6 +7,8 @@ import MainMenu from './MainMenu'
 import UserInfo from './UserInfo'
 import MyPageTab from './MyPageTab'
 import Footer from './Footer'
+import MyLikeList from './MyLikeList'
+import MyReviewList from './MyReviewList'
 
 export {
   LoginButton,
@@ -18,4 +20,6 @@ export {
   UserInfo,
   MyPageTab,
   Footer,
+  MyLikeList,
+  MyReviewList,
 }
