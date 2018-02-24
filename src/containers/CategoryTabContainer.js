@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { CategoryList } from 'components'
+import { CategoryTab } from 'components'
 
 const categories = [
   {
@@ -33,8 +33,8 @@ const categories = [
   },
 ]
 
-const CategoryListContainer = () => (
-  <CategoryList categories={categories} />
+const CategoryTabContainer = () => (
+  <CategoryTab categories={categories} />
 )
 
-export default CategoryListContainer
+export default CategoryTabContainer

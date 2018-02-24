@@ -1,4 +1,59 @@
 {
+  "myLikes": {
+    "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
+      "course1": true,
+      "course2": true,
+      "course5": true,
+      "course7": true
+    }
+  },
+  "myReviews": {
+    "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
+      "course1": {
+        "review1": true,
+        "review2": true
+      },
+      "course2": {
+        "review3": true,
+        "review4": true
+      },
+      "course3": {
+        "review5": true
+      }
+    }
+  },
+  "reviews": {
+    "review1": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course1",
+      "rating": 3.5,
+      "content": "정말 입문을 하는데 필요한 부분이 다 담겨져 있어서 좋았습니다!"
+    },
+    "review2": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course1",
+      "rating": 4.7,
+      "content": "자바스크립트 공부하면서 정말 많이 헷갈리던 부분이 많았는데… 대부분 해소가 되었습니다. 이런 강의자료가 나오기까지 강사님의 고민과 학습이 정말 많았으리라 생각됩니다. 많은 도움이 되었습니다. 그러나, 강의중 말의 속도가 다소 빠르다는 느낌이 듭니다. 그래서 자꾸 멈추면서 이해하고 넘어가는 부분이 있어 흐름이 조금씩 깨지고는 했습니다. 물론 저의 이해력이 낮아서 그런 문제가 있기도 합니다. 다른 언어에 있어서도 이런 강의가 있으면 좋을 것 같습니다."
+    },
+    "review3": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course2",
+      "rating": 2.8,
+      "content": "이미알고있는내용인데 가끔가다가 정말쉬운것도 까먹을때가 많아요 ㅠㅠ 이거 강좌한번이면 끝 ㅎㅎㅎㅎ"
+    },
+    "review4": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course2",
+      "rating": 3,
+      "content": "TDD에 대해 정확히 몰랐는데 강의 통해서 많이 배우고 갑니다."
+    },
+    "review5": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "course3",
+      "rating": 3.3,
+      "content": "책 보고 혼자 하는것보다 훨씬 기억하기 수월했고 리마인드하는 느낌으로 들었습니다."
+    }
+  },
   "courses": {
     "programming": {
       "course1": {
@@ -85,6 +140,15 @@
       "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
       "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
     }
+  },
+  "category": {
+    "course1": "programming",
+    "course2": "programming",
+    "course3": "programming",
+    "course4": "design",
+    "course5": "design",
+    "course6": "planMaking",
+    "course7": "planMaking"
   }
 }
 

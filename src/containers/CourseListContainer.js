@@ -10,10 +10,12 @@ class CourseListContainer extends Component {
   }
 
   componentDidMount() {
+    console.log('componentDidMount')
     this.props.onMount()
   }
 
   componentWillReceiveProps(nextProps) {
+    console.log('componentWillReceiveProps')
     const { url: currentUrl } = this.props.match
     const { url: nextUrl } = nextProps.match
     if (currentUrl !== nextUrl) {
@@ -22,6 +24,8 @@ class CourseListContainer extends Component {
   }
 
   render() {
+    console.log('render')
+    console.log(this.props.courses)
     const { courses } = this.props
     return (
       <React.Fragment>

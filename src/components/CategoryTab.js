@@ -6,7 +6,7 @@ export default class CategoryList extends Component {
     activeItem: this.props.categories[0].name,
   }
 
-  handleCategoryClick = (e, { name }) => {
+  handleClick = (e, { name }) => {
     this.setState({ activeItem: name })
   }
 
@@ -21,7 +21,7 @@ export default class CategoryList extends Component {
               key={category.name}
               name={category.name}
               active={activeItem === category.name}
-              onClick={this.handleCategoryClick}
+              onClick={this.handleClick}
               {...category.link}
             />
           ))}
