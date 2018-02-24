@@ -12,6 +12,7 @@ import MyPageTab from './MyPageTab'
 import Footer from './Footer'
 import MyLikeList from './MyLikeList'
 import MyReviewList from './MyReviewList'
+import ReviewCard from './ReviewCard'
 
 export {
   LoginButton,
@@ -28,4 +29,5 @@ export {
   Footer,
   MyLikeList,
   MyReviewList,
+  ReviewCard,
 }
