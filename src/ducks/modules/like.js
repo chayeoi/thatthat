@@ -40,17 +40,21 @@ export const loadMyLikeList = () => async (dispatch) => {
   const { uid } = firebase.auth().currentUser
   const snapshot = await firebase.database().ref(`myLikes/${uid}`).once('value')
   const result = snapshot.val()
-  const courseKeys = Object.keys(result)
-  const pendingLikes = courseKeys.map(async (courseKey) => {
-    const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
-    const category = categorySnapshot.val()
-    const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
-    const course = courseSnapshot.val()
-    return {
-      courseKey,
-      ...course,
-    }
-  })
-  const likes = await Promise.all(pendingLikes)
-  dispatch(completeLoading(likes))
+  if (result) {
+    const courseKeys = Object.keys(result)
+    const pendingLikes = courseKeys.map(async (courseKey) => {
+      const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
+      const category = categorySnapshot.val()
+      const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
+      const course = courseSnapshot.val()
+      return {
+        courseKey,
+        ...course,
+      }
+    })
+    const likes = await Promise.all(pendingLikes)
+    dispatch(completeLoading(likes))
+  } else {
+    dispatch(completeLoading(null))
+  }
 }
