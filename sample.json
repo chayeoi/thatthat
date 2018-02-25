@@ -1,4 +1,10 @@
 {
+  "users": {
+    "reviewers": {
+    },
+    "academies": {
+    }
+  },
   "myLikes": {
     "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
       "course1": true,
