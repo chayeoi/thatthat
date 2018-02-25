@@ -11,6 +11,16 @@ import { FONT_COLOR } from 'constants/color'
 const Wrapper = styled.div`
   height: 100vh;
   overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -49,7 +59,7 @@ const LoginPage = () => (
     <ContentWrapper>
       <header>
         <MainHeader as="h1" content="THATTHAT" textAlign="center" />
-        <SubHeader as="h2" content="IT 학원 강의 리뷰 플랫폼" textAlign="center" />
+        <SubHeader as="h2" content="IT 학원 강의 리뷰 플랫폼, 댓댓" textAlign="center" />
       </header>
       <TopMarginedGrid centered container>
         <Grid.Column>
