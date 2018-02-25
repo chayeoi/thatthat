@@ -3,6 +3,7 @@ import LoginButtonContainer from './LoginButtonContainer'
 import LogoutButtonContainer from './LogoutButtonContainer'
 import CategoryTabContainer from './CategoryTabContainer'
 import CourseListContainer from './CourseListContainer'
+import CourseCardContainer from './CourseCardContainer'
 import UserInfoContainer from './UserInfoContainer'
 import MyPageTabContainer from './MyPageTabContainer'
 import FooterContainer from './FooterContainer'
@@ -19,6 +20,7 @@ export {
   LogoutButtonContainer,
   CategoryTabContainer,
   CourseListContainer,
+  CourseCardContainer,
   UserInfoContainer,
   MyPageTabContainer,
   FooterContainer,

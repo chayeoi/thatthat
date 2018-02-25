@@ -3,6 +3,7 @@ import category from './category'
 import like from './like'
 import review from './review'
 import course from './course'
+import detail from './detail'
 
 export {
   auth,
@@ -10,4 +11,5 @@ export {
   like,
   review,
   course,
+  detail,
 }
