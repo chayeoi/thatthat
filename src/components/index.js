@@ -12,6 +12,7 @@ import MyPageTab from './MyPageTab'
 import Footer from './Footer'
 import MyLikeList from './MyLikeList'
 import MyReviewList from './MyReviewList'
+import MyCourseList from './MyCourseList'
 import ReviewCard from './ReviewCard'
 
 export {
@@ -29,5 +30,6 @@ export {
   Footer,
   MyLikeList,
   MyReviewList,
+  MyCourseList,
   ReviewCard,
 }

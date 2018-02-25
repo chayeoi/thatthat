@@ -1,8 +1,16 @@
 {
   "users": {
     "reviewers": {
+      "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
+        "displayName": "김찬연",
+        "photoURL": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+      }
     },
     "academies": {
+      "jmE6iw8Ie9StiVAAbuMt60Cpley2": {
+        "organization": "패스트캠퍼스",
+        "photoURL": "https://scontent.xx.fbcdn.net/v/t1.0-1/c29.0.100.100/p100x100/10354686_10150004552801856_220367501106153455_n.jpg?oh=10804aa5ece365752d695e1e4ece24e8&oe=5B17A377"
+      }
     }
   },
   "myLikes": {
@@ -95,6 +103,13 @@
       "courseKey": "course6",
       "rating": 4.7,
       "content": "좋은 강의 감사합니다."
+    }
+  },
+  "myCourses": {
+    "jmE6iw8Ie9StiVAAbuMt60Cpley2": {
+      "course1": true,
+      "course3": true,
+      "course5": true
     }
   },
   "courses": {

@@ -8,6 +8,7 @@ import MyPageTabContainer from './MyPageTabContainer'
 import FooterContainer from './FooterContainer'
 import MyLikeListContainer from './MyLikeListContainer'
 import MyReviewListContainer from './MyReviewListContainer'
+import MyCourseListContainer from './MyCourseListContainer'
 import CourseInfoContainer from './CourseInfoContainer'
 import CourseReviewContainer from './CourseReviewContainer'
 import CourseTabContainer from './CourseTabContainer'
@@ -23,6 +24,7 @@ export {
   FooterContainer,
   MyLikeListContainer,
   MyReviewListContainer,
+  MyCourseListContainer,
   CourseInfoContainer,
   CourseReviewContainer,
   CourseTabContainer,
