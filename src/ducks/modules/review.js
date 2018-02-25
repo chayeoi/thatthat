@@ -40,23 +40,27 @@ export const loadMyReviewList = () => async (dispatch) => {
   const { uid } = firebase.auth().currentUser
   const snapshot = await firebase.database().ref(`myReviews/${uid}`).once('value')
   const result = snapshot.val()
-  const reviewKeys = Object.keys(result)
-  const pendingReviews = reviewKeys.map(async (reviewKey) => {
-    const reviewSnapshot = await firebase.database().ref(`reviews/${reviewKey}`).once('value')
-    const review = reviewSnapshot.val()
-    const { courseKey } = review
-    const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
-    const category = categorySnapshot.val()
-    const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
-    const course = courseSnapshot.val()
-    const { organization, className } = course
-    return {
-      reviewKey,
-      organization,
-      className,
-      ...review,
-    }
-  })
-  const reviews = await Promise.all(pendingReviews)
-  dispatch(completeLoading(reviews))
+  if (result) {
+    const reviewKeys = Object.keys(result)
+    const pendingReviews = reviewKeys.map(async (reviewKey) => {
+      const reviewSnapshot = await firebase.database().ref(`reviews/${reviewKey}`).once('value')
+      const review = reviewSnapshot.val()
+      const { courseKey } = review
+      const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
+      const category = categorySnapshot.val()
+      const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
+      const course = courseSnapshot.val()
+      const { organization, className } = course
+      return {
+        reviewKey,
+        organization,
+        className,
+        ...review,
+      }
+    })
+    const reviews = await Promise.all(pendingReviews)
+    dispatch(completeLoading(reviews))
+  } else {
+    dispatch(completeLoading(null))
+  }
 }
