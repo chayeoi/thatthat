@@ -3,9 +3,12 @@ import { CourseCard } from 'components'
 
 const CourseList = ({ courses }) => (
   <ul>
-    {courses.map(course => (
-      <CourseCard key={course.courseKey} course={course} />
-    ))}
+    {courses ?
+      courses.map(course => (
+        <CourseCard key={course.courseKey} course={course} />
+      ))
+      : <div>등록된 강의가 없습니다.</div>
+    }
   </ul>
 )
 
