@@ -44,6 +44,30 @@ REACT_APP_STORAGE_BUCKET=[storageBucket]
 REACT_APP_MESSAGING_SENDER_ID=[messagingSenderId]
 ```
 
+Firebase CLI를 전역으로 설치한다.
+
+```bash
+npm install -g firebase-tools
+```
+
+Firebase에 로그인한다.
+
+```bash
+firebase login
+```
+
+프로젝트 루트 디렉토리에서 다음 명령을 실행하여 Firebase 앱으로 초기화한다. 어떤 기능과 연동시킬 것인지 물으면 Database와 Store를 선택하고, 앞서 파이어베이스 콘솔에서 생성한 프로젝트를 연동하고자 하는 프로젝트로 선택한다.
+
+```bash
+firebase init
+```
+
+다음 명령을 실행하여 sample.json을 파이어베이스 데이터베이스에 업로드한다.
+
+```bash
+firebase database:set / sample.json
+```
+
 개발 서버를 실행한다.
 
 ```bash
