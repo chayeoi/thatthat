@@ -2,7 +2,7 @@ import React from 'react'
 
 const CourseInfo = () => (
   <div>
-    코스정보
+    I am CourseInfo.
   </div>
 )
 
