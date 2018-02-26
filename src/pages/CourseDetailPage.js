@@ -14,11 +14,11 @@ const CourseDetailPage = ({ match: { params: { courseKey } } }) => (
   <React.Fragment>
     <MainMenu />
     <CourseCardContainer courseKey={courseKey} />
-    <CourseTabContainer />
+    <CourseTabContainer courseKey={courseKey} />
     <Switch>
-      <Route exact path="course/:id" render={() => <Redirect to="/courses/:courseKey/info" />} />
-      <Route path="course/:courseKey/info" component={CourseInfoContainer} />
-      <Route path="course/:courseKey/review" component={CourseReviewContainer} />
+      <Route exact path="/course/:courseKey" render={() => <Redirect to={`/courses/${courseKey}/info`} />} />
+      <Route path="/course/:courseKey/info" component={CourseInfoContainer} />
+      <Route path="/course/:courseKey/review" component={CourseReviewContainer} />
     </Switch>
   </React.Fragment>
 )

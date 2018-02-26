@@ -10,9 +10,9 @@ import FooterContainer from './FooterContainer'
 import MyLikeListContainer from './MyLikeListContainer'
 import MyReviewListContainer from './MyReviewListContainer'
 import MyCourseListContainer from './MyCourseListContainer'
+import CourseTabContainer from './CourseTabContainer'
 import CourseInfoContainer from './CourseInfoContainer'
 import CourseReviewContainer from './CourseReviewContainer'
-import CourseTabContainer from './CourseTabContainer'
 
 export {
   App,
@@ -27,7 +27,7 @@ export {
   MyLikeListContainer,
   MyReviewListContainer,
   MyCourseListContainer,
+  CourseTabContainer,
   CourseInfoContainer,
   CourseReviewContainer,
-  CourseTabContainer,
 }
