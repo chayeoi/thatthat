@@ -3,11 +3,13 @@ import LoginButtonContainer from './LoginButtonContainer'
 import LogoutButtonContainer from './LogoutButtonContainer'
 import CategoryTabContainer from './CategoryTabContainer'
 import CourseListContainer from './CourseListContainer'
+import CourseCardContainer from './CourseCardContainer'
 import UserInfoContainer from './UserInfoContainer'
 import MyPageTabContainer from './MyPageTabContainer'
 import FooterContainer from './FooterContainer'
 import MyLikeListContainer from './MyLikeListContainer'
 import MyReviewListContainer from './MyReviewListContainer'
+import MyCourseListContainer from './MyCourseListContainer'
 import CourseInfoContainer from './CourseInfoContainer'
 import CourseReviewContainer from './CourseReviewContainer'
 import CourseTabContainer from './CourseTabContainer'
@@ -18,11 +20,13 @@ export {
   LogoutButtonContainer,
   CategoryTabContainer,
   CourseListContainer,
+  CourseCardContainer,
   UserInfoContainer,
   MyPageTabContainer,
   FooterContainer,
   MyLikeListContainer,
   MyReviewListContainer,
+  MyCourseListContainer,
   CourseInfoContainer,
   CourseReviewContainer,
   CourseTabContainer,
