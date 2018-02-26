@@ -38,16 +38,19 @@ export const redirectToLogin = () => ({
 // Reducer
 const initialState = {
   redirectToMain: false,
+  redirectToLogin: false,
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case REDIRECT_TO_MAIN:
       return {
+        ...state,
         redirectToMain: true,
       }
     case REDIRECT_TO_LOGIN:
       return {
+        ...state,
         redirectToLogin: true,
       }
     default:

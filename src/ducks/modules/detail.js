@@ -16,16 +16,19 @@ export const completeLoading = course => ({
 // Reducer
 const initialState = {
   isLoading: false,
+  course: {},
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case IS_LOADING:
       return {
+        ...state,
         isLoading: true,
       }
     case COMPLETE_LOADING:
       return {
+        ...state,
         isLoading: false,
         course: action.course,
       }

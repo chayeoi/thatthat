@@ -16,16 +16,19 @@ export const completeLoading = likes => ({
 // Reducer
 const initialState = {
   isLoading: false,
+  likes: [],
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case IS_LOADING:
       return {
+        ...state,
         isLoading: true,
       }
     case COMPLETE_LOADING:
       return {
+        ...state,
         isLoading: false,
         likes: action.likes,
       }
