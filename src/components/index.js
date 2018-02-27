@@ -9,11 +9,12 @@ import CourseInfo from './CourseInfo'
 import CourseReview from './CourseReview'
 import UserInfo from './UserInfo'
 import MyPageTab from './MyPageTab'
-import Footer from './Footer'
 import MyLikeList from './MyLikeList'
-import MyReviewList from './MyReviewList'
 import MyCourseList from './MyCourseList'
+import MyReviewList from './MyReviewList'
 import ReviewCard from './ReviewCard'
+import CourseForm from './CourseForm'
+import Footer from './Footer'
 
 export {
   LoginButton,
@@ -27,9 +28,10 @@ export {
   CourseReview,
   UserInfo,
   MyPageTab,
-  Footer,
   MyLikeList,
-  MyReviewList,
   MyCourseList,
+  MyReviewList,
   ReviewCard,
+  CourseForm,
+  Footer,
 }

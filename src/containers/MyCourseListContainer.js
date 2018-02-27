@@ -6,7 +6,11 @@ import { loadMyCourseList } from 'ducks/modules/course'
 class MyCourseListContainer extends Component {
   static defaultProps = {
     courses: [],
-    onMount: () => { },
+    onMount: () => {},
+  }
+
+  componentDidMount() {
+    this.props.onMount()
   }
 
   render() {
