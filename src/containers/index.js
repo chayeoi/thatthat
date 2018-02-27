@@ -14,6 +14,8 @@ import MyCourseListContainer from './MyCourseListContainer'
 import MyReviewListContainer from './MyReviewListContainer'
 import CourseFormContainer from './CourseFormContainer'
 import FooterContainer from './FooterContainer'
+import ReviewerRoute from './ReviewerRoute'
+import AcademyRoute from './AcademyRoute'
 
 
 export {
@@ -33,4 +35,6 @@ export {
   MyCourseListContainer,
   CourseFormContainer,
   FooterContainer,
+  ReviewerRoute,
+  AcademyRoute,
 }

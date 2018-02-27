@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import { LogoutButton } from 'components'
 import { logout } from 'ducks/modules/auth'
+import { initializeUser } from 'ducks/modules/user'
 
 class LogoutButtonContainer extends Component {
   static defaultProps = {
@@ -25,6 +26,9 @@ export default connect(
     redirectToLogin: state.auth.redirectToLogin,
   }),
   dispatch => ({
-    onLogout: () => dispatch(logout()),
+    onLogout: async () => {
+      await dispatch(logout())
+      dispatch(initializeUser())
+    },
   }),
 )(LogoutButtonContainer)

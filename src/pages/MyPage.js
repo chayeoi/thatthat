@@ -1,27 +1,61 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { Loader } from 'semantic-ui-react'
 import { MainMenu } from 'components'
 import {
   UserInfoContainer,
   LogoutButtonContainer,
   MyPageTabContainer,
-  MyLikeListContainer,
-  MyReviewListContainer,
+  ReviewerRoute,
+  AcademyRoute,
 } from 'containers'
-import { withAuth } from 'hocs'
+import { requestAuthentication } from 'ducks/modules/user'
 
-const MyPage = () => (
-  <React.Fragment>
-    <MainMenu />
-    <UserInfoContainer />
-    <LogoutButtonContainer />
-    <MyPageTabContainer />
-    <Switch>
-      <Route exact path="/mypage" render={() => <Redirect to="/mypage/likes" />} />
-      <Route path="/mypage/likes" component={MyLikeListContainer} />
-      <Route path="/mypage/reviews" component={MyReviewListContainer} />
-    </Switch>
-  </React.Fragment>
-)
+class MyPage extends Component {
+  static defaultProps = {
+    isLoading: false,
+    userClass: '',
+    redirectToLogin: false,
+    onMount: () => {},
+  }
 
-export default withAuth(MyPage)
+  componentDidMount() {
+    this.props.onMount()
+  }
+
+  render() {
+    const {
+      isLoading,
+      userClass,
+      redirectToLogin,
+    } = this.props
+    if (isLoading) {
+      return <Loader />
+    } else if (redirectToLogin) {
+      return <Redirect to="/login" />
+    } else if (userClass !== '') {
+      return (
+        <React.Fragment>
+          <MainMenu />
+          <UserInfoContainer />
+          <LogoutButtonContainer />
+          <MyPageTabContainer userClass={userClass} />
+          {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}
+        </React.Fragment>
+      )
+    }
+    return null
+  }
+}
+
+export default connect(
+  state => ({
+    isLoading: state.user.isLoading,
+    userClass: state.user.userClass,
+    redirectToLogin: state.user.redirectToLogin,
+  }),
+  dispatch => ({
+    onMount: () => dispatch(requestAuthentication()),
+  }),
+)(MyPage)
