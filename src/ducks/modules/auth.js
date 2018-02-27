@@ -47,10 +47,12 @@ export default (state = initialState, action) => {
       return {
         ...state,
         redirectToMain: true,
+        redirectToLogin: false,
       }
     case REDIRECT_TO_LOGIN:
       return {
         ...state,
+        redirectToMain: false,
         redirectToLogin: true,
       }
     default:

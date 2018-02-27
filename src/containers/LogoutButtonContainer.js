@@ -5,6 +5,11 @@ import { LogoutButton } from 'components'
 import { logout } from 'ducks/modules/auth'
 
 class LogoutButtonContainer extends Component {
+  static defaultProps = {
+    redirectToLogin: false,
+    onLogout: () => {},
+  }
+
   render() {
     const { redirectToLogin, ...rest } = this.props
     return (
