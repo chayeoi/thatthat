@@ -3,7 +3,7 @@ import { Menu } from 'semantic-ui-react'
 
 export default class MyPageTab extends Component {
   state = {
-    activeItem: this.props.lists[0].name,
+    activeItem: this.props.tabs[0].name,
   }
 
   handleClick = (e, { name }) => {
@@ -12,17 +12,17 @@ export default class MyPageTab extends Component {
 
   render() {
     const { activeItem } = this.state
-    const { lists } = this.props
+    const { tabs } = this.props
     return (
       <div>
         <Menu pointing secondary color="red">
-          {lists.map(list => (
+          {tabs.map(tab => (
             <Menu.Item
-              key={list.name}
-              name={list.name}
-              active={activeItem === list.name}
+              key={tab.name}
+              name={tab.name}
+              active={activeItem === tab.name}
               onClick={this.handleClick}
-              {...list.link}
+              {...tab.link}
             />
           ))}
         </Menu>

@@ -1,8 +1,9 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { MyPageTab } from 'components'
 
-const lists = [
+const reviewerTabs = [
   {
     name: '좋아요',
     link: {
@@ -18,9 +19,30 @@ const lists = [
     },
   },
 ]
+const academyTabs = [
+  {
+    name: '등록한 강의',
+    link: {
+      as: Link,
+      to: '/mypage/courses',
+    },
+  },
+  {
+    name: '강의 등록',
+    link: {
+      as: Link,
+      to: '/mypage/new-course',
+    },
+  },
+]
 
-const MyPageTabContainer = () => (
-  <MyPageTab lists={lists} />
+const MyPageTabContainer = ({ userClass }) => (
+  <MyPageTab tabs={userClass === 'reviewer' ? reviewerTabs : academyTabs} />
 )
 
-export default MyPageTabContainer
+export default connect(
+  state => ({
+    userClass: state.user.userClass,
+  }),
+  null,
+)(MyPageTabContainer)
