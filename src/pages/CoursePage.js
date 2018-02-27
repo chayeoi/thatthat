@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { MainMenu } from 'components'
 import {
+  MainMenuContainer,
   CategoryTabContainer,
   CourseListContainer,
 } from 'containers'
@@ -9,7 +9,7 @@ import { withAuth } from 'hocs'
 
 const CoursePage = () => (
   <React.Fragment>
-    <MainMenu />
+    <MainMenuContainer />
     <CategoryTabContainer />
     <Switch>
       <Route exact path="/courses" component={CourseListContainer} />

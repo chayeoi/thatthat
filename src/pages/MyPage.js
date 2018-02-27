@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import { Loader } from 'semantic-ui-react'
-import { MainMenu } from 'components'
 import {
+  MainMenuContainer,
   UserInfoContainer,
   LogoutButtonContainer,
   MyPageTabContainer,
@@ -37,7 +37,7 @@ class MyPage extends Component {
     } else if (userClass !== '') {
       return (
         <React.Fragment>
-          <MainMenu />
+          <MainMenuContainer />
           <UserInfoContainer />
           <LogoutButtonContainer />
           <MyPageTabContainer userClass={userClass} />

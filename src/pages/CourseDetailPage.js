@@ -1,9 +1,7 @@
 import React from 'react'
 import { Redirect, Switch, Route } from 'react-router-dom'
 import {
-  MainMenu,
-} from 'components'
-import {
+  MainMenuContainer,
   CourseCardContainer,
   CourseTabContainer,
   CourseInfoContainer,
@@ -12,7 +10,7 @@ import {
 
 const CourseDetailPage = ({ match: { params: { courseKey } } }) => (
   <React.Fragment>
-    <MainMenu />
+    <MainMenuContainer />
     <CourseCardContainer courseKey={courseKey} />
     <CourseTabContainer courseKey={courseKey} />
     <Switch>

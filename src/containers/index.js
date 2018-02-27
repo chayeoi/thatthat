@@ -1,4 +1,5 @@
 import App from './App'
+import MainMenuContainer from './MainMenuContainer'
 import LoginButtonContainer from './LoginButtonContainer'
 import LogoutButtonContainer from './LogoutButtonContainer'
 import CategoryTabContainer from './CategoryTabContainer'
@@ -20,6 +21,7 @@ import AcademyRoute from './AcademyRoute'
 
 export {
   App,
+  MainMenuContainer,
   LoginButtonContainer,
   LogoutButtonContainer,
   CategoryTabContainer,
