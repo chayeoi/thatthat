@@ -10,22 +10,19 @@ class CourseListContainer extends Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount')
     this.props.onMount()
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('componentWillReceiveProps')
     const { url: currentUrl } = this.props.match
     const { url: nextUrl } = nextProps.match
     if (currentUrl !== nextUrl) {
-      this.props.onMount()
+      const category = nextProps.match.params.category || ''
+      this.props.onMount(category)
     }
   }
 
   render() {
-    console.log('render')
-    console.log(this.props.courses)
     const { courses } = this.props
     return (
       <React.Fragment>
@@ -39,10 +36,9 @@ export default connect(
   state => ({
     courses: state.category.courses,
   }),
-  (dispatch, ownProps) => {
-    const { category } = ownProps.match.params || ''
-    return {
-      onMount: () => dispatch(loadCourseList(category)),
-    }
-  },
+  dispatch => ({
+    onMount: (category) => {
+      dispatch(loadCourseList(category))
+    },
+  }),
 )(CourseListContainer)
