@@ -7,10 +7,10 @@ import {
 } from 'containers'
 import { withAuth } from 'hocs'
 
-const CoursePage = () => (
+const CoursePage = ({ location: { pathname } }) => (
   <React.Fragment>
     <MainMenuContainer />
-    <CategoryTabContainer />
+    <CategoryTabContainer pathName={pathname} />
     <Switch>
       <Route exact path="/courses" component={CourseListContainer} />
       <Route path="/courses/:category" component={CourseListContainer} />

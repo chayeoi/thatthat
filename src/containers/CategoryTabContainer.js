@@ -33,8 +33,8 @@ const categories = [
   },
 ]
 
-const CategoryTabContainer = () => (
-  <CategoryTab categories={categories} />
+const CategoryTabContainer = ({ pathName }) => (
+  <CategoryTab categories={categories} pathName={pathName} />
 )
 
 export default CategoryTabContainer

@@ -3,11 +3,11 @@ import { Menu } from 'semantic-ui-react'
 
 export default class CategoryList extends Component {
   state = {
-    activeItem: this.props.categories[0].name,
+    activeItem: this.props.pathName,
   }
 
-  handleClick = (e, { name }) => {
-    this.setState({ activeItem: name })
+  handleClick = (e, { to }) => {
+    this.setState({ activeItem: to })
   }
 
   render() {
@@ -20,7 +20,7 @@ export default class CategoryList extends Component {
             <Menu.Item
               key={category.name}
               name={category.name}
-              active={activeItem === category.name}
+              active={activeItem === category.link.to}
               onClick={this.handleClick}
               {...category.link}
             />
