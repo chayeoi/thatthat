@@ -14,6 +14,7 @@ import MyCourseList from './MyCourseList'
 import MyReviewList from './MyReviewList'
 import ReviewCard from './ReviewCard'
 import CourseForm from './CourseForm'
+import LikeButton from './LikeButton'
 import Footer from './Footer'
 
 export {
@@ -33,5 +34,6 @@ export {
   MyReviewList,
   ReviewCard,
   CourseForm,
+  LikeButton,
   Footer,
 }
