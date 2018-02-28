@@ -2,25 +2,27 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { CourseTab } from 'components'
 
-const tabs = [
-  {
-    name: '강의정보',
-    link: {
-      as: Link,
-      to: '/course/:id/info',
+const CourseTabContainer = ({ courseKey }) => {
+  const tabs = [
+    {
+      name: '강의 정보',
+      link: {
+        as: Link,
+        to: `/course/${courseKey}/info`,
+      },
     },
-  },
-  {
-    name: '강의리뷰',
-    link: {
-      as: Link,
-      to: '/course/:id/review',
+    {
+      name: '강의 리뷰',
+      link: {
+        as: Link,
+        to: `/course/${courseKey}/review`,
+      },
     },
-  },
-]
+  ]
 
-const CourseTabContainer = () => (
-  <CourseTab tabs={tabs} />
-)
+  return (
+    <CourseTab tabs={tabs} />
+  )
+}
 
 export default CourseTabContainer

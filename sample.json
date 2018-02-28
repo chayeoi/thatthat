@@ -1,4 +1,18 @@
 {
+  "users": {
+    "reviewers": {
+      "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
+        "displayName": "김찬연",
+        "photoURL": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+      }
+    },
+    "academies": {
+      "jmE6iw8Ie9StiVAAbuMt60Cpley2": {
+        "organization": "패스트캠퍼스",
+        "photoURL": "https://scontent.xx.fbcdn.net/v/t1.0-1/c29.0.100.100/p100x100/10354686_10150004552801856_220367501106153455_n.jpg?oh=10804aa5ece365752d695e1e4ece24e8&oe=5B17A377"
+      }
+    }
+  },
   "myLikes": {
     "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
       "course1": true,
@@ -34,61 +48,78 @@
       "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
       "courseKey": "course1",
       "rating": 3.5,
-      "content": "정말 입문을 하는데 필요한 부분이 다 담겨져 있어서 좋았습니다!"
+      "content": "정말 입문을 하는데 필요한 부분이 다 담겨져 있어서 좋았습니다!",
+      "createdAt": 1517553012567
     },
     "review2": {
       "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
       "courseKey": "course1",
       "rating": 4.7,
-      "content": "자바스크립트 공부하면서 정말 많이 헷갈리던 부분이 많았는데… 대부분 해소가 되었습니다. 이런 강의자료가 나오기까지 강사님의 고민과 학습이 정말 많았으리라 생각됩니다. 많은 도움이 되었습니다. 그러나, 강의중 말의 속도가 다소 빠르다는 느낌이 듭니다. 그래서 자꾸 멈추면서 이해하고 넘어가는 부분이 있어 흐름이 조금씩 깨지고는 했습니다. 물론 저의 이해력이 낮아서 그런 문제가 있기도 합니다. 다른 언어에 있어서도 이런 강의가 있으면 좋을 것 같습니다."
+      "content": "자바스크립트 공부하면서 정말 많이 헷갈리던 부분이 많았는데… 대부분 해소가 되었습니다. 이런 강의자료가 나오기까지 강사님의 고민과 학습이 정말 많았으리라 생각됩니다. 많은 도움이 되었습니다. 그러나, 강의중 말의 속도가 다소 빠르다는 느낌이 듭니다. 그래서 자꾸 멈추면서 이해하고 넘어가는 부분이 있어 흐름이 조금씩 깨지고는 했습니다. 물론 저의 이해력이 낮아서 그런 문제가 있기도 합니다. 다른 언어에 있어서도 이런 강의가 있으면 좋을 것 같습니다.",
+      "createdAt": 1512553315352
     },
     "review3": {
       "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
       "courseKey": "course2",
       "rating": 2.8,
-      "content": "이미알고있는내용인데 가끔가다가 정말쉬운것도 까먹을때가 많아요 ㅠㅠ 이거 강좌한번이면 끝 ㅎㅎㅎㅎ"
+      "content": "이미알고있는내용인데 가끔가다가 정말쉬운것도 까먹을때가 많아요 ㅠㅠ 이거 강좌한번이면 끝 ㅎㅎㅎㅎ",
+      "createdAt": 1513553023875
     },
     "review4": {
       "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
       "courseKey": "course2",
       "rating": 3,
-      "content": "TDD에 대해 정확히 몰랐는데 강의 통해서 많이 배우고 갑니다."
+      "content": "TDD에 대해 정확히 몰랐는데 강의 통해서 많이 배우고 갑니다.",
+      "createdAt": 1537525986569
     },
     "review5": {
       "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
       "courseKey": "course3",
       "rating": 3.3,
-      "content": "책 보고 혼자 하는것보다 훨씬 기억하기 수월했고 리마인드하는 느낌으로 들었습니다."
+      "content": "책 보고 혼자 하는것보다 훨씬 기억하기 수월했고 리마인드하는 느낌으로 들었습니다.",
+      "createdAt": 1617356879567
     },
     "review6": {
       "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
       "courseKey": "course1",
       "rating": 3.7,
-      "content": "너무 알차고 강의 설명도 친절하고 좋아요. 단축키 같은것도 계속해서 말해주셔서 기억하기 쉽구요."
+      "content": "너무 알차고 강의 설명도 친절하고 좋아요. 단축키 같은것도 계속해서 말해주셔서 기억하기 쉽구요.",
+      "createdAt": 1577357312491
     },
     "review7": {
       "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
       "courseKey": "course1",
       "rating": 2,
-      "content": "고급강좌가필요합니다~"
+      "content": "고급강좌가필요합니다~",
+      "createdAt": 1513546382321
     },
     "review8": {
       "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
       "courseKey": "course4",
       "rating": 4,
-      "content": "다른 개발경력이 있어서.. ios앱을 책들과 유튜브로 독학 했었습니다. 다른건 비슷하게 했는데.. UI에서 오토레이아웃은 아쉬움이 많았습니다. Ui조절도 Code로 보강하고.. 이 강의로 아쉬움이 다 없어지네요. 강추 입니다."
+      "content": "다른 개발경력이 있어서.. ios앱을 책들과 유튜브로 독학 했었습니다. 다른건 비슷하게 했는데.. UI에서 오토레이아웃은 아쉬움이 많았습니다. Ui조절도 Code로 보강하고.. 이 강의로 아쉬움이 다 없어지네요. 강추 입니다.",
+      "createdAt": 1538576938265
     },
     "review9": {
       "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
       "courseKey": "course4",
       "rating": 5,
-      "content": "유익한 내용이었습니다. 강의 진행이 조금 더 매끄러워진다면 더욱 좋을 것 같아요. 감사합니다."
+      "content": "유익한 내용이었습니다. 강의 진행이 조금 더 매끄러워진다면 더욱 좋을 것 같아요. 감사합니다.",
+      "createdAt": 1639281127717
     },
     "review10": {
       "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
       "courseKey": "course6",
       "rating": 4.7,
-      "content": "좋은 강의 감사합니다."
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    }
+  },
+  "myCourses": {
+    "jmE6iw8Ie9StiVAAbuMt60Cpley2": {
+      "course1": true,
+      "course3": true,
+      "course5": true
     }
   },
   "courses": {

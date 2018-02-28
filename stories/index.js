@@ -1,6 +1,7 @@
 import 'semantic-ui-css/semantic.min.css'
 import './LoginButton'
-import './CategoryList'
+import './CategoryTab'
 import './CourseList'
 import './LogoutButton'
 import './MyPageTab'
+import './LikeButton'

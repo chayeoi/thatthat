@@ -1,22 +1,22 @@
 import * as firebase from 'firebase'
 
 // Actions
-export const IS_LOADING = 'like/IS_LOADING'
-export const COMPLETE_LOADING = 'like/COMPLETE_LOADING'
+export const IS_LOADING = 'review/IS_LOADING'
+export const COMPLETE_LOADING = 'review/COMPLETE_LOADING'
 
 // Action Creators
 export const isLoading = () => ({
   type: IS_LOADING,
 })
-export const completeLoading = likes => ({
+export const completeLoading = reviews => ({
   type: COMPLETE_LOADING,
-  likes,
+  reviews,
 })
 
 // Reducer
 const initialState = {
   isLoading: false,
-  likes: [],
+  reviews: [],
 }
 
 export default (state = initialState, action) => {
@@ -30,7 +30,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isLoading: false,
-        likes: action.likes,
+        reviews: action.reviews,
       }
     default:
       return state
@@ -38,25 +38,31 @@ export default (state = initialState, action) => {
 }
 
 // Thunks
-export const loadMyLikeList = () => async (dispatch) => {
+export const loadMyReviewList = () => async (dispatch) => {
   dispatch(isLoading())
   const { uid } = firebase.auth().currentUser
-  const snapshot = await firebase.database().ref(`myLikes/${uid}`).once('value')
+  const snapshot = await firebase.database().ref(`myReviews/${uid}`).once('value')
   const result = snapshot.val()
   if (result) {
-    const courseKeys = Object.keys(result)
-    const pendingLikes = courseKeys.map(async (courseKey) => {
+    const reviewKeys = Object.keys(result)
+    const pendingReviews = reviewKeys.map(async (reviewKey) => {
+      const reviewSnapshot = await firebase.database().ref(`reviews/${reviewKey}`).once('value')
+      const review = reviewSnapshot.val()
+      const { courseKey } = review
       const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
       const category = categorySnapshot.val()
       const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
       const course = courseSnapshot.val()
+      const { organization, className } = course
       return {
-        courseKey,
-        ...course,
+        reviewKey,
+        organization,
+        className,
+        ...review,
       }
     })
-    const likes = await Promise.all(pendingLikes)
-    dispatch(completeLoading(likes))
+    const reviews = await Promise.all(pendingReviews)
+    dispatch(completeLoading(reviews))
   } else {
     dispatch(completeLoading(null))
   }

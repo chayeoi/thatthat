@@ -1,15 +1,15 @@
 import React from 'react'
 import { CourseCard } from 'components'
 
-const CourseList = ({ courses }) => (
+const MyCourseList = ({ courses }) => (
   <ul>
     {courses ?
       courses.map(course => (
         <CourseCard key={course.courseKey} course={course} />
       ))
-      : <li>등록된 강의가 없습니다.</li>
+      : <div>등록한 강의가 없습니다.</div>
     }
   </ul>
 )
 
-export default CourseList
+export default MyCourseList

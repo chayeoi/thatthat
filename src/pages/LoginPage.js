@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { initializeUser } from 'ducks/modules/user'
 import { Grid, Header } from 'semantic-ui-react'
 import styled from 'styled-components'
 import {
@@ -11,6 +13,16 @@ import { FONT_COLOR } from 'constants/color'
 const Wrapper = styled.div`
   height: 100vh;
   overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -44,21 +56,34 @@ const TopMarginedGrid = styled(Grid)`
   margin-top: 3rem !important;
 `
 
-const LoginPage = () => (
-  <Wrapper>
-    <ContentWrapper>
-      <header>
-        <MainHeader as="h1" content="THATTHAT" textAlign="center" />
-        <SubHeader as="h2" content="IT 학원 강의 리뷰 플랫폼" textAlign="center" />
-      </header>
-      <TopMarginedGrid centered container>
-        <Grid.Column>
-          <LoginButtonContainer />
-        </Grid.Column>
-      </TopMarginedGrid>
-      <FooterContainer />
-    </ContentWrapper>
-  </Wrapper>
-)
+class LoginPage extends Component {
+  componentDidMount() {
+    this.props.onMount()
+  }
 
-export default LoginPage
+  render() {
+    return (
+      <Wrapper>
+        <ContentWrapper>
+          <header>
+            <MainHeader as="h1" content="THATTHAT" textAlign="center" />
+            <SubHeader as="h2" content="IT 학원 강의 리뷰 플랫폼, 댓댓" textAlign="center" />
+          </header>
+          <TopMarginedGrid centered container>
+            <Grid.Column>
+              <LoginButtonContainer />
+            </Grid.Column>
+          </TopMarginedGrid>
+          <FooterContainer />
+        </ContentWrapper>
+      </Wrapper>
+    )
+  }
+}
+
+export default connect(
+  null,
+  dispatch => ({
+    onMount: () => dispatch(initializeUser()),
+  }),
+)(LoginPage)

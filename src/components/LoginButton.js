@@ -28,7 +28,7 @@ const LoginButton = ({ onFacebookLogin, onTwitterLogin, onGoogleLogin }) => (
     </PaddedWrapper>
     <PaddedWrapper>
       <RoughButton fluid color="red" onClick={onGoogleLogin}>
-        <Icon name="google plus" /> Google Plus 로그인
+        <Icon name="google plus" /> Google 로그인
       </RoughButton>
     </PaddedWrapper>
   </Wrapper>

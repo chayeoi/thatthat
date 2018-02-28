@@ -1,44 +1,61 @@
-import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
-import { MainMenu } from 'components'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
+import { Loader } from 'semantic-ui-react'
 import {
+  MainMenuContainer,
   UserInfoContainer,
   LogoutButtonContainer,
   MyPageTabContainer,
-  MyLikeListContainer,
-  MyReviewListContainer,
+  ReviewerRoute,
+  AcademyRoute,
 } from 'containers'
-import { withAuth } from 'hocs'
-import styled from 'styled-components'
+import { requestAuthentication } from 'ducks/modules/user'
 
-const Wrapper = styled.div`
-  height: 100vh;
-  overflow: hidden;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+class MyPage extends Component {
+  static defaultProps = {
+    isLoading: false,
+    userClass: '',
+    redirectToLogin: false,
+    onMount: () => {},
   }
-`
 
-const MyPage = () => (
-  <React.Fragment>
-    <Wrapper>
-      <MainMenu />
-      <UserInfoContainer />
-      <LogoutButtonContainer />
-      <MyPageTabContainer />
-      <Switch>
-        <Route exact path="/mypage" render={() => <Redirect to="/mypage/likes" />} />
-        <Route path="/mypage/likes" component={MyLikeListContainer} />
-        <Route path="/mypage/reviews" component={MyReviewListContainer} />
-      </Switch>
-    </Wrapper>
-  </React.Fragment>
-)
+  componentDidMount() {
+    this.props.onMount()
+  }
 
-export default withAuth(MyPage)
+  render() {
+    const {
+      isLoading,
+      userClass,
+      redirectToLogin,
+    } = this.props
+    if (isLoading) {
+      return <Loader />
+    } else if (redirectToLogin) {
+      return <Redirect to="/login" />
+    } else if (userClass !== '') {
+      return (
+        <React.Fragment>
+          <MainMenuContainer />
+          <UserInfoContainer />
+          <LogoutButtonContainer />
+          <MyPageTabContainer userClass={userClass} />
+          {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}
+        </React.Fragment>
+      )
+    }
+    return null
+  }
+}
+
+export default connect(
+  state => ({
+    isLoading: state.user.isLoading,
+    userClass: state.user.userClass,
+    redirectToLogin: state.user.redirectToLogin,
+  }),
+  dispatch => ({
+    onMount: () => dispatch(requestAuthentication()),
+  }),
+)(MyPage)
