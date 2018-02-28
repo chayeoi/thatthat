@@ -7,7 +7,7 @@ const CourseList = ({ courses }) => (
       courses.map(course => (
         <CourseCard key={course.courseKey} course={course} />
       ))
-      : <div>등록된 강의가 없습니다.</div>
+      : <li>등록된 강의가 없습니다.</li>
     }
   </ul>
 )
