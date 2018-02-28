@@ -4,6 +4,7 @@ import CategoryTab from './CategoryTab'
 import MainMenu from './MainMenu'
 import CourseList from './CourseList'
 import CourseCard from './CourseCard'
+import CourseSummaryInfo from './CourseSummaryInfo'
 import CourseTab from './CourseTab'
 import CourseInfo from './CourseInfo'
 import CourseReview from './CourseReview'
@@ -24,6 +25,7 @@ export {
   MainMenu,
   CourseList,
   CourseCard,
+  CourseSummaryInfo,
   CourseTab,
   CourseInfo,
   CourseReview,

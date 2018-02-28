@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { CourseCard } from 'components'
+import { CourseSummaryInfo } from 'components'
 import { loadCourse } from 'ducks/modules/detail'
 
-class CourseCardContainer extends Component {
+class CourseSummaryInfoContainer extends Component {
   static defaultProps = {
     course: {},
     onMount: () => {},
@@ -17,7 +17,7 @@ class CourseCardContainer extends Component {
     return (
       isLoading ?
         <div>로딩 중</div>
-        : <CourseCard course={course} />
+        : <CourseSummaryInfo course={course} />
     )
   }
 }
@@ -30,4 +30,4 @@ export default connect(
   (dispatch, ownProps) => ({
     onMount: () => dispatch(loadCourse(ownProps.courseKey)),
   }),
-)(CourseCardContainer)
+)(CourseSummaryInfoContainer)

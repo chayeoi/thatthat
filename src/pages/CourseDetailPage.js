@@ -2,7 +2,7 @@ import React from 'react'
 import { Redirect, Switch, Route } from 'react-router-dom'
 import {
   MainMenuContainer,
-  CourseCardContainer,
+  CourseSummaryInfoContainer,
   CourseTabContainer,
   CourseInfoContainer,
   CourseReviewContainer,
@@ -11,7 +11,7 @@ import {
 const CourseDetailPage = ({ match: { params: { courseKey } } }) => (
   <React.Fragment>
     <MainMenuContainer />
-    <CourseCardContainer courseKey={courseKey} />
+    <CourseSummaryInfoContainer courseKey={courseKey} />
     <CourseTabContainer courseKey={courseKey} />
     <Switch>
       <Route exact path="/course/:courseKey" render={() => <Redirect to={`/courses/${courseKey}/info`} />} />
