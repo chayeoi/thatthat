@@ -1,10 +1,12 @@
+@import url('./assets/fonts/index.css');
+
 body,
 video,
 ol,
 ul {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Spoqa Han Sans', sans-serif;
 }
 
 ol, ul {
