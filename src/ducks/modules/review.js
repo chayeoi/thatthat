@@ -53,11 +53,11 @@ export const loadMyReviewList = () => async (dispatch) => {
       const category = categorySnapshot.val()
       const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
       const course = courseSnapshot.val()
-      const { organization, className } = course
+      const { organization, courseName } = course
       return {
         reviewKey,
         organization,
-        className,
+        courseName,
         ...review,
       }
     })

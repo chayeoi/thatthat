@@ -126,87 +126,99 @@
     "programming": {
       "course1": {
         "organization": "패스트캠퍼스",
-        "className": "웹 프론트엔드 스쿨",
+        "courseName": "웹 프론트엔드 스쿨",
         "likeCount": 15,
         "reviewCount": 21,
-        "ratingAvg": 3.5
+        "ratingAvg": 3.5,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       },
       "course2": {
         "organization": "에이콘 아카데미",
-        "className": "자바 웹 개발자 양성 과정",
+        "courseName": "자바 웹 개발자 양성 과정",
         "likeCount": 5,
         "reviewCount": 13,
-        "ratingAvg": 3
+        "ratingAvg": 3,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       },
       "course3": {
         "organization": "멀티캠퍼스",
-        "className": "빅데이터 전문가 양성 과정",
+        "courseName": "빅데이터 전문가 양성 과정",
         "likeCount": 16,
         "reviewCount": 17,
-        "ratingAvg": 4
+        "ratingAvg": 4,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       }
     },
     "design": {
       "course4": {
         "organization": "Remain",
-        "className": "웹 퍼블리싱 전문 교육",
+        "courseName": "웹 퍼블리싱 전문 교육",
         "likeCount": 21,
         "reviewCount": 8,
-        "ratingAvg": 4.2
+        "ratingAvg": 4.2,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       },
       "course5": {
         "organization": "디자인캠퍼스",
-        "className": "일러스트레이터 3주만에 끝내기",
+        "courseName": "일러스트레이터 3주만에 끝내기",
         "likeCount": 7,
         "reviewCount": 3,
-        "ratingAvg": 3.9
+        "ratingAvg": 3.9,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       }
     },
     "planMaking": {
       "course6": {
         "organization": "패스트캠퍼스",
-        "className": "웹 서비스 기획 스쿨",
+        "courseName": "웹 서비스 기획 스쿨",
         "likeCount": 13,
         "reviewCount": 11,
-        "ratingAvg": 3.7
+        "ratingAvg": 3.7,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       },
       "course7": {
         "organization": "멀티캠퍼스",
-        "className": "실전 마케팅 전략",
+        "courseName": "실전 마케팅 전략",
         "likeCount": 7,
         "reviewCount": 9,
-        "ratingAvg": 4.5
+        "ratingAvg": 4.5,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       }
     }
   },
   "courseInfo": {
+    "course1": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "course2": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "course3": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "course4": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "course5": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "course6": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "course7": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
+  },
+  "reviewInfo": {
     "course1": {
-      "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
-      "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
+      "review1": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "review2": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "review3": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "review4": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
     },
     "course2": {
-      "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
-      "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
+      "review3": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "review4": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
     },
     "course3": {
-      "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
-      "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
+      "review5": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
     },
     "course4": {
-      "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
-      "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
+      "review8": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "review9": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
     },
     "course5": {
-      "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
-      "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
     },
     "course6": {
-      "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
-      "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
+      "review10": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
     },
     "course7": {
-      "url": "https://www.inflearn.com/course/핵심개념-javascript-flow/",
-      "desc": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
     }
   },
   "category": {

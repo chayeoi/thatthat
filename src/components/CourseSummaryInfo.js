@@ -21,11 +21,12 @@ const CourseSummaryInfo = ({ course }) => {
   const {
     courseKey,
     organization,
-    className,
+    courseName,
     likeCount,
     reviewCount,
     ratingAvg,
   } = course
+  console.log(course)
   return (
     <Segment as="li">
       <Grid as={Link} to={`/course/${courseKey}/info`}>
@@ -34,7 +35,7 @@ const CourseSummaryInfo = ({ course }) => {
         </Grid.Column>
         <Grid.Column width={12} color="green">
           <Header sub content={organization} size="huge" />
-          <Header as="h3" content={className} />
+          <Header as="h3" content={courseName} />
           <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
           <Statistic size="mini">
             <Statistic.Label content="리뷰 갯수" />

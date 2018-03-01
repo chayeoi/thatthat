@@ -5,6 +5,7 @@ import review from './review'
 import course from './course'
 import detail from './detail'
 import user from './user'
+import form from './form'
 
 export {
   auth,
@@ -14,4 +15,5 @@ export {
   course,
   detail,
   user,
+  form,
 }
