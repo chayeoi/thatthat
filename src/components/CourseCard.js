@@ -22,7 +22,7 @@ const CourseCard = ({ course }) => {
   const {
     courseKey,
     organization,
-    className,
+    courseName,
     likeCount,
     reviewCount,
     ratingAvg,
@@ -36,7 +36,7 @@ const CourseCard = ({ course }) => {
           </Grid.Column>
           <Grid.Column width={12}>
             <Header as="h4" sub content={organization} size="large" color="grey" />
-            <Header as="h3" content={className} />
+            <Header as="h3" content={courseName} />
             <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
             <Statistic size="mini">
               <Statistic.Label content="리뷰 갯수" />
