@@ -6,7 +6,7 @@ const courses = [
   {
     courseKey: 'course1',
     organization: '패스트캠퍼스',
-    className: '웹 프론트엔드 스쿨',
+    courseName: '웹 프론트엔드 스쿨',
     likeCount: 15,
     reviewCount: 21,
     ratingAvg: 3.5,
@@ -14,7 +14,7 @@ const courses = [
   {
     courseKey: 'course2',
     organization: '에이콘 아카데미',
-    className: '자바 웹 개발자 양성 과정',
+    courseName: '자바 웹 개발자 양성 과정',
     likeCount: 5,
     reviewCount: 13,
     ratingAvg: 3,
@@ -22,7 +22,7 @@ const courses = [
   {
     courseKey: 'course3',
     organization: '멀티캠퍼스',
-    className: '빅데이터 전문가 양성 과정',
+    courseName: '빅데이터 전문가 양성 과정',
     likeCount: 16,
     reviewCount: 17,
     ratingAvg: 4,
@@ -30,7 +30,7 @@ const courses = [
   {
     courseKey: 'course4',
     organization: 'Remain',
-    className: '웹 퍼블리싱 전문 교육',
+    courseName: '웹 퍼블리싱 전문 교육',
     likeCount: 21,
     reviewCount: 8,
     ratingAvg: 4.2,
@@ -38,7 +38,7 @@ const courses = [
   {
     courseKey: 'course5',
     organization: '패스트캠퍼스',
-    className: '웹 서비스 기획 스쿨',
+    courseName: '웹 서비스 기획 스쿨',
     likeCount: 13,
     reviewCount: 11,
     ratingAvg: 3.7,

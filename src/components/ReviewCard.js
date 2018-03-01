@@ -5,7 +5,7 @@ const ReviewCard = ({ review }) => {
   const {
     reviewKey,
     organization,
-    className,
+    courseName,
     uid,
     courseKey,
     rating,
@@ -15,7 +15,7 @@ const ReviewCard = ({ review }) => {
     <Segment as="li">
       <div>{reviewKey}</div>
       <div>{organization}</div>
-      <div>{className}</div>
+      <div>{courseName}</div>
       <div>{uid}</div>
       <div>{courseKey}</div>
       <div>{rating}</div>
