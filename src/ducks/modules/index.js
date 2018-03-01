@@ -2,7 +2,7 @@ import auth from './auth'
 import category from './category'
 import like from './like'
 import review from './review'
-import course from './course'
+import myCourse from './myCourse'
 import detail from './detail'
 import user from './user'
 import form from './form'
@@ -12,7 +12,7 @@ export {
   category,
   like,
   review,
-  course,
+  myCourse,
   detail,
   user,
   form,

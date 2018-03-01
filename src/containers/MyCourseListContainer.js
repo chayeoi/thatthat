@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { MyCourseList } from 'components'
-import { loadMyCourseList } from 'ducks/modules/course'
+import { loadMyCourseList } from 'ducks/modules/myCourse'
 
 class MyCourseListContainer extends Component {
   static defaultProps = {
@@ -23,7 +23,7 @@ class MyCourseListContainer extends Component {
 
 export default connect(
   state => ({
-    courses: state.course.courses,
+    courses: state.myCourse.courses,
   }),
   dispatch => ({
     onMount: () => dispatch(loadMyCourseList()),
