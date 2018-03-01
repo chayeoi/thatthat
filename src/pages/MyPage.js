@@ -29,6 +29,7 @@ class MyPage extends Component {
       isLoading,
       userClass,
       redirectToLogin,
+      location: { pathname },
     } = this.props
     if (isLoading) {
       return <Loader />
@@ -40,7 +41,7 @@ class MyPage extends Component {
           <MainMenuContainer />
           <UserInfoContainer />
           <LogoutButtonContainer />
-          <MyPageTabContainer userClass={userClass} />
+          <MyPageTabContainer userClass={userClass} pathName={pathname} />
           {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}
         </React.Fragment>
       )

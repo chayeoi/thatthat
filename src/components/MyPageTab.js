@@ -3,11 +3,11 @@ import { Menu } from 'semantic-ui-react'
 
 export default class MyPageTab extends Component {
   state = {
-    activeItem: this.props.tabs[0].name,
+    activeItem: this.props.pathName,
   }
 
-  handleClick = (e, { name }) => {
-    this.setState({ activeItem: name })
+  handleClick = (e, { to }) => {
+    this.setState({ activeItem: to })
   }
 
   render() {
@@ -20,7 +20,7 @@ export default class MyPageTab extends Component {
             <Menu.Item
               key={tab.name}
               name={tab.name}
-              active={activeItem === tab.name}
+              active={activeItem === tab.link.to}
               onClick={this.handleClick}
               {...tab.link}
             />
