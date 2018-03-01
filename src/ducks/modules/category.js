@@ -46,7 +46,7 @@ export const loadCourseList = category => async (dispatch) => {
     const courses = Object.entries(result).map(([courseKey, course]) => ({
       courseKey,
       ...course,
-    }))
+    })).reverse()
     dispatch(completeLoading(courses))
   } else {
     const snapshot = await firebase.database().ref('courses').once('value')
@@ -58,7 +58,7 @@ export const loadCourseList = category => async (dispatch) => {
     const courses = Object.entries(rawCourses).map(([courseKey, course]) => ({
       courseKey,
       ...course,
-    }))
+    })).reverse()
     dispatch(completeLoading(courses))
   }
 }
