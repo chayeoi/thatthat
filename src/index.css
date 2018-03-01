@@ -1,4 +1,5 @@
 @import url('./assets/fonts/index.css');
+@import url('./fonts.css');
 
 body,
 video,
@@ -6,9 +7,19 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  font-family: 'Spoqa Han Sans', sans-serif;
+  font-family: 'Spoqa Han Sans', sans-serif !important;
+  font-family: 'Spoqa Han Sans', sans-serif !important;
+  font-family: 'Spoqa Han Sans', sans-serif !important;
 }
+  font-family: 'Spoqa Han Sans', sans-serif !important;
 
 ol, ul {
 	list-style: none;
+/* fontello 아이콘 설정*/
+i.icon{
+  display:inline-block;
+  width: 100%;
+  font-family: fontello;
+  display: initial;
+  margin: 0 !important;
 }
