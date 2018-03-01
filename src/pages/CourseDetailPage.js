@@ -8,11 +8,11 @@ import {
   CourseReviewContainer,
 } from 'containers'
 
-const CourseDetailPage = ({ match: { params: { courseKey } } }) => (
+const CourseDetailPage = ({ match: { params: { courseKey } }, location: { pathname } }) => (
   <React.Fragment>
     <MainMenuContainer />
     <CourseSummaryInfoContainer courseKey={courseKey} />
-    <CourseTabContainer courseKey={courseKey} />
+    <CourseTabContainer courseKey={courseKey} pathName={pathname} />
     <Switch>
       <Route exact path="/course/:courseKey" render={() => <Redirect to={`/course/${courseKey}/info`} />} />
       <Route path="/course/:courseKey/info" component={CourseInfoContainer} />

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { CourseTab } from 'components'
 
-const CourseTabContainer = ({ courseKey }) => {
+const CourseTabContainer = ({ courseKey, pathName }) => {
   const tabs = [
     {
       name: '강의 정보',
@@ -21,7 +21,7 @@ const CourseTabContainer = ({ courseKey }) => {
   ]
 
   return (
-    <CourseTab tabs={tabs} />
+    <CourseTab tabs={tabs} pathName={pathName} />
   )
 }
 
