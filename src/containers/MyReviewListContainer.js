@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { MyReviewList } from 'components'
-import { loadMyReviewList } from 'ducks/modules/review'
+import { loadMyReviewList } from 'ducks/modules/myReview'
 
 class MyReviewListContainer extends Component {
   static defaultProps = {
@@ -23,7 +23,7 @@ class MyReviewListContainer extends Component {
 
 export default connect(
   state => ({
-    reviews: state.review.reviews,
+    reviews: state.myReview.reviews,
   }),
   dispatch => ({
     onMount: () => dispatch(loadMyReviewList()),

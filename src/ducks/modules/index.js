@@ -1,7 +1,7 @@
 import auth from './auth'
 import category from './category'
 import like from './like'
-import review from './review'
+import myReview from './myReview'
 import myCourse from './myCourse'
 import detail from './detail'
 import user from './user'
@@ -11,7 +11,7 @@ export {
   auth,
   category,
   like,
-  review,
+  myReview,
   myCourse,
   detail,
   user,
