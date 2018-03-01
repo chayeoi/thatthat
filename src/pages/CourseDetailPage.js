@@ -14,7 +14,7 @@ const CourseDetailPage = ({ match: { params: { courseKey } } }) => (
     <CourseSummaryInfoContainer courseKey={courseKey} />
     <CourseTabContainer courseKey={courseKey} />
     <Switch>
-      <Route exact path="/course/:courseKey" render={() => <Redirect to={`/courses/${courseKey}/info`} />} />
+      <Route exact path="/course/:courseKey" render={() => <Redirect to={`/course/${courseKey}/info`} />} />
       <Route path="/course/:courseKey/info" component={CourseInfoContainer} />
       <Route path="/course/:courseKey/review" component={CourseReviewContainer} />
     </Switch>
