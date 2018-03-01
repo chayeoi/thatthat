@@ -8,6 +8,7 @@ import {
   Header,
   Rating,
   Statistic,
+  Comment,
 } from 'semantic-ui-react'
 import { courseImg } from '../assets/images'
 
@@ -47,6 +48,18 @@ const CourseCard = ({ course }) => {
         </Grid.Column>
       </Grid>
     </Segment>
+        <Comment.Group>
+          <Comment>
+            <Comment.Avatar src='https://react.semantic-ui.com/assets/images/avatar/small/matt.jpg' />
+            <Comment.Content>
+              <Comment.Author as='a'>Matt</Comment.Author>
+              <Comment.Metadata>
+                <div>Today at 5:42PM</div>
+              </Comment.Metadata>
+              <Comment.Text>This has been very useful for my research.</Comment.Text>
+            </Comment.Content>
+          </Comment>
+        </Comment.Group>
   )
 }
 
