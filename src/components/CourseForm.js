@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Dropdown } from 'semantic-ui-react'
+import { Form, Dropdown, Message } from 'semantic-ui-react'
 
 const categories = [
   { key: 'programming', value: 'programming', text: '프로그래밍' },
@@ -9,27 +9,62 @@ const categories = [
 ]
 
 export default class CourseForm extends Component {
+  static defaultProps = {
+    isCreating: false,
+    errorMessage: '',
+    onSubmit: () => {},
+  }
+
   state = {
-    title: '',
+    courseName: '',
     category: '',
+    image: {},
     content: '',
   }
 
   handleChange = (e, { name, value }) => {
-    this.setState({
-      [name]: value,
-    })
+    if (name === 'image') {
+      const [image] = e.target.files
+      this.setState({
+        [name]: image,
+      })
+    } else {
+      this.setState({
+        [name]: value,
+      })
+    }
+  }
+
+  handleSubmit = () => {
+    this.props.onSubmit(this.state)
   }
 
   render() {
-    const { title, content } = this.state
+    const {
+      courseName,
+      category,
+      image,
+      content,
+    } = this.state
+    const { isCreating, errorMessage } = this.props
     return (
-      <Form>
-        <Form.Input name="title" value={title} label="제목" onChange={this.handleChange} />
-        <Dropdown name="category" placeholder="카테고리" fluid search selection options={categories} onChange={this.handleChange} />
-        <Form.TextArea name="content" value={content} label="강의 소개" onChange={this.handleChange} rows="5" />
-        <Form.Button>등록하기</Form.Button>
-      </Form>
+      <React.Fragment>
+        <Form loading={isCreating}>
+          <Form.Input name="courseName" value={courseName} label="강의명" onChange={this.handleChange} />
+          <Dropdown name="category" value={category} labeled placeholder="카테고리" fluid search selection options={categories} onChange={this.handleChange} />
+          <Form.Input type="file" name="image" files={image} label="강의 사진" onChange={this.handleChange} fluid />
+          <Form.TextArea name="content" value={content} label="강의 소개" onChange={this.handleChange} rows="10" />
+          <Form.Button onClick={this.handleSubmit}>등록하기</Form.Button>
+        </Form>
+        {
+          errorMessage && (
+            <Message negative>
+              <Message.Header>강의 등록에 실패하였습니다.</Message.Header>
+              <p>{errorMessage}</p>
+            </Message>
+          )
+        }
+      </React.Fragment>
     )
   }
 }
