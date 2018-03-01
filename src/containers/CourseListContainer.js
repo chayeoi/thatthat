@@ -10,7 +10,8 @@ class CourseListContainer extends Component {
   }
 
   componentDidMount() {
-    this.props.onMount()
+    const { category } = this.props.match.params
+    this.props.onMount(category)
   }
 
   componentWillReceiveProps(nextProps) {
