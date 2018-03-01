@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { MyLikeList } from 'components'
-import { loadMyLikeList } from 'ducks/modules/like'
+import { loadMyLikeList } from 'ducks/modules/myLike'
 
 class MyLikeListContainer extends Component {
   static defaultProps = {
@@ -23,7 +23,7 @@ class MyLikeListContainer extends Component {
 
 export default connect(
   state => ({
-    likes: state.like.likes,
+    likes: state.myLike.likes,
   }),
   dispatch => ({
     onMount: () => dispatch(loadMyLikeList()),

@@ -1,8 +1,8 @@
 import * as firebase from 'firebase'
 
 // Actions
-export const IS_LOADING = 'like/IS_LOADING'
-export const COMPLETE_LOADING = 'like/COMPLETE_LOADING'
+export const IS_LOADING = 'myLike/IS_LOADING'
+export const COMPLETE_LOADING = 'myLike/COMPLETE_LOADING'
 
 // Action Creators
 export const isLoading = () => ({
