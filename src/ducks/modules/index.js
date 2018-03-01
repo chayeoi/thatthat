@@ -6,6 +6,7 @@ import myCourse from './myCourse'
 import detail from './detail'
 import user from './user'
 import form from './form'
+import info from './info'
 
 export {
   auth,
@@ -16,4 +17,5 @@ export {
   detail,
   user,
   form,
+  info,
 }
