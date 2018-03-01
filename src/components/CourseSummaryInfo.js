@@ -26,7 +26,6 @@ const CourseSummaryInfo = ({ course }) => {
     reviewCount,
     ratingAvg,
   } = course
-  console.log(course)
   return (
     <Segment as="li">
       <Grid as={Link} to={`/course/${courseKey}/info`}>
