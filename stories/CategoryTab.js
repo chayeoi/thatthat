@@ -33,7 +33,7 @@ const categories = [
   },
 ]
 
-storiesOf('CategoryList', module)
+storiesOf('CategoryTab', module)
   .add('default', () => (
     <CategoryTab
       categories={categories}
