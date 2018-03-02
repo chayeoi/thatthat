@@ -52,9 +52,9 @@ const CourseCard = ({ course }) => {
       <Segment>
         <Comment.Group>
           <Comment>
-            <Comment.Avatar src='https://react.semantic-ui.com/assets/images/avatar/small/matt.jpg' />
+            <Comment.Avatar src="https://react.semantic-ui.com/assets/images/avatar/small/matt.jpg" />
             <Comment.Content>
-              <Comment.Author as='a'>Matt</Comment.Author>
+              <Comment.Author>Matt</Comment.Author>
               <Comment.Metadata>
                 <div>Today at 5:42PM</div>
               </Comment.Metadata>
