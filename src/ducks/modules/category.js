@@ -43,22 +43,30 @@ export const loadCourseList = category => async (dispatch) => {
   if (category) {
     const snapshot = await firebase.database().ref(`courses/${category}`).once('value')
     const result = snapshot.val()
-    const courses = Object.entries(result).map(([courseKey, course]) => ({
-      courseKey,
-      ...course,
-    })).reverse()
-    dispatch(completeLoading(courses))
+    if (result) {
+      const courses = Object.entries(result).map(([courseKey, course]) => ({
+        courseKey,
+        ...course,
+      })).reverse()
+      dispatch(completeLoading(courses))
+    } else {
+      dispatch(completeLoading(null))
+    }
   } else {
     const snapshot = await firebase.database().ref('courses').once('value')
     const result = snapshot.val()
-    const rawCourses = Object.values(result).reduce((acc, cur) => ({
-      ...acc,
-      ...cur,
-    }), {})
-    const courses = Object.entries(rawCourses).map(([courseKey, course]) => ({
-      courseKey,
-      ...course,
-    })).reverse()
-    dispatch(completeLoading(courses))
+    if (result) {
+      const rawCourses = Object.values(result).reduce((acc, cur) => ({
+        ...acc,
+        ...cur,
+      }), {})
+      const courses = Object.entries(rawCourses).map(([courseKey, course]) => ({
+        courseKey,
+        ...course,
+      })).reverse()
+      dispatch(completeLoading(courses))
+    } else {
+      dispatch(completeLoading(null))
+    }
   }
 }
