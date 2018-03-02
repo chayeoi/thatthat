@@ -37,11 +37,6 @@ a:hover, a:focus, a:active{
   color:#212529;
 }
 
-/* fontello 아이콘 설정*/
-i.icon{
-  display:inline-block;
-  width: 100%;
-  font-family: fontello;
-  display: initial;
-  margin: 0 !important;
+i[class^="icon"]{
+  font-style: normal;
 }
