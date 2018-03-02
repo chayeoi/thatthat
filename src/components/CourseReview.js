@@ -1,8 +1,11 @@
 import React from 'react'
+import { ReviewCard } from 'components'
 
-const CourseReview = () => (
+const CourseReview = ({ reviews }) => (
   <ul>
-    I am CourseReview.
+    {reviews.map(({ reviewKey, ...rest }) => (
+      <ReviewCard key={reviewKey} {...rest} />
+    ))}
   </ul>
 )
 

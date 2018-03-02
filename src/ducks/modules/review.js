@@ -51,6 +51,7 @@ export const loadCourseReview = courseKey => async (dispatch) => {
       const review = reviewSnapshot.val()
       const user = userSnapshot.val()
       return {
+        reviewKey,
         ...review,
         ...user,
       }
