@@ -15,8 +15,9 @@ class CourseReviewContainer extends Component {
 
   render() {
     console.log(this.props.reviews)
+    const { reviews } = this.props
     return (
-      <CourseReview />
+      <CourseReview reviews={reviews} />
     )
   }
 }

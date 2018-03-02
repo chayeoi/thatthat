@@ -51,6 +51,7 @@ export const loadCourseReview = courseKey => async (dispatch) => {
       const review = reviewSnapshot.val()
       const user = userSnapshot.val()
       return {
+        reviewKey,
         ...review,
         ...user,
       }
@@ -58,6 +59,6 @@ export const loadCourseReview = courseKey => async (dispatch) => {
     const reviews = await Promise.all(pendingReviews)
     dispatch(completeLoading(reviews))
   } else {
-    dispatch(completeLoading([]))
+    dispatch(completeLoading(null))
   }
 }

@@ -8,6 +8,7 @@ import CourseSummaryInfo from './CourseSummaryInfo'
 import CourseTab from './CourseTab'
 import CourseInfo from './CourseInfo'
 import CourseReview from './CourseReview'
+import ReviewCard from './ReviewCard'
 import UserInfo from './UserInfo'
 import MyPageTab from './MyPageTab'
 import MyLikeList from './MyLikeList'
@@ -29,6 +30,7 @@ export {
   CourseTab,
   CourseInfo,
   CourseReview,
+  ReviewCard,
   UserInfo,
   MyPageTab,
   MyLikeList,
