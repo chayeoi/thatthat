@@ -25,10 +25,17 @@ const categories = [
     },
   },
   {
-    name: '기획',
+    name: '마케팅',
     link: {
       as: Link,
-      to: '/courses/planMaking',
+      to: '/courses/marketing',
+    },
+  },
+  {
+    name: '영상',
+    link: {
+      as: Link,
+      to: '/courses/video',
     },
   },
 ]

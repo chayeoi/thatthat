@@ -7,7 +7,7 @@ const categories = [
     name: '전체',
     link: {
       as: 'a',
-      to: '/',
+      to: '/courses',
     },
   },
   {
@@ -25,17 +25,22 @@ const categories = [
     },
   },
   {
-    name: '기획',
+    name: '마케팅',
     link: {
       as: 'a',
-      to: '/courses/planMaking',
+      to: '/courses/marketing',
+    },
+  },
+  {
+    name: '영상',
+    link: {
+      as: 'a',
+      to: '/courses/video',
     },
   },
 ]
 
 storiesOf('CategoryTab', module)
-  .add('default', () => (
-    <CategoryTab
-      categories={categories}
-    />
+  .add('CategoryTab', () => (
+    <CategoryTab categories={categories} />
   ))

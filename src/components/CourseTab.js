@@ -9,10 +9,8 @@ export default class CourseTab extends Component {
   handleTabClick = (e, { to }) => {
     this.setState({ activeItem: to })
   }
-
+  
   render() {
-    const { activeItem } = this.state
-    const { tabs } = this.props
     return (
       <div>
         <Menu pointing secondary color="red">
