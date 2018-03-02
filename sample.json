@@ -1,130 +1,305 @@
 {
   "users": {
     "reviewers": {
+      "5tt9DjwP1aaWLBREPa9692B841z2": {
+        "displayName": "김찬연",
+        "photoURL": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg"
+      },
       "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
         "displayName": "김찬연",
         "photoURL": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+      },
+      "THWYuaMEcTPig8LFSJVeQ0UkcLK2": {
+        "displayName": "bong kim",
+        "photoURL": "https://lh4.googleusercontent.com/-b3hcMhWnkQ0/AAAAAAAAAAI/AAAAAAAAABE/285-bGvHdHs/photo.jpg"
+      },
+      "nLcC8OgGSfhya0Ev5efQmOfJ46k1": {
+        "displayName": "Bo Young  Kim",
+        "photoURL": "https://scontent.xx.fbcdn.net/v/t1.0-1/p100x100/10942439_845036582225956_495095274675341529_n.jpg?oh=5b43f3dbc9b73b836f6dae05af0681c4&oe=5B22FAE3"
       }
     },
     "academies": {
       "jmE6iw8Ie9StiVAAbuMt60Cpley2": {
         "organization": "패스트캠퍼스",
         "photoURL": "https://scontent.xx.fbcdn.net/v/t1.0-1/c29.0.100.100/p100x100/10354686_10150004552801856_220367501106153455_n.jpg?oh=10804aa5ece365752d695e1e4ece24e8&oe=5B17A377"
+      },
+      "lkWz4xkwyGW5qarJ14HOA3uki3B2": {
+        "organization": "멀티캠퍼스",
+        "photoURL": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg"
+      },
+      "J8FTz5H72vg62NSSVHHt2ty7UF03": {
+        "organization": "SBS 아카데미",
+        "photoURL": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
       }
     }
   },
   "myLikes": {
+    "5tt9DjwP1aaWLBREPa9692B841z2": {
+      "-L2T1S7d0kmuX3BkrjhM": true,
+      "-L6V4SLxQyrUTp9sYSe6": true,
+      "-L6XDdIsKynURNpq5fOz": true,
+      "-L6V4osId3XQ_F85GyuN": true,
+      "-L4KRZHeDXCvW9a8CN1h": true
+    },
     "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
-      "course1": true,
-      "course2": true,
-      "course5": true,
-      "course7": true
+      "-L6XDdIsKynURNpq5fOz": true,
+      "-L6XDtsljQqrz12f0CyU": true,
+      "-L2T4wfJB76NsgMgy050": true,
+      "-L4KRZHeDXCvW9a8CN1h": true,
+      "-L2T8rAdjFbDiKVp06g7": true
+    },
+    "THWYuaMEcTPig8LFSJVeQ0UkcLK2": {
+      "-L2TdqG2x9O5k1PYQ1h-": true,
+      "-L6XEU4_wHRIT1ZhuUbs": true,
+      "-L6V4osId3XQ_F85GyuN": true,
+      "-L2T8rAdjFbDiKVp06g7": true,
+      "-L4KESobporOt62FrXWL": true,
+      "-L6UdrMFI-r5k5GPMorY": true,
+      "-L4KEprikO5zoRKqolo6": true
     },
     "nLcC8OgGSfhya0Ev5efQmOfJ46k1": {
-      "course1": true,
-      "course3": true,
-      "course5": true,
-      "course6": true
+      "-L4KEprikO5zoRKqolo6": true,
+      "-L2TdqG2x9O5k1PYQ1h-": true,
+      "-L2T4wfJB76NsgMgy050": true,
+      "-L4KE_vGgFllzrH8hw98": true
     }
   },
   "myReviews": {
+    "5tt9DjwP1aaWLBREPa9692B841z2": {
+      "-L3TEJ7d0Bmu53BjrjTn": true,
+      "-L4S5DF3fyrUTp9sYSc7": true,
+      "-L5XDb1D7ynURN3qAfOg": true,
+      "-L6Z3sTId3XQ2F85Y3uK": true,
+      "-L6Z5DCDvW9b9zN1dbaQ": true,
+      "-L3B9A3da8Dz1AkBkdC9": true
+    },
     "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
-      "review1": true,
-      "review2": true,
-      "review3": true,
-      "review4": true,
-      "review5": true
+      "-L3XDBKu7dnURNpqgK8z": true,
+      "-L56Dasl7GF3A123yT8A": true,
+      "-L47WfJAz6NsgMjG565L": true,
+      "-L4gKZHeDXCvW9a8CIuA": true,
+      "-L7rbaZjFPEsiKVp06g7": true,
+      "-L6rAkdE58Gu7Av2Dek3": true
+    },
+    "THWYuaMEcTPig8LFSJVeQ0UkcLK2": {
+      "-L2Tdkfj810dAdW1Q3B-": true,
+      "-L6DG81KsdVBdw39aKz1": true,
+      "-L7kDvb8Bdk5dA8zA1D8": true,
+      "-L2T8rkgI4kQa3BA16g7": true,
+      "-L4KESoBkd8kd35DqlAL": true,
+      "-L5DKvl59Gke34Akz1rY": true,
+      "-L4KEprdk45H83D1KdB6": true
     },
     "nLcC8OgGSfhya0Ev5efQmOfJ46k1": {
-      "review6": true,
-      "review7": true,
-      "review8": true,
-      "review9": true,
-      "review10": true
+      "-L4KkBi4kO5zfk6Kd8a1": true,
+      "-L2TdqGdk4F9dA1YDgQA": true,
+      "-L3Dk505Gkv9a01CBdk3": true,
+      "-L73E_vGgFK8dkBz1kA1": true
     }
   },
   "reviews": {
-    "review1": {
-      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "courseKey": "course1",
-      "rating": 3.5,
+    "-L3TEJ7d0Bmu53BjrjTn": {
+      "uid": "5tt9DjwP1aaWLBREPa9692B841z2",
+      "courseKey": "-L6XDtsljQqrz12f0CyU",
+      "rating": 1,
       "content": "정말 입문을 하는데 필요한 부분이 다 담겨져 있어서 좋았습니다!",
       "createdAt": 1517553012567
     },
-    "review2": {
-      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "courseKey": "course1",
-      "rating": 4.7,
+    "-L2Tdkfj810dAdW1Q3B-": {
+      "uid": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "courseKey": "-L6XEU4_wHRIT1ZhuUbs",
+      "rating": 2,
       "content": "자바스크립트 공부하면서 정말 많이 헷갈리던 부분이 많았는데… 대부분 해소가 되었습니다. 이런 강의자료가 나오기까지 강사님의 고민과 학습이 정말 많았으리라 생각됩니다. 많은 도움이 되었습니다. 그러나, 강의중 말의 속도가 다소 빠르다는 느낌이 듭니다. 그래서 자꾸 멈추면서 이해하고 넘어가는 부분이 있어 흐름이 조금씩 깨지고는 했습니다. 물론 저의 이해력이 낮아서 그런 문제가 있기도 합니다. 다른 언어에 있어서도 이런 강의가 있으면 좋을 것 같습니다.",
       "createdAt": 1512553315352
     },
-    "review3": {
-      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "courseKey": "course2",
-      "rating": 2.8,
+    "-L4S5DF3fyrUTp9sYSc7": {
+      "uid": "5tt9DjwP1aaWLBREPa9692B841z2",
+      "courseKey": "-L6XDtsljQqrz12f0CyU",
+      "rating": 3,
       "content": "이미알고있는내용인데 가끔가다가 정말쉬운것도 까먹을때가 많아요 ㅠㅠ 이거 강좌한번이면 끝 ㅎㅎㅎㅎ",
       "createdAt": 1513553023875
     },
-    "review4": {
-      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "courseKey": "course2",
-      "rating": 3,
+    "-L4KkBi4kO5zfk6Kd8a1": {
+      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "courseKey": "-L6UdrMFI-r5k5GPMorY",
+      "rating": 4,
       "content": "TDD에 대해 정확히 몰랐는데 강의 통해서 많이 배우고 갑니다.",
       "createdAt": 1537525986569
     },
-    "review5": {
-      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "courseKey": "course3",
-      "rating": 3.3,
+    "-L5XDb1D7ynURN3qAfOg": {
+      "uid": "5tt9DjwP1aaWLBREPa9692B841z2",
+      "courseKey": "-L6XDtsljQqrz12f0CyU",
+      "rating": 5,
       "content": "책 보고 혼자 하는것보다 훨씬 기억하기 수월했고 리마인드하는 느낌으로 들었습니다.",
       "createdAt": 1617356879567
     },
-    "review6": {
-      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
-      "courseKey": "course1",
-      "rating": 3.7,
+    "-L6DG81KsdVBdw39aKz1": {
+      "uid": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "courseKey": "-L6XEU4_wHRIT1ZhuUbs",
+      "rating": 4,
       "content": "너무 알차고 강의 설명도 친절하고 좋아요. 단축키 같은것도 계속해서 말해주셔서 기억하기 쉽구요.",
       "createdAt": 1577357312491
     },
-    "review7": {
-      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
-      "courseKey": "course1",
-      "rating": 2,
+    "-L6Z3sTId3XQ2F85Y3uK": {
+      "uid": "5tt9DjwP1aaWLBREPa9692B841z2",
+      "courseKey": "-L4KRZHeDXCvW9a8CN1h",
+      "rating": 3,
       "content": "고급강좌가필요합니다~",
       "createdAt": 1513546382321
     },
-    "review8": {
+    "-L2TdqGdk4F9dA1YDgQA": {
       "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
-      "courseKey": "course4",
-      "rating": 4,
+      "courseKey": "-L6XEU4_wHRIT1ZhuUbs",
+      "rating": 2,
       "content": "다른 개발경력이 있어서.. ios앱을 책들과 유튜브로 독학 했었습니다. 다른건 비슷하게 했는데.. UI에서 오토레이아웃은 아쉬움이 많았습니다. Ui조절도 Code로 보강하고.. 이 강의로 아쉬움이 다 없어지네요. 강추 입니다.",
       "createdAt": 1538576938265
     },
-    "review9": {
-      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
-      "courseKey": "course4",
-      "rating": 5,
+    "-L7kDvb8Bdk5dA8zA1D8": {
+      "uid": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "courseKey": "-L4KRZHeDXCvW9a8CN1h",
+      "rating": 1,
       "content": "유익한 내용이었습니다. 강의 진행이 조금 더 매끄러워진다면 더욱 좋을 것 같아요. 감사합니다.",
       "createdAt": 1639281127717
     },
-    "review10": {
+    "-L3XDBKu7dnURNpqgK8z": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "-L6UdrMFI-r5k5GPMorY",
+      "rating": 2,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L3Dk505Gkv9a01CBdk3": {
       "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
-      "courseKey": "course6",
-      "rating": 4.7,
+      "courseKey": "-L6XEU4_wHRIT1ZhuUbs",
+      "rating": 3,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L73E_vGgFK8dkBz1kA1": {
+      "uid": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "courseKey": "-L6UdrMFI-r5k5GPMorY",
+      "rating": 4,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L6Z5DCDvW9b9zN1dbaQ": {
+      "uid": "5tt9DjwP1aaWLBREPa9692B841z2",
+      "courseKey": "-L4KRZHeDXCvW9a8CN1h",
+      "rating": 5,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L56Dasl7GF3A123yT8A": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "-L6XDdIsKynURNpq5fOz",
+      "rating": 4,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L2T8rkgI4kQa3BA16g7": {
+      "uid": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "courseKey": "-L4KCJnih9esLvWi3yku",
+      "rating": 3,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L3B9A3da8Dz1AkBkdC9": {
+      "uid": "5tt9DjwP1aaWLBREPa9692B841z2",
+      "courseKey": "-L6XDdIsKynURNpq5fOz",
+      "rating": 2,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L47WfJAz6NsgMjG565L": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "-L4KCJnih9esLvWi3yku",
+      "rating": 1,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L4KESoBkd8kd35DqlAL": {
+      "uid": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "courseKey": "-L4KESobporOt62FrXWL",
+      "rating": 2,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L5DKvl59Gke34Akz1rY": {
+      "uid": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "courseKey": "-L6XDdIsKynURNpq5fOz",
+      "rating": 3,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L4KEprdk45H83D1KdB6": {
+      "uid": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "courseKey": "-L4KESobporOt62FrXWL",
+      "rating": 4,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L4gKZHeDXCvW9a8CIuA": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "-L4KCJnih9esLvWi3yku",
+      "rating": 5,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L7rbaZjFPEsiKVp06g7": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "-L4KESobporOt62FrXWL",
+      "rating": 4,
+      "content": "좋은 강의 감사합니다.",
+      "createdAt": 1598716273869
+    },
+    "-L6rAkdE58Gu7Av2Dek3": {
+      "uid": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "courseKey": "-L4KCJnih9esLvWi3yku",
+      "rating": 3,
       "content": "좋은 강의 감사합니다.",
       "createdAt": 1598716273869
     }
   },
   "myCourses": {
     "jmE6iw8Ie9StiVAAbuMt60Cpley2": {
-      "course1": true,
-      "course3": true,
-      "course5": true
+      "-L2T1S7d0kmuX3BkrjhM": true,
+      "-L2Tdj-HAPSUuNUVWLBs": true,
+      "-L4KEBACbbZXcOelNs9H": true,
+      "-L4KCJnih9esLvWi3yku": true,
+      "-L4KEOdpRkg0gPl2FQt-": true,
+      "-L4KEprikO5zoRKqolo6": true,
+      "-L2T8rAdjFbDiKVp06g7": true,
+      "-L4KD1H1q7oykfICBJRY": true,
+      "-L4KESobporOt62FrXWL": true
+    },
+    "lkWz4xkwyGW5qarJ14HOA3uki3B2": {
+      "-L6V4SLxQyrUTp9sYSe6": true,
+      "-L4KFfo_a22g-5O2NiNn": true,
+      "-L2T4wfJB76NsgMgy050": true,
+      "-L2TdqG2x9O5k1PYQ1h-": true,
+      "-L4KE_vGgFllzrH8hw98": true,
+      "-L4KF-YuahHrMe8PgAR5": true
+    },
+    "J8FTz5H72vg62NSSVHHt2ty7UF03": {
+      "-L6XDdIsKynURNpq5fOz": true,
+      "-L6XDtsljQqrz12f0CyU": true,
+      "-L6V4osId3XQ_F85GyuN": true,
+      "-L6XEU4_wHRIT1ZhuUbs": true,
+      "-L4KRZHeDXCvW9a8CN1h": true,
+      "-L6UdrMFI-r5k5GPMorY": true
     }
   },
   "courses": {
     "programming": {
-      "course1": {
+      "-L2T1S7d0kmuX3BkrjhM": {
+        "organization": "패스트캠퍼스",
+        "courseName": "Python & Django를 활용한 웹 서비스 개발 CAMP",
+        "likeCount": 11,
+        "reviewCount": 3,
+        "ratingAvg": 4,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L2Tdj-HAPSUuNUVWLBs": {
         "organization": "패스트캠퍼스",
         "courseName": "웹 프론트엔드 스쿨",
         "likeCount": 15,
@@ -132,25 +307,41 @@
         "ratingAvg": 3.5,
         "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       },
-      "course2": {
+      "-L4KEBACbbZXcOelNs9H": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 프론트엔드 스쿨",
+        "likeCount": 15,
+        "reviewCount": 21,
+        "ratingAvg": 3.5,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L6V4SLxQyrUTp9sYSe6": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 프론트엔드 스쿨",
+        "likeCount": 15,
+        "reviewCount": 21,
+        "ratingAvg": 3.5,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L6XDdIsKynURNpq5fOz": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 프론트엔드 스쿨",
+        "likeCount": 15,
+        "reviewCount": 21,
+        "ratingAvg": 3.5,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L6XDtsljQqrz12f0CyU": {
         "organization": "에이콘 아카데미",
         "courseName": "자바 웹 개발자 양성 과정",
         "likeCount": 5,
         "reviewCount": 13,
         "ratingAvg": 3,
         "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
-      },
-      "course3": {
-        "organization": "멀티캠퍼스",
-        "courseName": "빅데이터 전문가 양성 과정",
-        "likeCount": 16,
-        "reviewCount": 17,
-        "ratingAvg": 4,
-        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       }
     },
     "design": {
-      "course4": {
+      "-L4KCJnih9esLvWi3yku": {
         "organization": "Remain",
         "courseName": "웹 퍼블리싱 전문 교육",
         "likeCount": 21,
@@ -158,17 +349,65 @@
         "ratingAvg": 4.2,
         "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       },
-      "course5": {
-        "organization": "디자인캠퍼스",
-        "courseName": "일러스트레이터 3주만에 끝내기",
-        "likeCount": 7,
-        "reviewCount": 3,
-        "ratingAvg": 3.9,
+      "-L4KEOdpRkg0gPl2FQt-": {
+        "organization": "Remain",
+        "courseName": "웹 퍼블리싱 전문 교육",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L4KEprikO5zoRKqolo6": {
+        "organization": "Remain",
+        "courseName": "웹 퍼블리싱 전문 교육",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L4KFfo_a22g-5O2NiNn": {
+        "organization": "Remain",
+        "courseName": "웹 퍼블리싱 전문 교육",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L2T4wfJB76NsgMgy050": {
+        "organization": "Remain",
+        "courseName": "웹 퍼블리싱 전문 교육5",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L2TdqG2x9O5k1PYQ1h-": {
+        "organization": "Remain",
+        "courseName": "웹 퍼블리싱 전문 교육",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L6V4osId3XQ_F85GyuN": {
+        "organization": "Remain",
+        "courseName": "웹 퍼블리싱 전문 교육",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L6XEU4_wHRIT1ZhuUbs": {
+        "organization": "Remain",
+        "courseName": "웹 퍼블리싱 전문 교육",
+        "likeCount": 21,
+        "reviewCount": 8,
+        "ratingAvg": 4.2,
         "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       }
     },
     "planMaking": {
-      "course6": {
+      "-L2T8rAdjFbDiKVp06g7": {
         "organization": "패스트캠퍼스",
         "courseName": "웹 서비스 기획 스쿨",
         "likeCount": 13,
@@ -176,7 +415,47 @@
         "ratingAvg": 3.7,
         "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
       },
-      "course7": {
+      "-L4KD1H1q7oykfICBJRY": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 서비스 기획 스쿨",
+        "likeCount": 13,
+        "reviewCount": 11,
+        "ratingAvg": 3.7,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L4KESobporOt62FrXWL": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 서비스 기획 스쿨",
+        "likeCount": 13,
+        "reviewCount": 11,
+        "ratingAvg": 3.7,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L4KE_vGgFllzrH8hw98": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 서비스 기획 스쿨4",
+        "likeCount": 13,
+        "reviewCount": 11,
+        "ratingAvg": 3.7,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L4KF-YuahHrMe8PgAR5": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 서비스 기획 스쿨",
+        "likeCount": 13,
+        "reviewCount": 11,
+        "ratingAvg": 3.7,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L4KRZHeDXCvW9a8CN1h": {
+        "organization": "패스트캠퍼스",
+        "courseName": "웹 서비스 기획 스쿨",
+        "likeCount": 13,
+        "reviewCount": 11,
+        "ratingAvg": 3.7,
+        "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2Fcourse-image.jpg?alt=media&token=d1d65877-a805-4527-9f6e-ba5e1f86f53e"
+      },
+      "-L6UdrMFI-r5k5GPMorY": {
         "organization": "멀티캠퍼스",
         "courseName": "실전 마케팅 전략",
         "likeCount": 7,
@@ -187,48 +466,124 @@
     }
   },
   "courseInfo": {
-    "course1": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
-    "course2": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
-    "course3": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
-    "course4": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
-    "course5": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
-    "course6": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
-    "course7": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
+    "-L2T1S7d0kmuX3BkrjhM": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L2Tdj-HAPSUuNUVWLBs": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KEBACbbZXcOelNs9H": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KCJnih9esLvWi3yku": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KEOdpRkg0gPl2FQt-": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KEprikO5zoRKqolo6": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L2T8rAdjFbDiKVp06g7": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KD1H1q7oykfICBJRY": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KESobporOt62FrXWL": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L6V4SLxQyrUTp9sYSe6": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KFfo_a22g-5O2NiNn": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L2T4wfJB76NsgMgy050": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L2TdqG2x9O5k1PYQ1h-": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KE_vGgFllzrH8hw98": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KF-YuahHrMe8PgAR5": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L6XDdIsKynURNpq5fOz": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L6XDtsljQqrz12f0CyU": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L6V4osId3XQ_F85GyuN": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L6XEU4_wHRIT1ZhuUbs": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L4KRZHeDXCvW9a8CN1h": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)",
+    "-L6UdrMFI-r5k5GPMorY": "1. 핵심개념을 알아보는 Javascript Flow 강좌 소개 핵심개념을 알아보는 Javascript Flow 강좌는 ES6 이전까지의 자바스크립트 전체를 관통하는 핵심 개념들에 대하여, 전반적인 흐름을 살펴보는 강의입니다. 자바스크립트 초심자들이 가장 어려워하는 this, 콜백, 스코프와 실행컨텍스트, 프로토타입, 클로저 등에 대하여 개념 및 동작 원리를 알기 쉽게 설명함으로써, 수강생들이 향후 자바스크립트를 학습하는 데에 있어 가이드를 제시해 드립니다.(17년 5월, 7월, 9월, 12월 총 4회에 걸쳐 오프라인에서 강의했던 내용을 바탕으로, 온라인 환경에 맞춰 제작한 강의입니다.)"
   },
   "reviewInfo": {
-    "course1": {
-      "review1": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "review2": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "review3": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
-      "review4": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
+    "-L2T1S7d0kmuX3BkrjhM": {
+      "-L3TEJ7d0Bmu53BjrjTn": "5tt9DjwP1aaWLBREPa9692B841z2"
     },
-    "course2": {
-      "review3": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
-      "review4": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
+    "-L2Tdj-HAPSUuNUVWLBs": {
+      "-L4S5DF3fyrUTp9sYSc7": "5tt9DjwP1aaWLBREPa9692B841z2"
     },
-    "course3": {
-      "review5": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
+    "-L4KEBACbbZXcOelNs9H": {
+      "-L5XDb1D7ynURN3qAfOg": "5tt9DjwP1aaWLBREPa9692B841z2"
     },
-    "course4": {
-      "review8": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
-      "review9": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
+    "-L4KCJnih9esLvWi3yku": {
+      "-L6Z3sTId3XQ2F85Y3uK": "5tt9DjwP1aaWLBREPa9692B841z2"
     },
-    "course5": {
+    "-L4KEOdpRkg0gPl2FQt-": {
+      "-L6Z5DCDvW9b9zN1dbaQ": "5tt9DjwP1aaWLBREPa9692B841z2",
+      "-L73E_vGgFK8dkBz1kA1": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
     },
-    "course6": {
-      "review10": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
+    "-L4KEprikO5zoRKqolo6": {
+      "-L3B9A3da8Dz1AkBkdC9": "5tt9DjwP1aaWLBREPa9692B841z2"
     },
-    "course7": {
+    "-L2T8rAdjFbDiKVp06g7": {
+      "-L3XDBKu7dnURNpqgK8z": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
+    },
+    "-L4KD1H1q7oykfICBJRY": {
+      "-L56Dasl7GF3A123yT8A": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
+    },
+    "-L4KESobporOt62FrXWL": {
+      "-L47WfJAz6NsgMjG565L": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
+    },
+    "-L6V4SLxQyrUTp9sYSe6": {
+      "-L4gKZHeDXCvW9a8CIuA": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
+    },
+    "-L4KFfo_a22g-5O2NiNn": {
+      "-L7rbaZjFPEsiKVp06g7": "78HkrC5iaMcNecc4A1nzn1afO4Z2",
+      "-L2TdqGdk4F9dA1YDgQA": "nLcC8OgGSfhya0Ev5efQmOfJ46k1",
+      "-L3Dk505Gkv9a01CBdk3": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
+    },
+    "-L2T4wfJB76NsgMgy050": {
+      "-L6rAkdE58Gu7Av2Dek3": "78HkrC5iaMcNecc4A1nzn1afO4Z2"
+    },
+    "-L2TdqG2x9O5k1PYQ1h-": {
+      "-L2Tdkfj810dAdW1Q3B-": "THWYuaMEcTPig8LFSJVeQ0UkcLK2"
+    },
+    "-L4KE_vGgFllzrH8hw98": {
+      "-L6DG81KsdVBdw39aKz1": "THWYuaMEcTPig8LFSJVeQ0UkcLK2"
+    },
+    "-L4KF-YuahHrMe8PgAR5": {
+      "-L7kDvb8Bdk5dA8zA1D8": "THWYuaMEcTPig8LFSJVeQ0UkcLK2",
+      "-L4KkBi4kO5zfk6Kd8a1": "nLcC8OgGSfhya0Ev5efQmOfJ46k1"
+    },
+    "-L6XDdIsKynURNpq5fOz": {
+      "-L2T8rkgI4kQa3BA16g7": "THWYuaMEcTPig8LFSJVeQ0UkcLK2"
+    },
+    "-L6XDtsljQqrz12f0CyU": {
+      "-L4KESoBkd8kd35DqlAL": "THWYuaMEcTPig8LFSJVeQ0UkcLK2"
+    },
+    "-L6V4osId3XQ_F85GyuN": {
+
+    },
+    "-L6XEU4_wHRIT1ZhuUbs": {
+
+    },
+    "-L4KRZHeDXCvW9a8CN1h": {
+      "-L5DKvl59Gke34Akz1rY": "THWYuaMEcTPig8LFSJVeQ0UkcLK2"
+    },
+    "-L6UdrMFI-r5k5GPMorY": {
+      "-L4KEprdk45H83D1KdB6": "THWYuaMEcTPig8LFSJVeQ0UkcLK2"
     }
   },
   "category": {
-    "course1": "programming",
-    "course2": "programming",
-    "course3": "programming",
-    "course4": "design",
-    "course5": "design",
-    "course6": "planMaking",
-    "course7": "planMaking"
+    "-L2T1S7d0kmuX3BkrjhM": "programming",
+    "-L2Tdj-HAPSUuNUVWLBs": "programming",
+    "-L4KEBACbbZXcOelNs9H": "programming",
+    "-L6V4SLxQyrUTp9sYSe6": "programming",
+    "-L6XDdIsKynURNpq5fOz": "programming",
+    "-L6XDtsljQqrz12f0CyU": "programming",
+    "-L4KCJnih9esLvWi3yku": "design",
+    "-L4KEOdpRkg0gPl2FQt-": "design",
+    "-L4KEprikO5zoRKqolo6": "design",
+    "-L4KFfo_a22g-5O2NiNn": "design",
+    "-L2T4wfJB76NsgMgy050": "design",
+    "-L2TdqG2x9O5k1PYQ1h-": "design",
+    "-L6V4osId3XQ_F85GyuN": "design",
+    "-L6XEU4_wHRIT1ZhuUbs": "design",
+    "-L2T8rAdjFbDiKVp06g7": "planMaking",
+    "-L4KD1H1q7oykfICBJRY": "planMaking",
+    "-L4KESobporOt62FrXWL": "planMaking",
+    "-L4KE_vGgFllzrH8hw98": "planMaking",
+    "-L4KF-YuahHrMe8PgAR5": "planMaking",
+    "-L4KRZHeDXCvW9a8CN1h": "planMaking",
+    "-L6UdrMFI-r5k5GPMorY": "planMaking"
+  },
+  "changingReq": {
+    "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
+      "organization": "코드잇"
+    }
   }
 }
 

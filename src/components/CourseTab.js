@@ -2,37 +2,29 @@ import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 
 export default class CourseTab extends Component {
-  // state = {
-  //   activeItem: this.props.tabs[0].name,
-  // }
+  state = {
+    activeItem: this.props.pathName,
+  }
 
-  // handleTabClick = (e, { name }) => {
-  //   this.setState({ activeItem: name })
-  // }
-
-  // render() {
-  //   const { activeItem } = this.state
-  //   const { tabs } = this.props
-  //   return (
-  //     <div>
-  //       <Menu pointing secondary color="red">
-  //         {tabs.map(tab => (
-  //           <Menu.Item
-  //             key={tab.name}
-  //             name={tab.name}
-  //             active={activeItem === tab.name}
-  //             onClick={this.handleTabClick}
-  //             {...tab.link}
-  //           />
-  //         ))}
-  //       </Menu>
-  //     </div>
-  //   )
-  // }
+  handleTabClick = (e, { to }) => {
+    this.setState({ activeItem: to })
+  }
   
   render() {
     return (
-      <div>하이</div>
+      <div>
+        <Menu pointing secondary color="red">
+          {tabs.map(tab => (
+            <Menu.Item
+              key={tab.name}
+              name={tab.name}
+              active={activeItem === tab.link.to}
+              onClick={this.handleTabClick}
+              {...tab.link}
+            />
+          ))}
+        </Menu>
+      </div>
     )
   }
 }

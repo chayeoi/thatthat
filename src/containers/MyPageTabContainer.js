@@ -36,8 +36,8 @@ const academyTabs = [
   },
 ]
 
-const MyPageTabContainer = ({ userClass }) => (
-  <MyPageTab tabs={userClass === 'reviewer' ? reviewerTabs : academyTabs} />
+const MyPageTabContainer = ({ userClass, pathName }) => (
+  <MyPageTab tabs={userClass === 'reviewer' ? reviewerTabs : academyTabs} pathName={pathName} />
 )
 
 export default connect(

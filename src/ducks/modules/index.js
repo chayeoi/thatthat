@@ -1,19 +1,24 @@
 import auth from './auth'
 import category from './category'
-import like from './like'
-import review from './review'
-import course from './course'
+import myLike from './myLike'
+import myReview from './myReview'
+import myCourse from './myCourse'
 import detail from './detail'
 import user from './user'
 import form from './form'
+import info from './info'
+import review from './review'
+
 
 export {
   auth,
   category,
-  like,
-  review,
-  course,
+  myLike,
+  myReview,
+  myCourse,
   detail,
   user,
   form,
+  info,
+  review,
 }

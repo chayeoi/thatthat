@@ -1,22 +1,22 @@
 import * as firebase from 'firebase'
 
 // Actions
-export const IS_LOADING = 'course/IS_LOADING'
-export const COMPLETE_LOADING = 'course/COMPLETE_LOADING'
+export const IS_LOADING = 'myLike/IS_LOADING'
+export const COMPLETE_LOADING = 'myLike/COMPLETE_LOADING'
 
 // Action Creators
 export const isLoading = () => ({
   type: IS_LOADING,
 })
-export const completeLoading = courses => ({
+export const completeLoading = likes => ({
   type: COMPLETE_LOADING,
-  courses,
+  likes,
 })
 
 // Reducer
 const initialState = {
   isLoading: false,
-  courses: [],
+  likes: [],
 }
 
 export default (state = initialState, action) => {
@@ -30,7 +30,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isLoading: false,
-        courses: action.courses,
+        likes: action.likes,
       }
     default:
       return state
@@ -38,14 +38,14 @@ export default (state = initialState, action) => {
 }
 
 // Thunks
-export const loadMyCourseList = () => async (dispatch) => {
+export const loadMyLikeList = () => async (dispatch) => {
   dispatch(isLoading())
   const { uid } = firebase.auth().currentUser
-  const snapshot = await firebase.database().ref(`myCourses/${uid}`).once('value')
+  const snapshot = await firebase.database().ref(`myLikes/${uid}`).once('value')
   const result = snapshot.val()
   if (result) {
     const courseKeys = Object.keys(result)
-    const pendingCourses = courseKeys.map(async (courseKey) => {
+    const pendingLikes = courseKeys.map(async (courseKey) => {
       const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
       const category = categorySnapshot.val()
       const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
@@ -55,8 +55,8 @@ export const loadMyCourseList = () => async (dispatch) => {
         ...course,
       }
     })
-    const courses = await Promise.all(pendingCourses)
-    dispatch(completeLoading(courses))
+    const likes = await Promise.all(pendingLikes)
+    dispatch(completeLoading(likes))
   } else {
     dispatch(completeLoading(null))
   }

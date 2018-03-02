@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CourseInfo = () => (
+const CourseInfo = ({ content }) => (
   <div>
-    I am CourseInfo.
+    {content}
   </div>
 )
 
