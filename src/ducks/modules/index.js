@@ -7,6 +7,8 @@ import detail from './detail'
 import user from './user'
 import form from './form'
 import info from './info'
+import review from './review'
+
 
 export {
   auth,
@@ -18,4 +20,5 @@ export {
   user,
   form,
   info,
+  review,
 }

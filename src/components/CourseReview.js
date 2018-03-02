@@ -1,9 +1,10 @@
 import React from 'react'
+import { ReviewCard } from 'components'
 
 const CourseReview = () => (
-  <div>
-    코스리뷰
-  </div>
+  <ul>
+    I am CourseReview.
+  </ul>
 )
 
 export default CourseReview
