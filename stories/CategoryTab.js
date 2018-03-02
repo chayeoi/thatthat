@@ -41,6 +41,6 @@ const categories = [
 ]
 
 storiesOf('CategoryTab', module)
-  .add('CategoryTab', () => (
+  .add('default', () => (
     <CategoryTab categories={categories} />
   ))
