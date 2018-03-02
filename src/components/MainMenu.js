@@ -11,13 +11,12 @@ const MenuBox = styled(Menu)`
   background-color: transparent !important;
   `
 const Logo = styled.h1`
-  font-family: 'Spoqa Han Sans', sans-serif;
   font-weight: 900;
   font-size: 22px;
 `
-const MypageIcon = styled.i`
+const MypageIcon = styled(Icon)`
   font-size: 19px;
-  font-family: fontello;
+  /* font-family: fontello; */
 `
 
 const MainMenu = ({ links }) => (

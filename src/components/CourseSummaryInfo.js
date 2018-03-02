@@ -11,8 +11,8 @@ import {
 } from 'semantic-ui-react'
 import { courseImg } from '../assets/images'
 
-const StyledRating = styled(Rating) `
-  & .active::before {
+const StyledRating = styled(Rating)`
+  &.active::before {
     color: #f8ba00;
   }
 `

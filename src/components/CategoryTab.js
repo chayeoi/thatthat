@@ -17,7 +17,7 @@ const CategoryItem = styled(Menu.Item)`
   }
 `
 
-export default class CategoryList extends Component {
+export default class CategoryTab extends Component {
   state = {
     activeItem: this.props.pathName,
   }
