@@ -4,6 +4,7 @@ import * as firebase from 'firebase'
 export const IS_CREATING = 'form/IS_CREATING'
 export const IS_COMPLETED = 'form/IS_COMPLETED'
 export const ERROR_OCCURED = 'form/ERROR_OCCURED'
+export const INITIALIZE_FORM = 'form/INITIALIZE_FORM'
 
 // Action Creators
 export const isCreating = () => ({
@@ -17,6 +18,9 @@ export const errorOccured = errorMessage => ({
   type: ERROR_OCCURED,
   errorMessage,
 })
+export const initializeForm = () => ({
+  type: INITIALIZE_FORM,
+})
 
 // Reducer
 const initialState = {
@@ -24,7 +28,6 @@ const initialState = {
   isCompleted: false,
   courseKey: '',
   errorMessage: '',
-
 }
 
 export default (state = initialState, action) => {
@@ -47,6 +50,8 @@ export default (state = initialState, action) => {
         isCreating: false,
         errorMessage: action.errorMessage,
       }
+    case INITIALIZE_FORM:
+      return initialState
     default:
       return state
   }
