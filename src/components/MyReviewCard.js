@@ -1,7 +1,7 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
 
-const ReviewCard = ({ review }) => {
+const MyReviewCard = ({ review }) => {
   const {
     reviewKey,
     organization,
@@ -24,4 +24,4 @@ const ReviewCard = ({ review }) => {
   )
 }
 
-export default ReviewCard
+export default MyReviewCard

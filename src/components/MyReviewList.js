@@ -1,11 +1,11 @@
 import React from 'react'
-import { ReviewCard } from 'components'
+import { MyReviewCard } from 'components'
 
 const MyReviewList = ({ reviews }) => (
   <ul>
     {reviews ?
       reviews.map(review => (
-        <ReviewCard key={review.reviewKey} review={review} />
+        <MyReviewCard key={review.reviewKey} review={review} />
       ))
       : <div>등록한 리뷰가 없습니다.</div>
     }

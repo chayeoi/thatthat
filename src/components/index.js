@@ -13,7 +13,7 @@ import MyPageTab from './MyPageTab'
 import MyLikeList from './MyLikeList'
 import MyCourseList from './MyCourseList'
 import MyReviewList from './MyReviewList'
-import ReviewCard from './ReviewCard'
+import MyReviewCard from './MyReviewCard'
 import CourseForm from './CourseForm'
 import LikeButton from './LikeButton'
 import Footer from './Footer'
@@ -34,7 +34,7 @@ export {
   MyLikeList,
   MyCourseList,
   MyReviewList,
-  ReviewCard,
+  MyReviewCard,
   CourseForm,
   LikeButton,
   Footer,
