@@ -19,8 +19,19 @@ export default class ReviewForm extends Component {
   }
 
   state = {
-    rating: 1,
+    rating: 0,
     content: '',
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const { isCreating: current } = this.props
+    const { isCreating: next } = nextProps
+    if (current !== next) {
+      this.setState({
+        rating: 0,
+        content: '',
+      })
+    }
   }
 
   handleRate = (e, { rating }) => this.setState({ rating })
@@ -30,11 +41,11 @@ export default class ReviewForm extends Component {
   handleClick = () => this.state.content && this.props.onSubmit(this.state, this.props.courseKey)
 
   render() {
-    const { content } = this.state
+    const { rating, content } = this.state
     const { isCreating } = this.props
     return (
       <Form loading={isCreating}>
-        <StyledRating icon="star" maxRating={5} onRate={this.handleRate} />
+        <StyledRating icon="star" rating={rating} maxRating={5} onRate={this.handleRate} />
         <MaxHeightTextArea autoHeight rows={1} value={content} onChange={this.handleChange} />
         <Form.Button onClick={this.handleClick}>등록</Form.Button>
       </Form>

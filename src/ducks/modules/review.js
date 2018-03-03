@@ -41,6 +41,7 @@ const initialState = {
   reviews: [],
   currentUserId: null,
   isCreating: false,
+  completeCreating: false,
   errorMessage: '',
   isDeleting: false,
 }
@@ -58,6 +59,7 @@ export default (state = initialState, action) => {
         isLoading: false,
         reviews: action.reviews,
         currentUserId: action.currentUserId,
+        completeCreating: false,
       }
     case IS_CREATING:
       return {
@@ -68,6 +70,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isCreating: false,
+        completeCreating: true,
       }
     case ERROR_OCCURED:
       return {
