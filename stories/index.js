@@ -6,4 +6,5 @@ import './LogoutButton'
 import './LikeButton'
 import './CategoryTab'
 import './MyPageTab'
+import './ReviewForm'
 
