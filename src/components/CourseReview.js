@@ -5,8 +5,8 @@ const CourseReview = ({ reviews, buttonRender, formRender }) => (
   <React.Fragment>
     <ul>
       {reviews ?
-        reviews.map(({ reviewKey, ...rest }) => (
-          <ReviewCard key={reviewKey} {...rest} render={buttonRender} />
+        reviews.map(review => (
+          <ReviewCard key={review.reviewKey} {...review} render={buttonRender} />
         ))
         : <div>등록된 리뷰가 없습니다.</div>
       }

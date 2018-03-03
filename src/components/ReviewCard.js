@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ReviewCard = ({
+  reviewKey,
   content,
   createdAt,
   displayName,
@@ -15,7 +16,7 @@ const ReviewCard = ({
     <div>{displayName}</div>
     <img src={photoURL} alt="유저 사진" />
     <div>{rating}</div>
-    {render(uid)}
+    {render(uid, reviewKey, rating)}
   </li>
 )
 

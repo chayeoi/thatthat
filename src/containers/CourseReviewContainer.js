@@ -22,9 +22,14 @@ class CourseReviewContainer extends Component {
     return (
       <CourseReview
         reviews={reviews}
-        buttonRender={uid => (
+        buttonRender={(uid, reviewKey, rating) => (
           uid === currentUserId ?
-            <DeleteReviewButtonContainer />
+            <DeleteReviewButtonContainer
+              uid={uid}
+              reviewKey={reviewKey}
+              courseKey={courseKey}
+              rating={rating}
+            />
             : null
         )}
         formRender={() => (<ReviewFormContainer courseKey={courseKey} />)}
