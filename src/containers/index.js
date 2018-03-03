@@ -9,7 +9,6 @@ import CourseSummaryInfoContainer from './CourseSummaryInfoContainer'
 import CourseTabContainer from './CourseTabContainer'
 import CourseInfoContainer from './CourseInfoContainer'
 import CourseReviewContainer from './CourseReviewContainer'
-import EditReviewButtonContainer from './EditReviewButtonContainer'
 import DeleteReviewButtonContainer from './DeleteReviewButtonContainer'
 import ReviewFormContainer from './ReviewFormContainer'
 import UserInfoContainer from './UserInfoContainer'
@@ -35,7 +34,6 @@ export {
   CourseTabContainer,
   CourseInfoContainer,
   CourseReviewContainer,
-  EditReviewButtonContainer,
   DeleteReviewButtonContainer,
   ReviewFormContainer,
   UserInfoContainer,

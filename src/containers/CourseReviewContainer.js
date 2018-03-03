@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { CourseReview } from 'components'
 import {
-  EditReviewButtonContainer,
   DeleteReviewButtonContainer,
   ReviewFormContainer,
 } from 'containers'
@@ -25,10 +24,7 @@ class CourseReviewContainer extends Component {
         reviews={reviews}
         buttonRender={uid => (
           uid === currentUserId ?
-            <React.Fragment>
-              <EditReviewButtonContainer />
-              <DeleteReviewButtonContainer />
-            </React.Fragment>
+            <DeleteReviewButtonContainer />
             : null
         )}
         formRender={() => (<ReviewFormContainer courseKey={courseKey} />)}

@@ -10,8 +10,6 @@ import CourseTab from './CourseTab'
 import CourseInfo from './CourseInfo'
 import CourseReview from './CourseReview'
 import ReviewCard from './ReviewCard'
-import ReviewButtonWrapper from './ReviewButtonWrapper'
-import EditReviewButton from './EditReviewButton'
 import DeleteReviewButton from './DeleteReviewButton'
 import ReviewForm from './ReviewForm'
 import UserInfo from './UserInfo'
@@ -36,8 +34,6 @@ export {
   CourseInfo,
   CourseReview,
   ReviewCard,
-  ReviewButtonWrapper,
-  EditReviewButton,
   DeleteReviewButton,
   ReviewForm,
   UserInfo,

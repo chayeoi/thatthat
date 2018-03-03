@@ -1,5 +1,4 @@
 import React from 'react'
-import { ReviewButtonWrapper } from 'components'
 
 const ReviewCard = ({
   content,
@@ -16,7 +15,7 @@ const ReviewCard = ({
     <div>{displayName}</div>
     <img src={photoURL} alt="유저 사진" />
     <div>{rating}</div>
-    <ReviewButtonWrapper uid={uid} render={render} />
+    {render(uid)}
   </li>
 )
 
