@@ -1,9 +1,26 @@
 @font-face {
   font-family: 'fontello';
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  src: url('./fonts/fontello.woff2') format('woff2'),
-  url('./fonts/fontello.woff') format('woff'),
-  url('./fonts/fontello.ttf') format('truetype');
+  src: url('./fonts/fontello.woff2?21878404') format('woff2'),
+       url('./fonts/fontello.woff?21878404') format('woff'),
+       url('./fonts/fontello.ttf?21878404') format('truetype'),
+       url('./fonts/fontello.svg?21878404#fontello') format('svg');
 }
+ 
+[class^="icon-"]:before { 
+  font-family: "fontello";
+  display:inline-block;
+  margin: 0;
+}
+
+.icon-user-outline:before { content: '\e800'; } /* MyPage Icon */
+.icon-user:before { content: '\e801'; } /* MyPage Icon */
+.icon-trash-empty:before { content: '\e802'; } /* Delete Button */
+.icon-cancel:before { content: '\e803'; } /* Delete Button */
+.icon-off:before { content: '\e804'; } /* Logout Button */
+.icon-arrows-ccw:before { content: '\e805'; } /* Changing User Level */
+.icon-arrows-cw:before { content: '\e806'; } /* Changing User Level */
+.icon-plus:before { content: '\e807'; } /* 리뷰+ */
+.icon-chat-empty:before { content: '\f0e6'; } /* About Page Icon */

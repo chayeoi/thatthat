@@ -14,9 +14,8 @@ const Logo = styled.h1`
   font-weight: 900;
   font-size: 22px;
 `
-const MypageIcon = styled(Icon)`
-  font-size: 19px;
-  /* font-family: fontello; */
+const MypageIcon = styled.i`
+  font-size: 18px;
 `
 
 const MainMenu = ({ links }) => (
