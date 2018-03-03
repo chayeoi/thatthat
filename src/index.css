@@ -28,3 +28,7 @@ a:active {
   font-family: 'Spoqa Han Sans', sans-serif !important;
   color:#212529;
 }
+
+i {
+  font-style: normal;
+}
