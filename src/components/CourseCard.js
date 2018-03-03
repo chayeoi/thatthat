@@ -48,14 +48,19 @@ const ImageGrid = styled(Grid.Column)`
 `
 
 const CourseImageBox = styled.div`
-  width: 80px;
-  height: 80px;
+  position: relative;
+  width: 100%;
+  min-width: 85px;
+  padding-top: 100%;
 `
 
 const CourseImage = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
 
 const CourseCard = ({ course }) => {
