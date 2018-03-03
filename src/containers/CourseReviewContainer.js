@@ -18,9 +18,15 @@ class CourseReviewContainer extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const { completeCreating: current } = this.props
-    const { completeCreating: next } = nextProps
-    if (current !== next) {
+    const {
+      completeCreating: currentCreating,
+      completeDeleting: currentDeleting,
+    } = this.props
+    const {
+      completeCreating: nextCreating,
+      completeDeleting: nextDeleting,
+    } = nextProps
+    if (currentCreating !== nextCreating || currentDeleting !== nextDeleting) {
       const { courseKey } = this.props.match.params
       this.props.onMount(courseKey)
     }
@@ -52,6 +58,7 @@ export default connect(
     reviews: state.review.reviews,
     currentUserId: state.review.currentUserId,
     completeCreating: state.review.completeCreating,
+    completeDeleting: state.review.completeDeleting,
   }),
   dispatch => ({
     onMount: courseKey => dispatch(loadCourseReview(courseKey)),

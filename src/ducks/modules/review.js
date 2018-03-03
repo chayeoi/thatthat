@@ -44,6 +44,7 @@ const initialState = {
   completeCreating: false,
   errorMessage: '',
   isDeleting: false,
+  completeDeleting: false,
 }
 
 export default (state = initialState, action) => {
@@ -60,6 +61,7 @@ export default (state = initialState, action) => {
         reviews: action.reviews,
         currentUserId: action.currentUserId,
         completeCreating: false,
+        completeDeleting: false,
       }
     case IS_CREATING:
       return {
@@ -88,6 +90,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isDeleting: false,
+        completeDeleting: true,
       }
     default:
       return state
