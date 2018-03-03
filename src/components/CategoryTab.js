@@ -9,7 +9,7 @@ const CategoryBox = styled(Menu)`
 
 const CategoryItem = styled(Menu.Item)`
   font-weight: 600 !important;
-  color: ${color.GRAY6} !important;
+  color: ${color.GRAY5} !important;
   border: 0;
   &.active {
     color: ${color.MAIN_COLOR} !important;
