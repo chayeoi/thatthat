@@ -15,7 +15,7 @@ const Logo = styled.h1`
   font-size: 22px;
 `
 const MypageIcon = styled.i`
-  font-size: 18px;
+  font-size: 19px;
 `
 
 const MainMenu = ({ links }) => (
