@@ -4,18 +4,60 @@ import styled from 'styled-components'
 import {
   Grid,
   Segment,
-  Image,
-  Header,
   Rating,
-  Statistic,
-  Comment,
 } from 'semantic-ui-react'
+import { RecentReview, LikeButton } from 'components'
 import { courseImg } from '../assets/images'
+import * as color from '../constants/color'
+import { review } from 'ducks/modules'
+
+const OrganizationName = styled.h4`
+  color: ${color.GRAY6};
+  font-size: 14px;
+  margin-bottom: 8px;
+  `
+
+const CourseName = styled.h3`
+  color: ${color.GRAY9};
+  font-size: 20px;
+`
+
+const LikeCount = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 12px;
+  color: ${color.GRAY5};
+`
+
+const ReviewCount = styled.div`
+  display: inline-block;
+  color: ${color.MAIN_COLOR};
+  font-weight: bold;
+  font-size: 12px;
+  padding-right: 10px;
+`
 
 const StyledRating = styled(Rating)`
   &.active::before {
     color: #f8ba00;
   }
+`
+
+const ImageGrid = styled(Grid.Column)`
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+`
+
+const CourseImageBox = styled.div`
+  width: 80px;
+  height: 80px;
+`
+
+const CourseImage = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 `
 
 const CourseCard = ({ course }) => {
@@ -31,37 +73,24 @@ const CourseCard = ({ course }) => {
     <Segment.Group as="li">
       <Segment>
         <Grid as={Link} to={`/course/${courseKey}/info`}>
-          <Grid.Column width={4} textAlign="center" color="blue">
-            <Image src={courseImg} size="medium" />
-          </Grid.Column>
-          <Grid.Column width={12}>
-            <Header as="h4" sub content={organization} size="large" color="grey" />
-            <Header as="h3" content={courseName} />
-            <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
-            <Statistic size="mini">
-              <Statistic.Label content="리뷰 갯수" />
-              <Statistic.Value content={reviewCount} />
-            </Statistic>
-            <Statistic size="mini">
-              <Statistic.Label content="좋아요 갯수" />
-              <Statistic.Value content={likeCount} />
-            </Statistic>
+          <ImageGrid width={4}>
+            <CourseImageBox>
+              <CourseImage src={courseImg} alt={courseName} />
+            </CourseImageBox>
+          </ImageGrid>
+          <Grid.Column width={12} verticalAlign="middle">
+            <div >
+              <OrganizationName>{organization}</OrganizationName>
+              <CourseName>{courseName}</CourseName>
+              <LikeCount>{likeCount} <LikeButton /></LikeCount>
+              <ReviewCount>리뷰 {reviewCount}</ReviewCount>
+              <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
+            </div>
           </Grid.Column>
         </Grid>
       </Segment>
       <Segment>
-        <Comment.Group>
-          <Comment>
-            <Comment.Avatar src="https://react.semantic-ui.com/assets/images/avatar/small/matt.jpg" />
-            <Comment.Content>
-              <Comment.Author>Matt</Comment.Author>
-              <Comment.Metadata>
-                <div>Today at 5:42PM</div>
-              </Comment.Metadata>
-              <Comment.Text>This has been very useful for my research.</Comment.Text>
-            </Comment.Content>
-          </Comment>
-        </Comment.Group>
+        <RecentReview />
       </Segment>
     </Segment.Group>
   )
