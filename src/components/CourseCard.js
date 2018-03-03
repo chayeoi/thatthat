@@ -10,6 +10,7 @@ import {
   Statistic,
   Comment,
 } from 'semantic-ui-react'
+import { RecentReview, LikeButton } from 'components'
 import { courseImg } from '../assets/images'
 
 const StyledRating = styled(Rating)`
@@ -62,6 +63,7 @@ const CourseCard = ({ course }) => {
             </Comment.Content>
           </Comment>
         </Comment.Group>
+        <RecentReview />
       </Segment>
     </Segment.Group>
   )
