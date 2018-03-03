@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import { CourseForm } from 'components'
-import { registerCourse } from 'ducks/modules/form'
+import { createCourse } from 'ducks/modules/form'
 
 class CourseFormContainer extends Component {
   render() {
@@ -23,6 +23,6 @@ export default connect(
     errorMessage: state.form.errorMessage,
   }),
   dispatch => ({
-    onSubmit: input => dispatch(registerCourse(input)),
+    onSubmit: input => dispatch(createCourse(input)),
   }),
 )(CourseFormContainer)

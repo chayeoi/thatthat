@@ -12,7 +12,7 @@ import {
 } from 'semantic-ui-react'
 
 const StyledRating = styled(Rating)`
-  & .active::before {
+  &.active::before {
     color: #f8ba00;
   }
 `

@@ -9,6 +9,7 @@ import CourseSummaryInfoContainer from './CourseSummaryInfoContainer'
 import CourseTabContainer from './CourseTabContainer'
 import CourseInfoContainer from './CourseInfoContainer'
 import CourseReviewContainer from './CourseReviewContainer'
+import ReviewFormContainer from './ReviewFormContainer'
 import UserInfoContainer from './UserInfoContainer'
 import MyPageTabContainer from './MyPageTabContainer'
 import MyLikeListContainer from './MyLikeListContainer'
@@ -32,6 +33,7 @@ export {
   CourseTabContainer,
   CourseInfoContainer,
   CourseReviewContainer,
+  ReviewFormContainer,
   UserInfoContainer,
   MyPageTabContainer,
   MyLikeListContainer,

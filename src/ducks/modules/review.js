@@ -3,6 +3,9 @@ import * as firebase from 'firebase'
 // Actions
 export const IS_LOADING = 'review/IS_LOADING'
 export const COMPLETE_LOADING = 'review/COMPLETE_LOADING'
+export const IS_CREATING = 'review/IS_CREATING'
+export const IS_COMPLETED = 'review/IS_COMPLETED'
+export const ERROR_OCCURED = 'review/ERROR_OCCURED'
 
 // Action Creators
 export const isLoading = () => ({
@@ -12,11 +15,24 @@ export const completeLoading = reviews => ({
   type: COMPLETE_LOADING,
   reviews,
 })
+export const isCreating = () => ({
+  type: IS_CREATING,
+})
+export const isCompleted = () => ({
+  type: IS_COMPLETED,
+})
+export const errorOccured = errorMessage => ({
+  type: ERROR_OCCURED,
+  errorMessage,
+})
 
 // Reducer
 const initialState = {
   isLoading: false,
   reviews: [],
+  isCreating: false,
+  isCompleted: false,
+  errorMessage: '',
 }
 
 export default (state = initialState, action) => {
@@ -31,6 +47,23 @@ export default (state = initialState, action) => {
         ...state,
         isLoading: false,
         reviews: action.reviews,
+      }
+    case IS_CREATING:
+      return {
+        ...state,
+        isCreating: true,
+      }
+    case IS_COMPLETED:
+      return {
+        ...state,
+        isCreating: false,
+        isCompleted: true,
+      }
+    case ERROR_OCCURED:
+      return {
+        ...state,
+        isCreating: false,
+        errorMessage: action.errorMessage,
       }
     default:
       return state
@@ -60,5 +93,46 @@ export const loadCourseReview = courseKey => async (dispatch) => {
     dispatch(completeLoading(reviews))
   } else {
     dispatch(completeLoading(null))
+  }
+}
+export const createReview = (input, courseKey) => async (dispatch) => {
+  dispatch(isCreating())
+  try {
+    const auth = firebase.auth()
+    const database = firebase.database()
+    const { uid } = auth.currentUser
+    const categorySnapshot = await database.ref(`category/${courseKey}`).once('value')
+    const category = categorySnapshot.val()
+    const reviewPromise = database.ref('reviews').push({
+      createdAt: firebase.database.ServerValue.TIMESTAMP,
+      uid,
+      courseKey,
+      ...input,
+    })
+    const myReviewRef = `myReviews/${uid}/${reviewPromise.key}`
+    const reviewInfoRef = `reviewInfo/${courseKey}/${reviewPromise.key}`
+    const courseRef = `courses/${category}/${courseKey}`
+    const myReviewPromise = database.ref(myReviewRef).set(true)
+    const reviewInfoPromise = database.ref(reviewInfoRef).set(uid)
+    const coursePromise = database.ref(courseRef).transaction((course) => {
+      if (course) {
+        const { reviewCount, ratingAvg } = course
+        return {
+          ...course,
+          reviewCount: reviewCount + 1,
+          ratingAvg: ((ratingAvg * reviewCount) + input.rating) / (reviewCount + 1),
+        }
+      }
+      return course
+    })
+    await Promise.all([
+      reviewPromise,
+      myReviewPromise,
+      reviewInfoPromise,
+      coursePromise,
+    ])
+    dispatch(isCompleted())
+  } catch (e) {
+    dispatch(errorOccured('알 수 없는 에러가 발생했습니다.'))
   }
 }

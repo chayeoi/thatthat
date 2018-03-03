@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { CourseReview } from 'components'
+import { ReviewFormContainer } from 'containers'
 import { loadCourseReview } from 'ducks/modules/review'
 
 class CourseReviewContainer extends Component {
@@ -14,10 +15,12 @@ class CourseReviewContainer extends Component {
   }
 
   render() {
-    console.log(this.props.reviews)
-    const { reviews } = this.props
+    const { reviews, match: { params: { courseKey } } } = this.props
     return (
-      <CourseReview reviews={reviews} />
+      <CourseReview
+        reviews={reviews}
+        render={() => (<ReviewFormContainer courseKey={courseKey} />)}
+      />
     )
   }
 }
