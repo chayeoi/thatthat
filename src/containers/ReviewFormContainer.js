@@ -20,7 +20,6 @@ class ReviewFormContainer extends Component {
 export default connect(
   state => ({
     isCreating: state.review.isCreating,
-    isCompleted: state.review.isCompleted,
   }),
   dispatch => ({
     onSubmit: (input, courseKey) => dispatch(createReview(input, courseKey)),

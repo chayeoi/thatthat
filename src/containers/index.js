@@ -4,10 +4,12 @@ import LoginButtonContainer from './LoginButtonContainer'
 import LogoutButtonContainer from './LogoutButtonContainer'
 import CategoryTabContainer from './CategoryTabContainer'
 import CourseListContainer from './CourseListContainer'
+import LikeButtonContainer from './LikeButtonContainer'
 import CourseSummaryInfoContainer from './CourseSummaryInfoContainer'
 import CourseTabContainer from './CourseTabContainer'
 import CourseInfoContainer from './CourseInfoContainer'
 import CourseReviewContainer from './CourseReviewContainer'
+import DeleteReviewButtonContainer from './DeleteReviewButtonContainer'
 import ReviewFormContainer from './ReviewFormContainer'
 import UserInfoContainer from './UserInfoContainer'
 import MyPageTabContainer from './MyPageTabContainer'
@@ -27,10 +29,12 @@ export {
   LogoutButtonContainer,
   CategoryTabContainer,
   CourseListContainer,
+  LikeButtonContainer,
   CourseSummaryInfoContainer,
   CourseTabContainer,
   CourseInfoContainer,
   CourseReviewContainer,
+  DeleteReviewButtonContainer,
   ReviewFormContainer,
   UserInfoContainer,
   MyPageTabContainer,

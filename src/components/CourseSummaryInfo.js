@@ -9,7 +9,6 @@ import {
   Rating,
   Statistic,
 } from 'semantic-ui-react'
-import { courseImg } from '../assets/images'
 
 const StyledRating = styled(Rating)`
   &.active::before {
@@ -25,12 +24,13 @@ const CourseSummaryInfo = ({ course }) => {
     likeCount,
     reviewCount,
     ratingAvg,
+    downloadURL,
   } = course
   return (
     <Segment as="li">
       <Grid as={Link} to={`/course/${courseKey}/info`}>
         <Grid.Column width={4} color="blue" textAlign="center">
-          <Image src={courseImg} size="small" />
+          <Image src={downloadURL} size="small" />
         </Grid.Column>
         <Grid.Column width={12} color="green">
           <Header sub content={organization} size="huge" />

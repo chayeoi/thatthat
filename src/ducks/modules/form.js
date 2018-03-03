@@ -2,7 +2,7 @@ import * as firebase from 'firebase'
 
 // Actions
 export const IS_CREATING = 'form/IS_CREATING'
-export const IS_COMPLETED = 'form/IS_COMPLETED'
+export const COMPLETE_CREATING = 'form/COMPLETE_CREATING'
 export const ERROR_OCCURED = 'form/ERROR_OCCURED'
 export const INITIALIZE_FORM = 'form/INITIALIZE_FORM'
 
@@ -10,8 +10,8 @@ export const INITIALIZE_FORM = 'form/INITIALIZE_FORM'
 export const isCreating = () => ({
   type: IS_CREATING,
 })
-export const isCompleted = courseKey => ({
-  type: IS_COMPLETED,
+export const completeCreating = courseKey => ({
+  type: COMPLETE_CREATING,
   courseKey,
 })
 export const errorOccured = errorMessage => ({
@@ -25,7 +25,7 @@ export const initializeForm = () => ({
 // Reducer
 const initialState = {
   isCreating: false,
-  isCompleted: false,
+  completeCreating: false,
   courseKey: '',
   errorMessage: '',
 }
@@ -37,11 +37,11 @@ export default (state = initialState, action) => {
         ...state,
         isCreating: true,
       }
-    case IS_COMPLETED:
+    case COMPLETE_CREATING:
       return {
         ...state,
         isCreating: false,
-        isCompleted: true,
+        completeCreating: true,
         courseKey: action.courseKey,
       }
     case ERROR_OCCURED:
@@ -97,7 +97,7 @@ export const createCourse = ({
         categoryPromise,
         myCoursePromise,
       ])
-      dispatch(isCompleted(coursePromise.key))
+      dispatch(completeCreating(coursePromise.key))
     } catch (e) {
       dispatch(errorOccured('알 수 없는 에러가 발생했습니다.'))
     }

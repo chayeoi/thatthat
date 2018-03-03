@@ -7,9 +7,7 @@ import {
   Rating,
 } from 'semantic-ui-react'
 import { RecentReview, LikeButton } from 'components'
-import { courseImg } from '../assets/images'
 import * as color from '../constants/color'
-import { review } from 'ducks/modules'
 
 const OrganizationName = styled.h4`
   color: ${color.GRAY6};
@@ -68,6 +66,7 @@ const CourseCard = ({ course }) => {
     likeCount,
     reviewCount,
     ratingAvg,
+    downloadURL,
   } = course
   return (
     <Segment.Group as="li">
@@ -75,7 +74,7 @@ const CourseCard = ({ course }) => {
         <Grid as={Link} to={`/course/${courseKey}/info`}>
           <ImageGrid width={4}>
             <CourseImageBox>
-              <CourseImage src={courseImg} alt={courseName} />
+              <CourseImage src={downloadURL} alt={courseName} />
             </CourseImageBox>
           </ImageGrid>
           <Grid.Column width={12} verticalAlign="middle">

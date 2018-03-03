@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { CourseReview } from 'components'
-import { ReviewFormContainer } from 'containers'
+import {
+  DeleteReviewButtonContainer,
+  ReviewFormContainer,
+} from 'containers'
 import { loadCourseReview } from 'ducks/modules/review'
 
 class CourseReviewContainer extends Component {
@@ -15,11 +18,21 @@ class CourseReviewContainer extends Component {
   }
 
   render() {
-    const { reviews, match: { params: { courseKey } } } = this.props
+    const { reviews, currentUserId, match: { params: { courseKey } } } = this.props
     return (
       <CourseReview
         reviews={reviews}
-        render={() => (<ReviewFormContainer courseKey={courseKey} />)}
+        buttonRender={(uid, reviewKey, rating) => (
+          uid === currentUserId ?
+            <DeleteReviewButtonContainer
+              uid={uid}
+              reviewKey={reviewKey}
+              courseKey={courseKey}
+              rating={rating}
+            />
+            : null
+        )}
+        formRender={() => (<ReviewFormContainer courseKey={courseKey} />)}
       />
     )
   }
@@ -28,6 +41,7 @@ class CourseReviewContainer extends Component {
 export default connect(
   state => ({
     reviews: state.review.reviews,
+    currentUserId: state.review.currentUserId,
   }),
   dispatch => ({
     onMount: courseKey => dispatch(loadCourseReview(courseKey)),

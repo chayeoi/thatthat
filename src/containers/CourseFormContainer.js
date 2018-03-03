@@ -6,9 +6,9 @@ import { createCourse } from 'ducks/modules/form'
 
 class CourseFormContainer extends Component {
   render() {
-    const { isCompleted, courseKey, ...rest } = this.props
+    const { completeCreating, courseKey, ...rest } = this.props
     return (
-      isCompleted ?
+      completeCreating ?
         <Redirect to={`/course/${courseKey}`} />
         : <CourseForm {...rest} />
     )
@@ -18,7 +18,7 @@ class CourseFormContainer extends Component {
 export default connect(
   state => ({
     isCreating: state.form.isCreating,
-    isCompleted: state.form.isCompleted,
+    completeCreating: state.form.completeCreating,
     courseKey: state.form.courseKey,
     errorMessage: state.form.errorMessage,
   }),
