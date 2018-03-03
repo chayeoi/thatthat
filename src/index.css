@@ -3,6 +3,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
@@ -12,8 +14,9 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, div {
   font-family: 'Spoqa Han Sans', sans-serif !important;
+  margin: 0;
 }
 
 ol, ul {

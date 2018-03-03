@@ -5,6 +5,7 @@ import * as color from '../constants/color'
 
 const Wrapper = styled.ul`
   padding: 1em;
+  min-height: 100vh;
   background-color: ${color.GRAY2};
 `
 
