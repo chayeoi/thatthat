@@ -47,6 +47,7 @@ const CourseCard = ({ course }) => {
               <Statistic.Label content="좋아요 갯수" />
               <Statistic.Value content={likeCount} />
             </Statistic>
+              <LikeCount>{likeCount} <LikeButton /></LikeCount>
           </Grid.Column>
         </Grid>
       </Segment>
