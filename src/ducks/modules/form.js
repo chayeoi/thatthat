@@ -58,7 +58,7 @@ export default (state = initialState, action) => {
 }
 
 // Thunks
-export const registerCourse = ({
+export const createCourse = ({
   courseName,
   category,
   image,

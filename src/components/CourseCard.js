@@ -13,7 +13,7 @@ import {
 import { courseImg } from '../assets/images'
 
 const StyledRating = styled(Rating)`
-  & .active::before {
+  &.active::before {
     color: #f8ba00;
   }
 `
