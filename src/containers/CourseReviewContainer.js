@@ -19,15 +19,18 @@ class CourseReviewContainer extends Component {
   }
 
   render() {
-    const { reviews, match: { params: { courseKey } } } = this.props
+    const { reviews, currentUserId, match: { params: { courseKey } } } = this.props
     return (
       <CourseReview
         reviews={reviews}
-        buttonRender={() => (
-          <React.Fragment>
-            <EditReviewButtonContainer />
-            <DeleteReviewButtonContainer />
-          </React.Fragment>)}
+        buttonRender={uid => (
+          uid === currentUserId ?
+            <React.Fragment>
+              <EditReviewButtonContainer />
+              <DeleteReviewButtonContainer />
+            </React.Fragment>
+            : null
+        )}
         formRender={() => (<ReviewFormContainer courseKey={courseKey} />)}
       />
     )
@@ -37,6 +40,7 @@ class CourseReviewContainer extends Component {
 export default connect(
   state => ({
     reviews: state.review.reviews,
+    currentUserId: state.review.currentUserId,
   }),
   dispatch => ({
     onMount: courseKey => dispatch(loadCourseReview(courseKey)),

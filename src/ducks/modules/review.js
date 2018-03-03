@@ -11,9 +11,10 @@ export const ERROR_OCCURED = 'review/ERROR_OCCURED'
 export const isLoading = () => ({
   type: IS_LOADING,
 })
-export const completeLoading = reviews => ({
+export const completeLoading = (reviews, currentUserId) => ({
   type: COMPLETE_LOADING,
   reviews,
+  currentUserId,
 })
 export const isCreating = () => ({
   type: IS_CREATING,
@@ -30,6 +31,7 @@ export const errorOccured = errorMessage => ({
 const initialState = {
   isLoading: false,
   reviews: [],
+  currentUserId: null,
   isCreating: false,
   isCompleted: false,
   errorMessage: '',
@@ -47,6 +49,7 @@ export default (state = initialState, action) => {
         ...state,
         isLoading: false,
         reviews: action.reviews,
+        currentUserId: action.currentUserId,
       }
     case IS_CREATING:
       return {
@@ -89,10 +92,12 @@ export const loadCourseReview = courseKey => async (dispatch) => {
         ...user,
       }
     })
+    const { uid } = firebase.auth().currentUser
     const reviews = await Promise.all(pendingReviews)
-    dispatch(completeLoading(reviews))
+    dispatch(completeLoading(reviews, uid))
   } else {
-    dispatch(completeLoading(null))
+    const { uid } = firebase.auth().currentUser
+    dispatch(completeLoading(null, uid))
   }
 }
 export const createReview = (input, courseKey) => async (dispatch) => {

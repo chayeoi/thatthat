@@ -16,7 +16,7 @@ const ReviewCard = ({
     <div>{displayName}</div>
     <img src={photoURL} alt="유저 사진" />
     <div>{rating}</div>
-    <ReviewButtonWrapper render={render} />
+    <ReviewButtonWrapper uid={uid} render={render} />
   </li>
 )
 
