@@ -4,6 +4,7 @@ import LoginButtonContainer from './LoginButtonContainer'
 import LogoutButtonContainer from './LogoutButtonContainer'
 import CategoryTabContainer from './CategoryTabContainer'
 import CourseListContainer from './CourseListContainer'
+import LikeButtonContainer from './LikeButtonContainer'
 import CourseSummaryInfoContainer from './CourseSummaryInfoContainer'
 import CourseTabContainer from './CourseTabContainer'
 import CourseInfoContainer from './CourseInfoContainer'
@@ -26,6 +27,7 @@ export {
   LogoutButtonContainer,
   CategoryTabContainer,
   CourseListContainer,
+  LikeButtonContainer,
   CourseSummaryInfoContainer,
   CourseTabContainer,
   CourseInfoContainer,

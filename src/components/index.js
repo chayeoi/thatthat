@@ -4,6 +4,7 @@ import CategoryTab from './CategoryTab'
 import MainMenu from './MainMenu'
 import CourseList from './CourseList'
 import CourseCard from './CourseCard'
+import LikeButton from './LikeButton'
 import CourseSummaryInfo from './CourseSummaryInfo'
 import CourseTab from './CourseTab'
 import CourseInfo from './CourseInfo'
@@ -16,7 +17,6 @@ import MyCourseList from './MyCourseList'
 import MyReviewList from './MyReviewList'
 import MyReviewCard from './MyReviewCard'
 import CourseForm from './CourseForm'
-import LikeButton from './LikeButton'
 import Footer from './Footer'
 
 export {
@@ -26,6 +26,7 @@ export {
   MainMenu,
   CourseList,
   CourseCard,
+  LikeButton,
   CourseSummaryInfo,
   CourseTab,
   CourseInfo,
@@ -38,6 +39,5 @@ export {
   MyReviewList,
   MyReviewCard,
   CourseForm,
-  LikeButton,
   Footer,
 }
