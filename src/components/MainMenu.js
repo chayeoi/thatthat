@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Menu, Icon } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react'
 import { MAIN_COLOR } from '../constants/color'
 
 const Wrapper = styled.header`
