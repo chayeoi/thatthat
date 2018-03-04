@@ -24,10 +24,10 @@ class CourseListContainer extends Component {
   }
 
   render() {
-    const { courses } = this.props
+    const { courses, userClass } = this.props
     return (
       <React.Fragment>
-        <CourseList courses={courses} />
+        <CourseList courses={courses} userClass={userClass} />
       </React.Fragment>
     )
   }
