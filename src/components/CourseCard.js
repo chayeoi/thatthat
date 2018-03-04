@@ -44,7 +44,6 @@ const StyledRating = styled(Rating)`
 
 const ImageGrid = styled(Grid.Column)`
   padding-right: 0 !important;
-  padding-bottom: 0 !important;
 `
 
 const SquareImageBox = styled.div`
@@ -60,6 +59,10 @@ const CourseImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+`
+
+const InfoGrid = styled(Grid.Column)`
+  padding-left: 1.5rem !important;
 `
 
 const CourseCard = ({ course }) => {
@@ -81,7 +84,7 @@ const CourseCard = ({ course }) => {
               <CourseImage src={downloadURL} alt={courseName} />
             </SquareImageBox>
           </ImageGrid>
-          <Grid.Column width={12} verticalAlign="middle">
+          <InfoGrid width={12} verticalAlign="middle">
             <div >
               <OrganizationName>{organization}</OrganizationName>
               <CourseName>{courseName}</CourseName>
@@ -89,7 +92,7 @@ const CourseCard = ({ course }) => {
               <ReviewCount>리뷰 {reviewCount}</ReviewCount>
               <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
             </div>
-          </Grid.Column>
+          </InfoGrid>
         </Grid>
       </Segment>
       <Segment>
