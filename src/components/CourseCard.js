@@ -8,6 +8,7 @@ import {
 } from 'semantic-ui-react'
 import { RecentReview, LikeButton } from 'components'
 import * as color from '../constants/color'
+import * as font from '../constants/font'
 
 const OrganizationName = styled.h4`
   color: ${color.GRAY6};
@@ -16,8 +17,9 @@ const OrganizationName = styled.h4`
   `
 
 const CourseName = styled.h3`
-  color: ${color.GRAY9};
-  font-size: 20px;
+  color: ${font.TITLE.color};
+  font-size: ${font.TITLE.size};
+  font-weight: ${font.TITLE.weight};
 `
 
 const LikeCount = styled.div`
