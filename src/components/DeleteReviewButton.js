@@ -1,5 +1,17 @@
 import React, { Component } from 'react'
-import { Button } from 'semantic-ui-react'
+import styled from 'styled-components'
+import { GRAY6, GRAY9 } from '../constants/color'
+
+const DeleteButton = styled.button`
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  padding: 5px;
+  color: ${GRAY6};
+  &:hover {
+    color: ${GRAY9};
+  }
+`
 
 export default class DeleteReviewButton extends Component {
   static defaultProps = {
@@ -9,7 +21,12 @@ export default class DeleteReviewButton extends Component {
   handleClick = () => this.props.onDelete()
   render() {
     return (
-      <Button content="삭제" onClick={this.handleClick} />
+      <DeleteButton
+        className="icon-trash-empty"
+        type="button"
+        value="리뷰 삭제"
+        title="리뷰 삭제"
+      />
     )
   }
 }

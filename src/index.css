@@ -19,7 +19,7 @@ html, body, button, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, i, dl
 }
 
 ol, ul {
-  list-style: none;
+  list-style: none !important;
 }
 
 a:link,
