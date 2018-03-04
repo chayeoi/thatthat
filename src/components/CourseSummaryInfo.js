@@ -106,11 +106,11 @@ const CourseSummaryInfo = ({ course }) => {
         <InfoGrid width={12} verticalAlign="middle">
           <OrganizationName>{organization}</OrganizationName>
           <CourseName>{courseName}</CourseName>
-          <LikeCount>{likeCount} <LikeButton /></LikeCount>
+          <LikeButton likeCount={likeCount} />
           {/* 유저 인증 등급 hocs 완성 후 사용할 코드 */}
           {/* {userClass === 'reviewer' ?
-            <LikeCount>{likeCount} <LikeButton /></LikeCount> :
-            <LikeCount>{likeCount} <LikeIcon name="empty heart" /></LikeCount>
+            <LikeButton /> :
+            <LikeCount title={`좋아요 ${likeCount}개`} >{likeCount} <LikeIcon name="empty heart" /></LikeCount>
           } */}
           <UserFeedbackBox>
             <ReviewCount>리뷰 {reviewCount}</ReviewCount>
