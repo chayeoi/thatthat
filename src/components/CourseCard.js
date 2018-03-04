@@ -47,10 +47,9 @@ const ImageGrid = styled(Grid.Column)`
   padding-bottom: 0 !important;
 `
 
-const CourseImageBox = styled.div`
+const SquareImageBox = styled.div`
   position: relative;
   width: 100%;
-  min-width: 85px;
   padding-top: 100%;
 `
 
@@ -78,9 +77,9 @@ const CourseCard = ({ course }) => {
       <Segment>
         <Grid as={Link} to={`/course/${courseKey}/info`}>
           <ImageGrid width={4}>
-            <CourseImageBox>
+            <SquareImageBox>
               <CourseImage src={downloadURL} alt={courseName} />
-            </CourseImageBox>
+            </SquareImageBox>
           </ImageGrid>
           <Grid.Column width={12} verticalAlign="middle">
             <div >
