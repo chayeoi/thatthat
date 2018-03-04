@@ -34,3 +34,20 @@ a:active {
 button {
   background: none;
 }
+
+/* 본문 스타일 */
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Spoqa Han Sans', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, div, button {
+  font-family: 'Spoqa Han Sans', sans-serif !important;
+  margin: 0;
+}
+
