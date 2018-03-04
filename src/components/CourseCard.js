@@ -71,7 +71,7 @@ const StyledRating = styled(Rating)`
   }
 `
 
-const CourseCard = ({ course }) => {
+const CourseCard = ({ course, userClass }) => {
   const {
     courseKey,
     organization,
@@ -93,7 +93,7 @@ const CourseCard = ({ course }) => {
           <InfoGrid width={12} verticalAlign="middle">
             <OrganizationName>{organization}</OrganizationName>
             <CourseName>{courseName}</CourseName>
-            <LikeCount>{likeCount} <LikeButton /></LikeCount>
+            {userClass === 'reviewer' && <LikeCount>{likeCount} <LikeButton /></LikeCount>}
             <UserFeedbackBox>
               <ReviewCount>리뷰 {reviewCount}</ReviewCount>
               <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />

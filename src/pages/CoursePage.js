@@ -5,17 +5,24 @@ import {
   CategoryTabContainer,
   CourseListContainer,
 } from 'containers'
-import { withAuth } from 'hocs'
+import { withUser } from 'hocs'
 
-const CoursePage = ({ location: { pathname } }) => (
+const CoursePage = ({ userClass, location: { pathname } }) => (
   <React.Fragment>
     <MainMenuContainer />
     <CategoryTabContainer pathName={pathname} />
     <Switch>
-      <Route exact path="/courses" component={CourseListContainer} />
-      <Route path="/courses/:category" component={CourseListContainer} />
+      <Route
+        exact
+        path="/courses"
+        render={({ match }) => <CourseListContainer match={match} userClass={userClass} />}
+      />
+      <Route
+        path="/courses/:category"
+        render={({ match }) => <CourseListContainer match={match} userClass={userClass} />}
+      />
     </Switch>
   </React.Fragment>
 )
 
-export default withAuth(CoursePage)
+export default withUser(CoursePage)
