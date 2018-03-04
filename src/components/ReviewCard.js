@@ -2,8 +2,12 @@ import React from 'react'
 import { Segment, Comment, Rating } from 'semantic-ui-react'
 import styled from 'styled-components'
 
+const Wrapper = styled(Segment)`
+  margin: .5rem 0 !important;
+`
 const CommentBox = styled(Comment.Group)`
   max-width: 100% !important;
+  
 `
 
 const UserName = styled(Comment.Author)`
@@ -34,7 +38,7 @@ const ReviewCard = ({
   uid,
   render,
 }) => (
-  <Segment as="li">
+  <Wrapper as="li">
     <CommentBox>
       <Comment>
         <Comment.Avatar src={photoURL} alt={`${displayName} 프로필 사진`} />
@@ -47,7 +51,7 @@ const ReviewCard = ({
         {render(uid, reviewKey, rating)}
       </Comment>
     </CommentBox>
-  </Segment>
+  </Wrapper>
 )
 
 export default ReviewCard
