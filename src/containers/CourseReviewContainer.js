@@ -33,7 +33,12 @@ class CourseReviewContainer extends Component {
   }
 
   render() {
-    const { reviews, currentUserId, match: { params: { courseKey } } } = this.props
+    const {
+      reviews,
+      currentUserId,
+      userClass,
+      match: { params: { courseKey } },
+    } = this.props
     return (
       <CourseReview
         reviews={reviews}
@@ -47,18 +52,18 @@ class CourseReviewContainer extends Component {
             />
             : null
         )}
-        formRender={() => (<ReviewFormContainer courseKey={courseKey} />)}
+        formRender={() => (userClass === 'reviewer' && <ReviewFormContainer courseKey={courseKey} />)}
       />
     )
   }
 }
 
 export default connect(
-  state => ({
-    reviews: state.review.reviews,
-    currentUserId: state.review.currentUserId,
-    completeCreating: state.review.completeCreating,
-    completeDeleting: state.review.completeDeleting,
+  ({ review }) => ({
+    reviews: review.reviews,
+    currentUserId: review.currentUserId,
+    completeCreating: review.completeCreating,
+    completeDeleting: review.completeDeleting,
   }),
   dispatch => ({
     onMount: courseKey => dispatch(loadCourseReview(courseKey)),
