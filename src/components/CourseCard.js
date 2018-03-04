@@ -11,7 +11,7 @@ import * as color from '../constants/color'
 
 const OrganizationName = styled.h4`
   color: ${color.GRAY6};
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 8px;
   `
 
