@@ -58,12 +58,7 @@ export default (state = initialState, action) => {
         redirectToLogin: true,
       }
     case INITIALIZE_USER:
-      return {
-        ...state,
-        isLoading: false,
-        redirectToLogin: false,
-        userClass: '',
-      }
+      return initialState
     default:
       return state
   }
@@ -98,3 +93,32 @@ export const requestAuthentication = () => async (dispatch) => {
     })
   }
 }
+
+// export const requestAuthentication = () => async (dispatch) => {
+//   dispatch(isLoading())
+//   const { currentUser } = firebase.auth()
+//   if (currentUser) {
+//     const snapshot = await firebase.database().ref(`users/reviewers/${currentUser.uid}`).once('value')
+//     const reviewer = snapshot.val()
+//     if (reviewer) {
+//       dispatch(authenticateAsReviewer())
+//     } else {
+//       dispatch(authenticateAsAcademy())
+//     }
+//   } else {
+//     const unsubscribe = firebase.auth().onAuthStateChanged(async (user) => {
+//       unsubscribe()
+//       if (user) {
+//         const snapshot = await firebase.database().ref(`users/reviewers/${user.uid}`).once('value')
+//         const reviewer = snapshot.val()
+//         if (reviewer) {
+//           dispatch(authenticateAsReviewer())
+//         } else {
+//           dispatch(authenticateAsAcademy())
+//         }
+//       } else {
+//         dispatch(redirectToLogin())
+//       }
+//     })
+//   }
+// }
