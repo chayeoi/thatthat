@@ -56,12 +56,12 @@ const LikeCount = styled.div`
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 12px;
+  font-size: 10px;
   color: ${color.GRAY5};
 `
 
 const LikeIcon = styled(Icon)`
-  font-size: 1.2rem !important;
+  font-size: 14px !important;
   width: auto !important;
   margin: 0 !important;
 `
