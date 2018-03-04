@@ -100,7 +100,7 @@ const CourseSummaryInfo = ({ course }) => {
       <Grid>
         <ImageGrid width={4}>
           <SquareImageBox>
-            <CourseImage src={downloadURL} size="small" />
+            <CourseImage src={downloadURL} size="small" alt={`${courseName} 대표 이미지`} />
           </SquareImageBox>
         </ImageGrid>
         <InfoGrid width={12} verticalAlign="middle">
