@@ -29,7 +29,8 @@ const CourseImage = styled.img`
   object-fit: cover;
 `
 
-const InfoGrid = styled(Grid.Column) `
+const InfoGrid = styled(Grid.Column)`
+  position: static !important;
   padding-left: 1.5rem !important;
 `
 
