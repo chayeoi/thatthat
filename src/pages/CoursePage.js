@@ -15,11 +15,11 @@ const CoursePage = ({ userClass, location: { pathname } }) => (
       <Route
         exact
         path="/courses"
-        render={({ match }) => <CourseListContainer match={match} userClass={userClass} />}
+        render={({ match }) => <CourseListContainer userClass={userClass} match={match} />}
       />
       <Route
         path="/courses/:category"
-        render={({ match }) => <CourseListContainer match={match} userClass={userClass} />}
+        render={({ match }) => <CourseListContainer userClass={userClass} match={match} />}
       />
     </Switch>
   </React.Fragment>

@@ -1,4 +1,5 @@
 import * as firebase from 'firebase'
+import { processCourseData } from 'utils'
 
 // Actions
 export const IS_LOADING = 'category/IS_LOADING'
@@ -41,13 +42,11 @@ export default (state = initialState, action) => {
 export const loadCourseList = category => async (dispatch) => {
   dispatch(isLoading())
   if (category) {
-    const snapshot = await firebase.database().ref(`courses/${category}`).once('value')
-    const result = snapshot.val()
+    const coursesSnapshot = await firebase.database().ref(`courses/${category}`).orderByChild('createdAt').once('value')
+    const result = coursesSnapshot.val()
     if (result) {
-      const courses = Object.entries(result).map(([courseKey, course]) => ({
-        courseKey,
-        ...course,
-      })).reverse()
+      const unsortedCourses = await processCourseData(result)
+      const courses = unsortedCourses.reverse()
       dispatch(completeLoading(courses))
     } else {
       dispatch(completeLoading(null))
@@ -60,10 +59,8 @@ export const loadCourseList = category => async (dispatch) => {
         ...acc,
         ...cur,
       }), {})
-      const courses = Object.entries(rawCourses).map(([courseKey, course]) => ({
-        courseKey,
-        ...course,
-      })).reverse()
+      const unsortedCourses = await processCourseData(rawCourses)
+      const courses = unsortedCourses.sort((pre, cur) => cur.createdAt - pre.createdAt)
       dispatch(completeLoading(courses))
     } else {
       dispatch(completeLoading(null))

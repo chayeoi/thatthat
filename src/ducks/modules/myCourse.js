@@ -46,16 +46,19 @@ export const loadMyCourseList = () => async (dispatch) => {
   if (result) {
     const courseKeys = Object.keys(result)
     const pendingCourses = courseKeys.map(async (courseKey) => {
-      const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
+      const categoryRef = firebase.database().ref(`category/${courseKey}`)
+      const categorySnapshot = await categoryRef.once('value')
       const category = categorySnapshot.val()
-      const courseSnapshot = await firebase.database().ref(`courses/${category}/${courseKey}`).once('value')
+      const courseRef = firebase.database().ref(`courses/${category}/${courseKey}`)
+      const courseSnapshot = await courseRef.orderByChild('createdAt').once('value')
       const course = courseSnapshot.val()
       return {
         courseKey,
         ...course,
       }
     })
-    const courses = await Promise.all(pendingCourses)
+    const ascendingCourses = await Promise.all(pendingCourses)
+    const courses = ascendingCourses.reverse()
     dispatch(completeLoading(courses))
   } else {
     dispatch(completeLoading(null))
