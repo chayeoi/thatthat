@@ -25,6 +25,7 @@ const CourseSummaryInfo = ({ course }) => {
     reviewCount,
     ratingAvg,
     downloadURL,
+    userClass,
   } = course
   return (
     <Segment as="li">
@@ -45,6 +46,11 @@ const CourseSummaryInfo = ({ course }) => {
             <Statistic.Value content={likeCount} />
           </Statistic>
         </Grid.Column>
+          {/* 유저 인증 등급 hocs 완성 후 사용할 코드 */}
+          {/* {userClass === 'reviewer' ?
+            <LikeCount>{likeCount} <LikeButton /></LikeCount> :
+            <LikeCount>{likeCount} <LikeIcon name="empty heart" /></LikeCount>
+          } */}
       </Grid>
     </Segment>
   )
