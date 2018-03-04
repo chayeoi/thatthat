@@ -21,10 +21,10 @@ const MypageIcon = styled.i`
 const MainMenu = ({ links }) => (
   <Wrapper>
     <MenuBox inverted>
-      <Menu.Item {...links.home}>
+      <Menu.Item {...links.home} title="홈으로 이동">
         <Logo>댓댓</Logo>
       </Menu.Item>
-      <Menu.Item {...links.myPage} position="right" >
+      <Menu.Item {...links.myPage} position="right" title="마이페이지로 이동">
         <MypageIcon className="icon-user-outline" />
       </Menu.Item>
     </MenuBox>
