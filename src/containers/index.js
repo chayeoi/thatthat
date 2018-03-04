@@ -17,6 +17,7 @@ import MyLikeListContainer from './MyLikeListContainer'
 import MyCourseListContainer from './MyCourseListContainer'
 import MyReviewListContainer from './MyReviewListContainer'
 import CourseFormContainer from './CourseFormContainer'
+import RegisterFormContainer from './RegisterFormContainer'
 import FooterContainer from './FooterContainer'
 import ReviewerRoute from './ReviewerRoute'
 import AcademyRoute from './AcademyRoute'
@@ -42,6 +43,7 @@ export {
   MyReviewListContainer,
   MyCourseListContainer,
   CourseFormContainer,
+  RegisterFormContainer,
   FooterContainer,
   ReviewerRoute,
   AcademyRoute,

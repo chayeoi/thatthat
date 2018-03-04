@@ -19,6 +19,7 @@ import MyCourseList from './MyCourseList'
 import MyReviewList from './MyReviewList'
 import MyReviewCard from './MyReviewCard'
 import CourseForm from './CourseForm'
+import RegisterForm from './RegisterForm'
 import Footer from './Footer'
 import RecentReview from './RecentReview'
 import UserLevel from './UserLevel'
@@ -45,6 +46,7 @@ export {
   MyReviewList,
   MyReviewCard,
   CourseForm,
+  RegisterForm,
   Footer,
   RecentReview,
   UserLevel,
