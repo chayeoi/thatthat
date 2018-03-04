@@ -10,16 +10,23 @@ const CommentText = styled(Comment.Text)`
   margin-bottom: 0 !important;
 `
 
-const RecentReview = () => (
+const RecentReview = ({
+  review: {
+    content,
+    createdAt,
+    displayName,
+    photoURL,
+  },
+}) => (
   <Comment.Group>
     <Comment>
-      <Comment.Avatar src="https://react.semantic-ui.com/assets/images/avatar/small/matt.jpg" />
+      <Comment.Avatar src={photoURL} />
       <Comment.Content>
-        <Name>Matt</Name>
+        <Name>{displayName}</Name>
         <Comment.Metadata>
-          <div>Today at 5:42PM</div>
+          <div>{createdAt}</div>
         </Comment.Metadata>
-        <CommentText>This has been very useful for my research.</CommentText>
+        <CommentText>{content}</CommentText>
       </Comment.Content>
     </Comment>
   </Comment.Group>
