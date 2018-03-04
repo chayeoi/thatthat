@@ -94,7 +94,6 @@ const CourseCard = ({ course, userClass }) => {
           <InfoGrid width={12} verticalAlign="middle">
             <OrganizationName>{organization}</OrganizationName>
             <CourseName>{courseName}</CourseName>
-            {userClass === 'reviewer' && <LikeCount>{likeCount} <LikeButton /></LikeCount>}
             <UserFeedbackBox>
               <ReviewCount>리뷰 {reviewCount}</ReviewCount>
               <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
@@ -102,6 +101,7 @@ const CourseCard = ({ course, userClass }) => {
           </InfoGrid>
         </Grid>
       </Segment>
+      {userClass === 'reviewer' && <LikeButton likeCount={likeCount} />}
       <Segment>
         <RecentReview />
       </Segment>
