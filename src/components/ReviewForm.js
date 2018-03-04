@@ -46,7 +46,16 @@ export default class ReviewForm extends Component {
     return (
       <Form loading={isCreating}>
         <StyledRating icon="star" rating={rating} maxRating={5} onRate={this.handleRate} />
-        <MaxHeightTextArea autoHeight rows={1} value={content} onChange={this.handleChange} />
+        <label htmlFor="comment">강의리뷰
+          <MaxHeightTextArea
+            id="comment"
+            autoHeight
+            rows={1}
+            value={content}
+            placeholder="강의리뷰를 입력하세요..."
+            onChange={this.handleChange}
+          />
+        </label>
         <Form.Button onClick={this.handleClick}>등록</Form.Button>
       </Form>
     )
