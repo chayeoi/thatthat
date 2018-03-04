@@ -87,6 +87,7 @@ export const createCourse = ({
         reviewCount: 0,
         ratingAvg: 0,
         downloadURL: imageSnapshot.downloadURL,
+        createdAt: firebase.database.ServerValue.TIMESTAMP,
       })
       const contentPromise = firebase.database().ref(`courseInfo/${coursePromise.key}`).set(content)
       const categoryPromise = firebase.database().ref(`category/${coursePromise.key}`).set(category)

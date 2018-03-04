@@ -41,7 +41,7 @@ export default (state = initialState, action) => {
 export const loadCourseList = category => async (dispatch) => {
   dispatch(isLoading())
   if (category) {
-    const snapshot = await firebase.database().ref(`courses/${category}`).once('value')
+    const snapshot = await firebase.database().ref(`courses/${category}`).orderByChild('createdAt').once('value')
     const result = snapshot.val()
     if (result) {
       const courses = Object.entries(result).map(([courseKey, course]) => ({
@@ -63,7 +63,7 @@ export const loadCourseList = category => async (dispatch) => {
       const courses = Object.entries(rawCourses).map(([courseKey, course]) => ({
         courseKey,
         ...course,
-      })).reverse()
+      })).sort((pre, cur) => cur.createdAt - pre.createdAt)
       dispatch(completeLoading(courses))
     } else {
       dispatch(completeLoading(null))
