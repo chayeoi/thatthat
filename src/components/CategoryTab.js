@@ -3,13 +3,12 @@ import styled from 'styled-components'
 import { Menu } from 'semantic-ui-react'
 import * as color from '../constants/color'
 
-const CategoryBox = styled(Menu)`
+const TabBox = styled(Menu)`
   height: 40px;
 `
 
-const CategoryItem = styled(Menu.Item)`
-  font-weight: 600 !important;
-  color: ${color.GRAY5} !important;
+const TabItem = styled(Menu.Item)`
+  color: ${color.GRAY6} !important;
   border: 0;
   &.active {
     color: ${color.MAIN_COLOR} !important;
@@ -31,9 +30,9 @@ export default class CategoryTab extends Component {
     const { categories } = this.props
     return (
       <div>
-        <CategoryBox pointing secondary widths={5}>
+        <TabBox pointing secondary widths={5}>
           {categories.map(category => (
-            <CategoryItem
+            <TabItem
               key={category.name}
               name={category.name}
               active={activeItem === category.link.to}
@@ -41,7 +40,7 @@ export default class CategoryTab extends Component {
               {...category.link}
             />
           ))}
-        </CategoryBox>
+        </TabBox>
       </div>
     )
   }

@@ -1,5 +1,21 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Menu } from 'semantic-ui-react'
+import * as color from '../constants/color'
+
+const TabBox = styled(Menu)`
+  height: 40px;
+  margin-top: 20px !important;
+`
+
+const TabItem = styled(Menu.Item)`
+  color: ${color.GRAY6} !important;
+  border: 0;
+  &.active {
+    color: ${color.MAIN_COLOR} !important;
+    border-color: ${color.MAIN_COLOR} !important;
+  }
+`
 
 export default class MyPageTab extends Component {
   state = {
@@ -15,9 +31,9 @@ export default class MyPageTab extends Component {
     const { tabs } = this.props
     return (
       <div>
-        <Menu pointing secondary color="red">
+        <TabBox pointing secondary widths={2}>
           {tabs.map(tab => (
-            <Menu.Item
+            <TabItem
               key={tab.name}
               name={tab.name}
               active={activeItem === tab.link.to}
@@ -25,7 +41,7 @@ export default class MyPageTab extends Component {
               {...tab.link}
             />
           ))}
-        </Menu>
+        </TabBox>
       </div>
     )
   }

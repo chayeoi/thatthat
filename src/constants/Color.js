@@ -1,4 +1,5 @@
 export const MAIN_COLOR = '#ed234b'
+export const SUB_COLOR = '#00b5ad'
 
 // Background Color
 export const GRAY0 = '#f8f9fa'

@@ -21,6 +21,7 @@ import MyReviewCard from './MyReviewCard'
 import CourseForm from './CourseForm'
 import Footer from './Footer'
 import RecentReview from './RecentReview'
+import UserLevel from './UserLevel'
 
 export {
   LoginButton,
@@ -46,4 +47,5 @@ export {
   CourseForm,
   Footer,
   RecentReview,
+  UserLevel,
 }

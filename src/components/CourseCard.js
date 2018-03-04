@@ -8,16 +8,41 @@ import {
 } from 'semantic-ui-react'
 import { RecentReview, LikeButton } from 'components'
 import * as color from '../constants/color'
+import * as font from '../constants/font'
+
+const ImageGrid = styled(Grid.Column) `
+  padding-right: 0 !important;
+`
+
+const SquareImageBox = styled.div`
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+`
+
+const CourseImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`
+
+const InfoGrid = styled(Grid.Column) `
+  padding-left: 1.5rem !important;
+`
 
 const OrganizationName = styled.h4`
   color: ${color.GRAY6};
-  font-size: 14px;
-  margin-bottom: 8px;
-  `
+  font-size: 13px;
+  font-weight: bold;
+`
 
 const CourseName = styled.h3`
-  color: ${color.GRAY9};
-  font-size: 20px;
+  color: ${font.TITLE.color};
+  font-size: ${font.TITLE.size};
+  font-weight: ${font.TITLE.weight};
 `
 
 const LikeCount = styled.div`
@@ -26,6 +51,10 @@ const LikeCount = styled.div`
   right: 1rem;
   font-size: 12px;
   color: ${color.GRAY5};
+`
+
+const UserFeedbackBox = styled.div`
+  margin-top: 5px;
 `
 
 const ReviewCount = styled.div`
@@ -40,22 +69,6 @@ const StyledRating = styled(Rating)`
   &.active::before {
     color: #f8ba00;
   }
-`
-
-const ImageGrid = styled(Grid.Column)`
-  padding-right: 0 !important;
-  padding-bottom: 0 !important;
-`
-
-const CourseImageBox = styled.div`
-  width: 80px;
-  height: 80px;
-`
-
-const CourseImage = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 `
 
 const CourseCard = ({ course }) => {
@@ -73,19 +86,19 @@ const CourseCard = ({ course }) => {
       <Segment>
         <Grid as={Link} to={`/course/${courseKey}/info`}>
           <ImageGrid width={4}>
-            <CourseImageBox>
+            <SquareImageBox>
               <CourseImage src={downloadURL} alt={courseName} />
-            </CourseImageBox>
+            </SquareImageBox>
           </ImageGrid>
-          <Grid.Column width={12} verticalAlign="middle">
-            <div >
-              <OrganizationName>{organization}</OrganizationName>
-              <CourseName>{courseName}</CourseName>
-              <LikeCount>{likeCount} <LikeButton /></LikeCount>
+          <InfoGrid width={12} verticalAlign="middle">
+            <OrganizationName>{organization}</OrganizationName>
+            <CourseName>{courseName}</CourseName>
+            <LikeCount>{likeCount} <LikeButton /></LikeCount>
+            <UserFeedbackBox>
               <ReviewCount>리뷰 {reviewCount}</ReviewCount>
               <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
-            </div>
-          </Grid.Column>
+            </UserFeedbackBox>
+          </InfoGrid>
         </Grid>
       </Segment>
       <Segment>
