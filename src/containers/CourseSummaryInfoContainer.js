@@ -31,9 +31,9 @@ class CourseSummaryInfoContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    isLoading: state.detail.isLoading,
-    course: state.detail.course,
+  ({ detail }) => ({
+    isLoading: detail.isLoading,
+    course: detail.course,
   }),
   (dispatch, ownProps) => ({
     onMount: () => dispatch(loadCourse(ownProps.courseKey)),

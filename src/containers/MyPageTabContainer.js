@@ -41,8 +41,8 @@ const MyPageTabContainer = ({ userClass, pathName }) => (
 )
 
 export default connect(
-  state => ({
-    userClass: state.user.userClass,
+  ({ user }) => ({
+    userClass: user.userClass,
   }),
   null,
 )(MyPageTabContainer)

@@ -22,8 +22,8 @@ class MyCourseListContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    courses: state.myCourse.courses,
+  ({ myCourse }) => ({
+    courses: myCourse.courses,
   }),
   dispatch => ({
     onMount: () => dispatch(loadMyCourseList()),

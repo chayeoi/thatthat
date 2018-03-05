@@ -34,8 +34,8 @@ class CourseListContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    courses: state.category.courses,
+  ({ category }) => ({
+    courses: category.courses,
   }),
   dispatch => ({
     onMount: (category) => {
