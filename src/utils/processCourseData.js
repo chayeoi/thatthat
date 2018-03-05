@@ -21,9 +21,9 @@ const processCourseData = async (rawCourses) => {
     const recentReviewInfo = recentReviewInfoSnapshot.val()
     let recentReview = null
     if (recentReviewInfo) {
-      const [[recentReviewKey, uid]] = Object.entries(recentReviewInfo)
+      const [[recentReviewKey, reviewerId]] = Object.entries(recentReviewInfo)
       const recentReviewPromise = firebase.database().ref(`reviews/${recentReviewKey}`).once('value')
-      const reviewerPromise = firebase.database().ref(`users/reviewers/${uid}`).once('value')
+      const reviewerPromise = firebase.database().ref(`users/reviewers/${reviewerId}`).once('value')
       const [
         recentReviewSnapshot,
         reviewerSnapshot,
