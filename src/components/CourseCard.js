@@ -10,6 +10,10 @@ import { RecentReview, LikeButton } from 'components'
 import * as color from '../constants/color'
 import * as font from '../constants/font'
 
+const Wrapper = styled(Segment.Group)`
+  margin: 0 0 .5rem !important;
+`
+
 const ImageGrid = styled(Grid.Column) `
   padding-right: 0 !important;
 `
@@ -83,7 +87,7 @@ const CourseCard = ({ course, userClass }) => {
     downloadURL,
   } = course
   return (
-    <Segment.Group as="li">
+    <Wrapper as="li">
       <Segment>
         <Grid as={Link} to={`/course/${courseKey}/info`}>
           <ImageGrid width={4}>
@@ -105,7 +109,7 @@ const CourseCard = ({ course, userClass }) => {
       <Segment>
         <RecentReview />
       </Segment>
-    </Segment.Group>
+    </Wrapper>
   )
 }
 
