@@ -15,10 +15,14 @@ const RoundedButton = styled.button`
     background-color: ${MAIN_COLOR};
     color: white;
   }
+  &:before {
+    margin-right: 5px;
+    font-weight: normal;
+  }
 `
 
 const LogoutButton = ({ onLogout }) => (
-  <RoundedButton onClick={onLogout}>로그아웃</RoundedButton>
+  <RoundedButton onClick={onLogout} className="icon-off" >로그아웃</RoundedButton>
 )
 
 export default LogoutButton
