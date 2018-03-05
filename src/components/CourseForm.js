@@ -64,6 +64,8 @@ export default class CourseForm extends Component {
             </Message>
           )
         }
+            <label htmlFor="courseCategory">강의 분류</label>
+            <Category id="courseCategory" name="category" value={category} placeholder="프로그래밍" labeled="true" fluid search selection options={categories} onChange={this.handleChange} />
       </React.Fragment>
     )
   }
