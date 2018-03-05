@@ -13,7 +13,7 @@ class DeleteReviewButtonContainer extends Component {
 }
 
 export default connect(
-  state => ({}),
+  null,
   (dispatch, {
     uid,
     reviewKey,

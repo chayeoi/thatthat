@@ -11,6 +11,7 @@ const Wrapper = styled.ul`
 
 const MyLikeList = ({ likes }) => (
   <Wrapper>
+    {likes.length ? <div>총 {likes.length}개의 관심 강의가 있습니다.</div> : null}
     <ul>
       {likes ?
         likes.map(course => (

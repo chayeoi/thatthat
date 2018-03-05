@@ -10,14 +10,17 @@ const Wrapper = styled.ul`
 `
 
 const MyCourseList = ({ courses }) => (
-  <Wrapper>
-    {courses ?
-      courses.map(course => (
-        <CourseCard key={course.courseKey} course={course} />
-      ))
-      : <div>등록한 강의가 없습니다.</div>
-    }
-  </Wrapper>
+  <React.Fragment>
+    {courses.length ? <div>총 {courses.length}개의 등록한 강의가 있습니다.</div> : null}
+    <Wrapper>
+      {courses ?
+        courses.map(course => (
+          <CourseCard key={course.courseKey} course={course} />
+        ))
+        : <div>등록한 강의가 없습니다.</div>
+      }
+    </Wrapper>
+  </React.Fragment>
 )
 
 export default MyCourseList

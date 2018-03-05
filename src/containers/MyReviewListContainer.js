@@ -22,8 +22,8 @@ class MyReviewListContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    reviews: state.myReview.reviews,
+  ({ myReview }) => ({
+    reviews: myReview.reviews,
   }),
   dispatch => ({
     onMount: () => dispatch(loadMyReviewList()),

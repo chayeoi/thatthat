@@ -22,8 +22,8 @@ class MyLikeListContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    likes: state.myLike.likes,
+  ({ myLike }) => ({
+    likes: myLike.likes,
   }),
   dispatch => ({
     onMount: () => dispatch(loadMyLikeList()),

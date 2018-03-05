@@ -10,14 +10,17 @@ const Wrapper = styled.ul`
 `
 
 const MyReviewList = ({ reviews }) => (
-  <Wrapper>
-    {reviews ?
-      reviews.map(review => (
-        <MyReviewCard key={review.reviewKey} review={review} />
-      ))
-      : <div>등록한 리뷰가 없습니다.</div>
-    }
-  </Wrapper>
+  <React.Fragment>
+    {reviews.length ? <div>총 {reviews.length}개의 리뷰가 있습니다.</div> : null}
+    <Wrapper>
+      {reviews ?
+        reviews.map(review => (
+          <MyReviewCard key={review.reviewKey} review={review} />
+        ))
+        : <div>등록한 리뷰가 없습니다.</div>
+      }
+    </Wrapper>
+  </React.Fragment>
 )
 
 export default MyReviewList

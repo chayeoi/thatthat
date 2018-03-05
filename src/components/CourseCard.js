@@ -6,7 +6,7 @@ import {
   Segment,
   Rating,
 } from 'semantic-ui-react'
-import { RecentReview, LikeButton } from 'components'
+import { RecentReview } from 'components'
 import * as color from '../constants/color'
 import * as font from '../constants/font'
 
@@ -77,7 +77,7 @@ const CourseRating = styled(Rating)`
   position: absolute;
 `
 
-const CourseCard = ({ course, userClass }) => {
+const CourseCard = ({ course, userClass, render }) => {
   const {
     courseKey,
     organization,
@@ -87,6 +87,7 @@ const CourseCard = ({ course, userClass }) => {
     ratingAvg,
     downloadURL,
     recentReview,
+    myLike,
   } = course
   return (
     <Wrapper as="li" className="cardshadow">
@@ -107,7 +108,7 @@ const CourseCard = ({ course, userClass }) => {
           </InfoGrid>
         </Grid>
       </Segment>
-      {userClass === 'reviewer' && <LikeButton likeCount={likeCount} />}
+      {userClass === 'reviewer' && render({ courseKey, likeCount, myLike })}
       <Segment>
         {recentReview ?
           <RecentReview review={recentReview} />

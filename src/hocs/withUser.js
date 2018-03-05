@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom'
 import { Loader } from 'semantic-ui-react'
 import { requestAuthentication } from 'ducks/modules/user'
 
-const withAuth = WrappedComponent => (
+const withUser = WrappedComponent => (
   connect(
     ({ user }) => ({
       isLoading: user.isLoading,
@@ -47,4 +47,4 @@ const withAuth = WrappedComponent => (
   })
 )
 
-export default withAuth
+export default withUser

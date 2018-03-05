@@ -22,8 +22,8 @@ class LogoutButtonContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    redirectToLogin: state.auth.redirectToLogin,
+  ({ auth }) => ({
+    redirectToLogin: auth.redirectToLogin,
   }),
   dispatch => ({
     onLogout: async () => {

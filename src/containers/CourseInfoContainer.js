@@ -22,8 +22,8 @@ class CourseInfoContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    content: state.info.content,
+  ({ info }) => ({
+    content: info.content,
   }),
   dispatch => ({
     onMount: courseKey => dispatch(loadCourseInfo(courseKey)),
