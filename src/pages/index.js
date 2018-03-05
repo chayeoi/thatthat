@@ -3,7 +3,7 @@ import LoginPage from './LoginPage'
 import CoursePage from './CoursePage'
 import CourseDetailPage from './CourseDetailPage'
 import MyPage from './MyPage'
-import RegistrationPage from './RegistrationPage'
+import RegisteringPage from './RegisteringPage'
 import AboutPage from './AboutPage'
 import NotFoundPage from './NotFoundPage'
 
@@ -13,7 +13,7 @@ export {
   CoursePage,
   CourseDetailPage,
   MyPage,
-  RegistrationPage,
+  RegisteringPage,
   AboutPage,
   NotFoundPage,
 }
