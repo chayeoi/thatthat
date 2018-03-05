@@ -86,6 +86,7 @@ const CourseCard = ({ course, userClass, render }) => {
     ratingAvg,
     downloadURL,
     recentReview,
+    myLike,
   } = course
   return (
     <Wrapper as="li">
@@ -106,7 +107,7 @@ const CourseCard = ({ course, userClass, render }) => {
           </InfoGrid>
         </Grid>
       </Segment>
-      {userClass === 'reviewer' && render({ courseKey, likeCount })}
+      {userClass === 'reviewer' && render({ courseKey, likeCount, myLike })}
       <Segment>
         {recentReview ?
           <RecentReview review={recentReview} />

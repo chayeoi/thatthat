@@ -23,8 +23,8 @@ const Heart = styled(Rating)`
   }
 `
 
-const LikeButton = ({ likeCount }) => (
-  <Wrapper title="좋아요" >{likeCount} <Heart icon="heart" /></Wrapper>
+const LikeButton = ({ likeCount, myLike }) => (
+  <Wrapper title="좋아요" >{likeCount} <Heart icon="heart" rating={myLike} /></Wrapper>
 )
 
 export default LikeButton
