@@ -9,11 +9,16 @@ const Wrapper = styled.ul`
   background-color: ${color.GRAY2};
 `
 
-const CourseList = ({ courses, userClass }) => (
+const CourseList = ({ courses, userClass, render }) => (
   <Wrapper>
     {courses ?
       courses.map(course => (
-        <CourseCard key={course.courseKey} course={course} userClass={userClass} />
+        <CourseCard
+          key={course.courseKey}
+          course={course}
+          userClass={userClass}
+          render={render}
+        />
       ))
       : <li>등록된 강의가 없습니다.</li>
     }

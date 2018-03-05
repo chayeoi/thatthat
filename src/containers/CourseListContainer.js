@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { CourseList } from 'components'
+import { LikeButtonContainer } from 'containers'
 import { loadCourseList } from 'ducks/modules/category'
 
 class CourseListContainer extends Component {
@@ -27,7 +28,11 @@ class CourseListContainer extends Component {
     const { courses, userClass } = this.props
     return (
       <React.Fragment>
-        <CourseList courses={courses} userClass={userClass} />
+        <CourseList
+          courses={courses}
+          userClass={userClass}
+          render={props => <LikeButtonContainer {...props} />}
+        />
       </React.Fragment>
     )
   }
