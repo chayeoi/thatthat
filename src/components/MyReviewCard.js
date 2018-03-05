@@ -6,12 +6,13 @@ import * as color from '../constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled(Segment)`
-  margin: 0 0 .5rem !important;
+  padding: 1rem 1.5rem !important;
+  margin: 0 0 .7rem !important;
 `
 
 const CourseName = styled.h3`
   color: ${font.TITLE.color};
-  font-size: ${font.TITLE.size};
+  font-size: 18px;
   font-weight: ${font.TITLE.weight};
   display: inline-block;
   padding-right: 10px;
@@ -40,7 +41,7 @@ const StyledRating = styled(Rating)`
 `
 
 const CommentText = styled(Comment.Text)`
-  margin-top: 4px !important;
+  margin-top: 8px !important;
   margin-bottom: 0 !important;
 `
 
