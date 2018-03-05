@@ -10,14 +10,12 @@ const Wrapper = styled.div`
   width: 100%;
 `
 
-const StyledRating = styled(Rating)`
-  display: block !important;
-  margin-top: 5px;
-  font-size: 1rem !important;
-  &.active::before, &.selected::before {
-    color: black !important;
-  }
-`
+// const StyledRating = styled(Rating)`
+//   display: block !important;
+//   text-align: center;
+//   margin-top: 5px;
+//   font-size: 1rem !important;
+// `
 
 const MaxHeightTextArea = styled(TextArea)`
   max-height: 75px;
@@ -69,6 +67,12 @@ export default class ReviewForm extends Component {
             />
           </label>
           <Form.Button onClick={this.handleClick}>등록</Form.Button>
+          {/* <StyledRating
+            icon="star"
+            rating={rating}
+            maxRating={5}
+            onRate={this.handleRate}
+          /> */}
         </Form>
       </Wrapper>
     )
