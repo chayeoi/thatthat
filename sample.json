@@ -601,9 +601,10 @@
     "-L4KRZHeDXCvW9a8CN1h": "planMaking",
     "-L6UdrMFI-r5k5GPMorY": "planMaking"
   },
-  "changingReq": {
+  "registeringReq": {
     "78HkrC5iaMcNecc4A1nzn1afO4Z2": {
-      "organization": "코드잇"
+      "organization": "코드잇",
+      "downloadURL": "https://firebasestorage.googleapis.com/v0/b/thatthat-dev-y.appspot.com/o/courses%2FjmE6iw8Ie9StiVAAbuMt60Cpley21520097576887?alt=media&token=b25a7238-7fba-4d9f-ab81-f3e20ae9e3e5"
     }
   }
 }

@@ -16,11 +16,11 @@ class CourseFormContainer extends Component {
 }
 
 export default connect(
-  state => ({
-    isCreating: state.form.isCreating,
-    completeCreating: state.form.completeCreating,
-    courseKey: state.form.courseKey,
-    errorMessage: state.form.errorMessage,
+  ({ form }) => ({
+    isCreating: form.isCreating,
+    completeCreating: form.completeCreating,
+    courseKey: form.courseKey,
+    errorMessage: form.errorMessage,
   }),
   dispatch => ({
     onSubmit: input => dispatch(createCourse(input)),

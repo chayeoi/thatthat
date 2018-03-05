@@ -85,6 +85,7 @@ const CourseCard = ({ course, userClass }) => {
     reviewCount,
     ratingAvg,
     downloadURL,
+    recentReview,
   } = course
   return (
     <Wrapper as="li">
@@ -107,7 +108,10 @@ const CourseCard = ({ course, userClass }) => {
       </Segment>
       {userClass === 'reviewer' && <LikeButton likeCount={likeCount} />}
       <Segment>
-        <RecentReview />
+        {recentReview ?
+          <RecentReview review={recentReview} />
+          : <React.Fragment>등록된 리뷰가 없습니다.</React.Fragment>
+        }
       </Segment>
     </Wrapper>
   )
