@@ -12,6 +12,7 @@ import * as font from '../constants/font'
 
 const Wrapper = styled(Segment.Group)`
   margin: 0 0 .7rem !important;
+  border: none !important;
 `
 
 const ImageGrid = styled(Grid.Column)`
@@ -88,7 +89,7 @@ const CourseCard = ({ course, userClass }) => {
     recentReview,
   } = course
   return (
-    <Wrapper as="li">
+    <Wrapper as="li" className="cardshadow">
       <Segment>
         <Grid as={Link} to={`/course/${courseKey}/info`}>
           <ImageGrid width={4}>
