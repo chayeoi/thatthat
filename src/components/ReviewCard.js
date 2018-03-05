@@ -3,7 +3,7 @@ import { Segment, Comment, Rating } from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Wrapper = styled(Segment)`
-  margin: 0 0 .5rem !important;
+  margin: 0 0 .7rem !important;
 `
 const CommentBox = styled(Comment.Group)`
   max-width: 100% !important;

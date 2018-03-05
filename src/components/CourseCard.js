@@ -11,7 +11,7 @@ import * as color from '../constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled(Segment.Group)`
-  margin: 0 0 .5rem !important;
+  margin: 0 0 .7rem !important;
 `
 
 const ImageGrid = styled(Grid.Column)`
