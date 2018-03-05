@@ -14,7 +14,7 @@ const Wrapper = styled(Segment.Group)`
   margin: 0 0 .5rem !important;
 `
 
-const ImageGrid = styled(Grid.Column) `
+const ImageGrid = styled(Grid.Column)`
   padding-right: 0 !important;
 `
 
