@@ -7,7 +7,6 @@ const Wrapper = styled(Segment)`
 `
 const CommentBox = styled(Comment.Group)`
   max-width: 100% !important;
-  
 `
 
 const UserName = styled(Comment.Author)`
@@ -23,9 +22,6 @@ const StyledRating = styled(Rating)`
   display: block !important;
   margin-top: 5px;
   font-size: .7rem !important;
-  &.active::before {
-    color: #f8ba00;
-  }
 `
 
 const ReviewCard = ({
