@@ -59,6 +59,7 @@ const LikeCount = styled.div`
 `
 
 const UserFeedbackBox = styled.div`
+  position: relative;
   margin-top: 5px;
 `
 
@@ -70,10 +71,9 @@ const ReviewCount = styled.div`
   padding-right: 10px;
 `
 
-const StyledRating = styled(Rating)`
-  &.active::before {
-    color: #f8ba00;
-  }
+const CourseRating = styled(Rating)`
+  bottom: 0;
+  position: absolute;
 `
 
 const CourseCard = ({ course, userClass }) => {
@@ -101,7 +101,7 @@ const CourseCard = ({ course, userClass }) => {
             <CourseName>{courseName}</CourseName>
             <UserFeedbackBox>
               <ReviewCount>리뷰 {reviewCount}</ReviewCount>
-              <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
+              <CourseRating defaultRating={ratingAvg} maxRating={5} disabled />
             </UserFeedbackBox>
           </InfoGrid>
         </Grid>
