@@ -35,6 +35,16 @@ button {
   background: none;
 }
 
+/* 숨김 콘텐츠 */
+
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
 /* 본문 스타일 */
 
 html {
