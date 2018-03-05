@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { GRAY6, GRAY9 } from '../constants/color'
+import { GRAY5, GRAY9 } from '../constants/color'
 
 const DeleteButton = styled.button`
   position: absolute;
   top: -7px;
   right: -5px;
   padding: 5px;
-  color: ${GRAY6};
+  color: ${GRAY5};
   &:hover {
     color: ${GRAY9};
   }
