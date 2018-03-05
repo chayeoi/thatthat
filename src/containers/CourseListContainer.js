@@ -25,13 +25,17 @@ class CourseListContainer extends Component {
   }
 
   render() {
-    const { courses, userClass } = this.props
+    const {
+      courses,
+      userClass,
+      match: { params: { category } },
+    } = this.props
     return (
       <React.Fragment>
         <CourseList
           courses={courses}
           userClass={userClass}
-          render={props => <LikeButtonContainer {...props} />}
+          render={props => <LikeButtonContainer category={category} {...props} />}
         />
       </React.Fragment>
     )
@@ -43,8 +47,6 @@ export default connect(
     courses: category.courses,
   }),
   dispatch => ({
-    onMount: (category) => {
-      dispatch(loadCourseList(category))
-    },
+    onMount: category => dispatch(loadCourseList(category)),
   }),
 )(CourseListContainer)

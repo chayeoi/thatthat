@@ -11,7 +11,6 @@ import review from './review'
 import registering from './registering'
 import label from './label'
 
-
 export {
   auth,
   category,

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Rating } from 'semantic-ui-react'
 import * as color from '../constants/color'
@@ -23,8 +23,26 @@ const Heart = styled(Rating)`
   }
 `
 
-const LikeButton = ({ likeCount, myLike }) => (
-  <Wrapper title="좋아요" >{likeCount} <Heart icon="heart" rating={myLike} /></Wrapper>
-)
+export default class LikeButton extends Component {
+  static defaultProps = {
+    likeCount: 0,
+    myLike: 0,
+    onLike: () => {},
+  }
 
-export default LikeButton
+  handleRate = () => this.props.onLike()
+
+  render() {
+    const { likeCount, myLike } = this.props
+    return (
+      <Wrapper title="좋아요">
+        {likeCount}
+        <Heart
+          icon="heart"
+          defaultRating={myLike}
+          onRate={this.handleRate}
+        />
+      </Wrapper>
+    )
+  }
+}
