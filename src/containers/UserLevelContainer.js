@@ -4,7 +4,7 @@ import { UserLevel } from 'components'
 
 const link = {
   as: Link,
-  to: '/registration',
+  to: '/registering',
 }
 
 const UserLevelContainer = () => (

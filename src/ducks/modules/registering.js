@@ -1,10 +1,10 @@
 import * as firebase from 'firebase'
 
 // Actions
-export const IS_REGISTERING = 'registration/IS_REGISTERING'
-export const COMPLETE_REGISTERING = 'registration/COMPLETE_REGISTERING'
-export const ERROR_OCCURED = 'registration/ERROR_OCCURED'
-export const INITIALIZE_REGISTRATION = 'registration/INITIALIZE_REGISTRATION'
+export const IS_REGISTERING = 'registering/IS_REGISTERING'
+export const COMPLETE_REGISTERING = 'registering/COMPLETE_REGISTERING'
+export const ERROR_OCCURED = 'registering/ERROR_OCCURED'
+export const INITIALIZE_REGISTERING = 'registering/INITIALIZE_REGISTERING'
 
 // Action Creators
 export const isRegistering = () => ({
@@ -17,8 +17,8 @@ export const errorOccured = errorMessage => ({
   type: ERROR_OCCURED,
   errorMessage,
 })
-export const initializeRegistration = () => ({
-  type: INITIALIZE_REGISTRATION,
+export const initializeRegistering = () => ({
+  type: INITIALIZE_REGISTERING,
 })
 
 // Reducer
@@ -47,7 +47,7 @@ export default (state = initialState, action) => {
         isRegistering: false,
         errorMessage: action.errorMessage,
       }
-    case INITIALIZE_REGISTRATION:
+    case INITIALIZE_REGISTERING:
       return initialState
     default:
       return state

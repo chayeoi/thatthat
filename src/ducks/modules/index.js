@@ -8,7 +8,7 @@ import user from './user'
 import form from './form'
 import info from './info'
 import review from './review'
-import registration from './registration'
+import registering from './registering'
 
 
 export {
@@ -22,5 +22,5 @@ export {
   form,
   info,
   review,
-  registration,
+  registering,
 }
