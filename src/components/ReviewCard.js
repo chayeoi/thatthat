@@ -3,11 +3,10 @@ import { Segment, Comment, Rating } from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Wrapper = styled(Segment)`
-  margin: 0 0 .5rem !important;
+  margin: 0 0 .7rem !important;
 `
 const CommentBox = styled(Comment.Group)`
   max-width: 100% !important;
-  
 `
 
 const UserName = styled(Comment.Author)`
@@ -23,9 +22,6 @@ const StyledRating = styled(Rating)`
   display: block !important;
   margin-top: 5px;
   font-size: .7rem !important;
-  &.active::before {
-    color: #f8ba00;
-  }
 `
 
 const ReviewCard = ({

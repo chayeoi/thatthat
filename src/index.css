@@ -35,6 +35,17 @@ button {
   background: none;
 }
 
+/* 숨김 콘텐츠 */
+
+.readable-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
 /* 본문 스타일 */
 
 html {
@@ -51,3 +62,18 @@ h1, h2, h3, h4, h5, h6, div, button {
   margin: 0;
 }
 
+/* 그림자 스타일 */
+
+.cardshadow {
+  -webkit-transition: all 235ms ease 0s;
+  -moz-transition: all 235ms ease 0s;
+  -o-transition: all 235ms ease 0s;
+  transition: all 235ms ease 0s;
+  box-shadow: 15px 28px 25px -18px rgba(202, 39, 39, 0.2);
+}
+.cardshadow:hover {
+  box-shadow: 2px 8px 5px -5px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translate3d(0, 1.5px, 0);
+  -ms-transform: translate3d(0, 1.5px, 0);
+  transform: translate3d(0, 1.5px, 0)
+}
