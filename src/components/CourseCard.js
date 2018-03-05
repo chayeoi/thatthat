@@ -39,9 +39,9 @@ const InfoGrid = styled(Grid.Column)`
 `
 
 const OrganizationName = styled.h4`
-  color: ${color.GRAY6};
-  font-size: 13px;
-  font-weight: bold;
+  color: ${font.SUB_TITLE.color};
+  font-size: ${font.SUB_TITLE.size};
+  font-weight: ${font.SUB_TITLE.weight};
 `
 
 const CourseName = styled.h3`
