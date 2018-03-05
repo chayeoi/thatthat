@@ -9,6 +9,7 @@ import form from './form'
 import info from './info'
 import review from './review'
 import registering from './registering'
+import label from './label'
 
 
 export {
@@ -23,4 +24,5 @@ export {
   info,
   review,
   registering,
+  label,
 }

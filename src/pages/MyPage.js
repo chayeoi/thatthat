@@ -12,7 +12,7 @@ import { withUser } from 'hocs'
 const MyPage = ({ userClass = '', location: { pathname } }) => (
   <React.Fragment>
     <MainMenuContainer />
-    <UserInfoContainer />
+    <UserInfoContainer userClass={userClass} />
     <LogoutButtonContainer />
     <MyPageTabContainer userClass={userClass} pathName={pathname} />
     {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}

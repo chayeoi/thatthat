@@ -23,6 +23,8 @@ import RegisterForm from './RegisterForm'
 import Footer from './Footer'
 import RecentReview from './RecentReview'
 import RegisterLink from './RegisterLink'
+import PendingLabel from './PendingLabel'
+import AcademyLabel from './AcademyLabel'
 
 export {
   LoginButton,
@@ -50,4 +52,6 @@ export {
   Footer,
   RecentReview,
   RegisterLink,
+  PendingLabel,
+  AcademyLabel,
 }
