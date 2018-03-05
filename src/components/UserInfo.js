@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Image } from 'semantic-ui-react'
 import { UserLevel } from 'components'
 import * as font from '../constants/font'
 
@@ -38,6 +37,7 @@ const UserInfo = ({
     displayName,
     email,
   },
+  render,
 }) => (
   <Wrapper>
     {/* <Image src={photoURL} size="mini" circular /> */}
@@ -46,7 +46,7 @@ const UserInfo = ({
     </SquareImageBox>
     <UserName>{displayName}</UserName>
     <div>{email}</div>
-    <UserLevel />
+    {render()}
   </Wrapper>
 )
 

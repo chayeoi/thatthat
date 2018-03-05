@@ -21,6 +21,7 @@ import RegisterFormContainer from './RegisterFormContainer'
 import FooterContainer from './FooterContainer'
 import ReviewerRoute from './ReviewerRoute'
 import AcademyRoute from './AcademyRoute'
+import UserLevelContainer from './UserLevelContainer'
 
 
 export {
@@ -47,4 +48,5 @@ export {
   FooterContainer,
   ReviewerRoute,
   AcademyRoute,
+  UserLevelContainer,
 }
