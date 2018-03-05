@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   position: absolute;
   top: 1rem;
   right: 1rem;
-  width: 30px;
+  /* width: 30px; */
   text-align: right;
   font-size: 10px;
   color: ${color.GRAY5};
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `
 
 const Heart = styled(Rating)`
-  font-size: 14px !important;
+  font-size: 16px !important;
   &.ui.heart.rating .icon {
     width: auto !important;
   }

@@ -4,7 +4,7 @@ import { ReviewCard } from 'components'
 import { GRAY2 } from '../constants/color'
 
 const Wrapper = styled.ul`
-  padding: 1em;
+  padding: 1rem;
   min-height: 100vh;
   background-color: ${GRAY2};
 `

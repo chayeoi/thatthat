@@ -3,3 +3,8 @@ export const TITLE = {
   size: '20px',
   weight: 'bold',
 }
+export const SUB_TITLE = {
+  color: '#868e96',
+  size: '13px',
+  weight: 'bold',
+}

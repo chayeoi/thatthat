@@ -11,7 +11,8 @@ import * as font from '../constants/font'
 
 const Wrapper = styled.div`
   position: relative;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
+  margin-top: .5rem;
   min-height: 135px !important;
 `
 
@@ -60,7 +61,7 @@ const LikeCount = styled.div`
 `
 
 const LikeIcon = styled(Icon)`
-  font-size: 14px !important;
+  font-size: 16px !important;
   width: auto !important;
   margin: 0 !important;
 `

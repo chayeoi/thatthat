@@ -11,7 +11,8 @@ import * as color from '../constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled(Segment.Group)`
-  margin: 0 0 .5rem !important;
+  margin: 0 0 .7rem !important;
+  border: none !important;
 `
 
 const ImageGrid = styled(Grid.Column)`
@@ -39,9 +40,9 @@ const InfoGrid = styled(Grid.Column)`
 `
 
 const OrganizationName = styled.h4`
-  color: ${color.GRAY6};
-  font-size: 13px;
-  font-weight: bold;
+  color: ${font.SUB_TITLE.color};
+  font-size: ${font.SUB_TITLE.size};
+  font-weight: ${font.SUB_TITLE.weight};
 `
 
 const CourseName = styled.h3`
@@ -59,6 +60,7 @@ const LikeCount = styled.div`
 `
 
 const UserFeedbackBox = styled.div`
+  position: relative;
   margin-top: 5px;
 `
 
@@ -70,10 +72,9 @@ const ReviewCount = styled.div`
   padding-right: 10px;
 `
 
-const StyledRating = styled(Rating)`
-  &.active::before {
-    color: #f8ba00;
-  }
+const CourseRating = styled(Rating)`
+  bottom: 0;
+  position: absolute;
 `
 
 const CourseCard = ({ course, userClass, render }) => {
@@ -89,7 +90,7 @@ const CourseCard = ({ course, userClass, render }) => {
     myLike,
   } = course
   return (
-    <Wrapper as="li">
+    <Wrapper as="li" className="cardshadow">
       <Segment>
         <Grid as={Link} to={`/course/${courseKey}/info`}>
           <ImageGrid width={4}>
@@ -102,7 +103,7 @@ const CourseCard = ({ course, userClass, render }) => {
             <CourseName>{courseName}</CourseName>
             <UserFeedbackBox>
               <ReviewCount>리뷰 {reviewCount}</ReviewCount>
-              <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
+              <CourseRating defaultRating={ratingAvg} maxRating={5} disabled />
             </UserFeedbackBox>
           </InfoGrid>
         </Grid>
