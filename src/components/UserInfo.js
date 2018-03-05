@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { UserLevel } from 'components'
 import * as font from '../constants/font'
 
 const Wrapper = styled.div`

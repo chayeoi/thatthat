@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Button } from 'semantic-ui-react'
 import * as color from '../constants/color'
 
-const RegisterAcademyButton = styled(Button)`
+const StyledButton = styled(Button)`
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -19,8 +19,8 @@ const RegisterAcademyButton = styled(Button)`
     background-color: ${color.SUB_COLOR} !important;
   }
 `
-const UserLevel = ({ link }) => (
-  <RegisterAcademyButton {...link}>교육기관 등록</RegisterAcademyButton>
+const RegisterLink = ({ link }) => (
+  <StyledButton {...link}>교육기관 등록</StyledButton>
 )
 
-export default UserLevel
+export default RegisterLink

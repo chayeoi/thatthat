@@ -22,7 +22,7 @@ import CourseForm from './CourseForm'
 import RegisterForm from './RegisterForm'
 import Footer from './Footer'
 import RecentReview from './RecentReview'
-import UserLevel from './UserLevel'
+import RegisterLink from './RegisterLink'
 
 export {
   LoginButton,
@@ -49,5 +49,5 @@ export {
   RegisterForm,
   Footer,
   RecentReview,
-  UserLevel,
+  RegisterLink,
 }
