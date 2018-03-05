@@ -56,12 +56,12 @@ const LikeCount = styled.div`
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 12px;
+  font-size: 10px;
   color: ${color.GRAY5};
 `
 
 const LikeIcon = styled(Icon)`
-  font-size: 1.2rem !important;
+  font-size: 14px !important;
   width: auto !important;
   margin: 0 !important;
 `
@@ -100,17 +100,17 @@ const CourseSummaryInfo = ({ course }) => {
       <Grid>
         <ImageGrid width={4}>
           <SquareImageBox>
-            <CourseImage src={downloadURL} size="small" />
+            <CourseImage src={downloadURL} size="small" alt={`${courseName} 대표 이미지`} />
           </SquareImageBox>
         </ImageGrid>
         <InfoGrid width={12} verticalAlign="middle">
           <OrganizationName>{organization}</OrganizationName>
           <CourseName>{courseName}</CourseName>
-          <LikeCount>{likeCount} <LikeButton /></LikeCount>
+          <LikeButton likeCount={likeCount} />
           {/* 유저 인증 등급 hocs 완성 후 사용할 코드 */}
           {/* {userClass === 'reviewer' ?
-            <LikeCount>{likeCount} <LikeButton /></LikeCount> :
-            <LikeCount>{likeCount} <LikeIcon name="empty heart" /></LikeCount>
+            <LikeButton /> :
+            <LikeCount title={`좋아요 ${likeCount}개`} >{likeCount} <LikeIcon name="empty heart" /></LikeCount>
           } */}
           <UserFeedbackBox>
             <ReviewCount>리뷰 {reviewCount}</ReviewCount>

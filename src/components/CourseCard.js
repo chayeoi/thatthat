@@ -10,7 +10,11 @@ import { RecentReview, LikeButton } from 'components'
 import * as color from '../constants/color'
 import * as font from '../constants/font'
 
-const ImageGrid = styled(Grid.Column) `
+const Wrapper = styled(Segment.Group)`
+  margin: 0 0 .5rem !important;
+`
+
+const ImageGrid = styled(Grid.Column)`
   padding-right: 0 !important;
 `
 
@@ -83,7 +87,7 @@ const CourseCard = ({ course, userClass }) => {
     downloadURL,
   } = course
   return (
-    <Segment.Group as="li">
+    <Wrapper as="li">
       <Segment>
         <Grid as={Link} to={`/course/${courseKey}/info`}>
           <ImageGrid width={4}>
@@ -94,7 +98,6 @@ const CourseCard = ({ course, userClass }) => {
           <InfoGrid width={12} verticalAlign="middle">
             <OrganizationName>{organization}</OrganizationName>
             <CourseName>{courseName}</CourseName>
-            {userClass === 'reviewer' && <LikeCount>{likeCount} <LikeButton /></LikeCount>}
             <UserFeedbackBox>
               <ReviewCount>리뷰 {reviewCount}</ReviewCount>
               <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
@@ -102,10 +105,11 @@ const CourseCard = ({ course, userClass }) => {
           </InfoGrid>
         </Grid>
       </Segment>
+      {userClass === 'reviewer' && <LikeButton likeCount={likeCount} />}
       <Segment>
         <RecentReview />
       </Segment>
-    </Segment.Group>
+    </Wrapper>
   )
 }
 
