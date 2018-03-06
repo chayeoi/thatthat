@@ -8,16 +8,25 @@ const Wrapper = styled.ul`
   min-height: 100vh;
   background-color: ${color.GRAY2};
 `
+const Total = styled.div`
+  padding: 0 .5rem .7rem;
+  & > em {
+    font-weight: bold;
+  }
+`
 
 const MyLikeList = ({ likes }) => (
   <Wrapper>
-    {likes.length ? <div>총 {likes.length}개의 관심 강의가 있습니다.</div> : null}
+    {likes.length ?
+      <Total>총 <em>{likes.length}개</em>의 관심 강의가 있습니다.</Total> :
+      <Total>관심 강의가 없습니다.</Total>
+    }
     <ul>
       {likes ?
         likes.map(course => (
           <CourseCard key={course.courseKey} course={course} />
         ))
-        : <div>좋아요 누른 강의가 없습니다.</div>
+        : null
       }
     </ul>
   </Wrapper>

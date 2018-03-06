@@ -17,26 +17,69 @@ const categories = [
 ]
 
 const Wrapper = styled.ul`
-  padding: 1rem 1rem;
+  padding: 1.2rem 1rem;
   min-height: 100vh;
-  background-color: ${color.GRAY1};
+  background-color: ${color.GRAY2};
 `
 
-const Category = styled(Dropdown)`
-  margin-bottom: 14px;
-`
+const CourseInput = styled(Form.Input)`
+  margin-bottom: 12px;
+  caret-color: ${color.MAIN_COLOR};
+  & label {
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #495057 !important;
+  }
+  & input {
+    border-top: 1px solid ${color.GRAY4} !important;
+    border-left: 1px solid ${color.GRAY4} !important;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+  `
+
+const CourseCategoryLabel = styled.label`
+  margin-bottom: 4px !important;
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  color: #495057 !important;
+  `
+
+const CourseCategory = styled(Dropdown)`
+  margin-bottom: 1rem;
+  border-color: white;
+  caret-color: ${color.MAIN_COLOR};
+  & input {
+    border-top: 1px solid ${color.GRAY4} !important;
+    border-left: 1px solid ${color.GRAY4} !important;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+  `
 
 const CourseDesc = styled(Form.TextArea)`
-  border: none !important;
   border-radius: 1.5rem !important;
   caret-color: ${color.MAIN_COLOR};
+  & label {
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #495057 !important;
+  }
+  & textarea {
+    border-top: 1px solid ${color.GRAY4} !important;
+    border-left: 1px solid ${color.GRAY4} !important;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
 `
 
 const FormButton = styled(Button)`
   width: 100%;
-  background-color: ${color.GRAY4} !important;
+  color: white !important;
+  background-color: ${color.GRAY6} !important;
+  font-weight: 300 !important;
   &:hover {
-    color: white !important;
     background-color: ${color.GRAY7} !important;
   }
 `
@@ -91,11 +134,22 @@ export default class CourseForm extends Component {
       <React.Fragment>
         <Wrapper>
           <Form loading={isCreating}>
-            <Form.Input id="courseName" name="courseName" value={courseName} label="강의명" onChange={this.handleChange} />
-            <label htmlFor="courseCategory">강의 분류</label>
-            <Category id="courseCategory" name="category" value={category} placeholder="프로그래밍" labeled fluid search selection options={categories} onChange={this.handleChange} />
-            <Form.Input id="courseImage" type="file" name="image" files={image} label="강의 사진" onChange={this.handleChange} fluid />
-            <CourseDesc id="courseDesc" name="content" value={content} label="강의 소개" onChange={this.handleChange} rows="10" />
+            <CourseInput id="courseName" name="courseName" value={courseName} label="강의명" onChange={this.handleChange} />
+            <CourseCategoryLabel htmlFor="courseCategory">강의 분류</CourseCategoryLabel>
+            <CourseCategory
+              id="courseCategory"
+              name="category"
+              value={category}
+              placeholder="프로그래밍"
+              labeled
+              fluid
+              search
+              selection
+              options={categories}
+              onChange={this.handleChange}
+            />
+            <CourseInput id="courseImage" type="file" name="image" files={image} label="강의 사진" onChange={this.handleChange} fluid />
+            <CourseDesc id="courseDesc" name="content" value={content} label="강의 소개" onChange={this.handleChange} rows="3" />
             <FormButton content="등록하기" onClick={this.handleClick} />
             <Modal dimmer="inverted" open={open} onClose={this.handleClose}>
               <Modal.Header content="강의 등록" />

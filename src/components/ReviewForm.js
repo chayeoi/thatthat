@@ -9,8 +9,7 @@ const Wrapper = styled.div`
   bottom: 0;
   width: 100%;
   padding: 10px 1rem;
-  box-shadow: 0 -5px 10px -2px rgba(0,0,0,.12);
-  background-color: white;
+  background-color: #c9cfd5;
 `
 
 const StyledRating = styled(Rating)`
@@ -27,7 +26,7 @@ const MaxHeightTextArea = styled(TextArea)`
   padding: .7rem 1.1rem;
   border: none !important;
   border-radius: 1.5rem !important;
-  background-color: ${color.GRAY1} !important;
+  background-color: #fff;
   caret-color: ${color.MAIN_COLOR};
 `
 
@@ -38,13 +37,12 @@ const FormButton = styled.button`
   display: inline-block;
   width: 30px;
   margin: 0;
-  color: #ced4da;
+  color: white;
   font-size: 1.2rem;
   font-weight: normal;
   text-align: right;
-  background-color: white;
-  &:hover {
-    color: ${color.MAIN_COLOR};
+  &:hover > i:before {
+    content: "\f1d8"  !important;
   }
 `
 
@@ -106,8 +104,9 @@ export default class ReviewForm extends Component {
             autoHeight
             required
           />
-          <FormButton onClick={this.handleClick}>
+          <FormButton onClick={this.handleClick} htmlRole="button">
             <Icon name="send outline" />
+            <span className="readable-hidden">리뷰 등록</span>
           </FormButton>
           <Modal dimmer="inverted" open={open} onClose={this.handleClose}>
             <Modal.Header content="리뷰 등록" />

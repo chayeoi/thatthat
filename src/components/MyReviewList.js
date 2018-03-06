@@ -9,15 +9,25 @@ const Wrapper = styled.ul`
   background-color: ${GRAY2};
 `
 
+const Total = styled.div`
+  padding: 0 .5rem .7rem;
+  & > em {
+    font-weight: bold;
+  }
+`
+
 const MyReviewList = ({ reviews }) => (
   <React.Fragment>
-    {reviews.length ? <div>총 {reviews.length}개의 리뷰가 있습니다.</div> : null}
     <Wrapper>
+      {reviews.length ?
+        <Total>총 <em>{reviews.length}개</em>의 리뷰가 있습니다.</Total> :
+        <Total>등록한 리뷰가 없습니다.</Total>
+      }
       {reviews ?
         reviews.map(review => (
           <MyReviewCard key={review.reviewKey} review={review} />
         ))
-        : <div>등록한 리뷰가 없습니다.</div>
+        : null
       }
     </Wrapper>
   </React.Fragment>
