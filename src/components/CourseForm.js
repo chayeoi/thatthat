@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Form, Dropdown, Message, Button } from 'semantic-ui-react'
+import {
+  Form,
+  Dropdown,
+  Message,
+  Button,
+  Modal,
+} from 'semantic-ui-react'
 import * as color from '../constants/color'
 
 const categories = [
@@ -47,6 +53,7 @@ export default class CourseForm extends Component {
     category: '',
     image: {},
     content: '',
+    open: false,
   }
 
   handleChange = (e, { name, value }) => {
@@ -62,7 +69,12 @@ export default class CourseForm extends Component {
     }
   }
 
+  handleClick = () => this.setState({ open: true })
+
+  handleClose = () => this.setState({ open: false })
+
   handleSubmit = () => {
+    this.setState({ open: false })
     this.props.onSubmit(this.state)
   }
 
@@ -72,6 +84,7 @@ export default class CourseForm extends Component {
       category,
       image,
       content,
+      open,
     } = this.state
     const { isCreating, errorMessage } = this.props
     return (
@@ -80,10 +93,18 @@ export default class CourseForm extends Component {
           <Form loading={isCreating}>
             <Form.Input id="courseName" name="courseName" value={courseName} label="강의명" onChange={this.handleChange} />
             <label htmlFor="courseCategory">강의 분류</label>
-            <Category id="courseCategory" name="category" value={category} placeholder="프로그래밍" labeled="true" fluid search selection options={categories} onChange={this.handleChange} />
+            <Category id="courseCategory" name="category" value={category} placeholder="프로그래밍" labeled fluid search selection options={categories} onChange={this.handleChange} />
             <Form.Input id="courseImage" type="file" name="image" files={image} label="강의 사진" onChange={this.handleChange} fluid />
             <CourseDesc id="courseDesc" name="content" value={content} label="강의 소개" onChange={this.handleChange} rows="10" />
-            <FormButton onClick={this.handleSubmit}>등록하기</FormButton>
+            <FormButton content="등록하기" onClick={this.handleClick} />
+            <Modal dimmer="inverted" open={open} onClose={this.handleClose}>
+              <Modal.Header content="강의 등록" />
+              <Modal.Content content="작성하신 내용으로 강의를 등록하시겠습니까?" />
+              <Modal.Actions>
+                <Button content="취소" onClick={this.handleClose} />
+                <Button content="등록" onClick={this.handleSubmit} />
+              </Modal.Actions>
+            </Modal>
           </Form>
           {
             errorMessage && (

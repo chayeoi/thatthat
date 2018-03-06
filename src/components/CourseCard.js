@@ -51,14 +51,6 @@ const CourseName = styled.h3`
   font-weight: ${font.TITLE.weight};
 `
 
-const LikeCount = styled.div`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 12px;
-  color: ${color.GRAY5};
-`
-
 const UserFeedbackBox = styled.div`
   position: relative;
   margin-top: 5px;
