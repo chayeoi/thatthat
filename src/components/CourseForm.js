@@ -78,7 +78,7 @@ const FormButton = styled(Button)`
   width: 100%;
   color: white !important;
   background-color: ${color.GRAY6} !important;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
   &:hover {
     background-color: ${color.GRAY7} !important;
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Form, Modal, Message, Button } from 'semantic-ui-react'
+  font-weight: 500 !important;
 
 export default class RegisterForm extends Component {
   static defaultProps = {
