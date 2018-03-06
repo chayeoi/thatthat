@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { Segment, Comment, Rating } from 'semantic-ui-react'
-import * as color from '../constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled(Segment)`
