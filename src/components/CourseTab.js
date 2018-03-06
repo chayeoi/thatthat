@@ -22,6 +22,14 @@ export default class CourseTab extends Component {
     activeItem: this.props.pathName,
   }
 
+  componentWillReceiveProps(nextProps) {
+    const { pathName: current } = this.props
+    const { pathName: next } = nextProps
+    if (current !== next) {
+      this.setState({ activeItem: nextProps.pathName })
+    }
+  }
+
   handleTabClick = (e, { to }) => {
     this.setState({ activeItem: to })
   }

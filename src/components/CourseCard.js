@@ -84,7 +84,7 @@ const CourseCard = ({ course, userClass, render }) => {
   return (
     <Wrapper as="li" className="cardshadow">
       <Segment>
-        <Grid as={Link} to={`/course/${courseKey}/info`}>
+        <Grid as={Link} to={`/course/${courseKey}`}>
           <ImageGrid width={4}>
             <SquareImageBox>
               <CourseImage src={downloadURL} alt={courseName} />
