@@ -69,11 +69,11 @@ h1, h2, h3, h4, h5, h6, div, button {
   -moz-transition: all 235ms ease 0s;
   -o-transition: all 235ms ease 0s;
   transition: all 235ms ease 0s;
-  box-shadow: 15px 28px 25px -18px rgba(202, 39, 39, 0.2);
+  box-shadow: 15px 30px 32px -15px rgba(202, 39, 39, 0.2);
 }
 .cardshadow:hover {
   box-shadow: 2px 8px 5px -5px rgba(0, 0, 0, 0.15);
-  -webkit-transform: translate3d(0, 1.5px, 0);
-  -ms-transform: translate3d(0, 1.5px, 0);
-  transform: translate3d(0, 1.5px, 0)
+  -webkit-transform: translate3d(0, -1.5px, 0);
+  -ms-transform: translate3d(0, -1.5px, 0);
+  transform: translate3d(0, -1.5px, 0)
 }
