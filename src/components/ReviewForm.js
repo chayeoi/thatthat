@@ -98,7 +98,10 @@ export default class ReviewForm extends Component {
             autoHeight
             required
           />
-          <FormButton onClick={this.handleClick}><Icon name="send outline" /></FormButton>
+          <FormButton onClick={this.handleClick} htmlRole="button">
+            <Icon name="send outline" />
+            <span className="readable-hidden">리뷰 등록</span>
+          </FormButton>
         </Form>
       </Wrapper>
     )
