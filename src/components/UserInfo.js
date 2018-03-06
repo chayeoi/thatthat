@@ -39,7 +39,6 @@ const UserInfo = ({
   render,
 }) => (
   <Wrapper>
-    {/* <Image src={photoURL} size="mini" circular /> */}
     <SquareImageBox>
       <ProfileImage src={photoURL} />
     </SquareImageBox>
