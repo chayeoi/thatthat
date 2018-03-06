@@ -1,4 +1,6 @@
 import React from 'react'
+import * as moment from 'moment'
+import 'moment/locale/ko'
 import { Comment } from 'semantic-ui-react'
 import styled from 'styled-components'
 
@@ -24,7 +26,7 @@ const RecentReview = ({
       <Comment.Content>
         <Name>{displayName}</Name>
         <Comment.Metadata>
-          <div>{createdAt}</div>
+          {moment(createdAt).locale('ko').fromNow()}
         </Comment.Metadata>
         <CommentText>{content}</CommentText>
       </Comment.Content>

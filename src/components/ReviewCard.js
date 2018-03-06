@@ -1,4 +1,6 @@
 import React from 'react'
+import * as moment from 'moment'
+import 'moment/locale/ko'
 import { Segment, Comment, Rating } from 'semantic-ui-react'
 import styled from 'styled-components'
 
@@ -40,7 +42,7 @@ const ReviewCard = ({
         <Comment.Avatar src={photoURL} alt={`${displayName} 프로필 사진`} />
         <Comment.Content>
           <UserName>{displayName}</UserName>
-          <Comment.Metadata>{createdAt}</Comment.Metadata>
+          <Comment.Metadata>{moment(createdAt).locale('ko').fromNow()}</Comment.Metadata>
           <StyledRating defaultRating={rating} maxRating={5} disabled />
           <CommentText>{content}</CommentText>
         </Comment.Content>
