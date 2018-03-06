@@ -4,11 +4,11 @@ import { Loader } from 'semantic-ui-react'
 const withLoading = WrappedComponent => (
   class extends Component {
     render() {
-      const { isLoading } = this.props
+      const { isLoading, ...props } = this.props
       return (
         isLoading ?
-          <Loader />
-          : <WrappedComponent />
+          <Loader active content="로딩 중" />
+          : <WrappedComponent {...props} />
       )
     }
   }
