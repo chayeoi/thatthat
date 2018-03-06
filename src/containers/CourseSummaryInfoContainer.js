@@ -3,11 +3,6 @@ import { connect } from 'react-redux'
 import { CourseSummaryInfo } from 'components'
 import { loadCourse } from 'ducks/modules/detail'
 
-const LoaderBox = styled.div`
-  min-height:135px;
-  vertical-align: center;
-`
-
 class CourseSummaryInfoContainer extends Component {
   static defaultProps = {
     course: {},
