@@ -31,13 +31,11 @@ class CourseListContainer extends Component {
       match: { params: { category } },
     } = this.props
     return (
-      <React.Fragment>
-        <CourseList
-          courses={courses}
-          userClass={userClass}
-          render={props => <LikeButtonContainer category={category} {...props} />}
-        />
-      </React.Fragment>
+      <CourseList
+        courses={courses}
+        userClass={userClass}
+        render={props => <LikeButtonContainer category={category} {...props} />}
+      />
     )
   }
 }
