@@ -36,7 +36,7 @@ const CourseInput = styled(Form.Input)`
     border-right: none !important;
     border-bottom: none !important;
   }
-  `
+`
 
 const CourseCategoryLabel = styled.label`
   margin-bottom: 4px !important;
@@ -44,7 +44,7 @@ const CourseCategoryLabel = styled.label`
   font-weight: 700;
   font-size: 13px;
   color: #495057 !important;
-  `
+`
 
 const CourseCategory = styled(Dropdown)`
   margin-bottom: 1rem;
@@ -56,7 +56,7 @@ const CourseCategory = styled(Dropdown)`
     border-right: none !important;
     border-bottom: none !important;
   }
-  `
+`
 
 const CourseDesc = styled(Form.TextArea)`
   border-radius: 1.5rem !important;
