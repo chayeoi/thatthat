@@ -26,7 +26,7 @@ export default class CourseTab extends Component {
     const { pathName: current } = this.props
     const { pathName: next } = nextProps
     if (current !== next) {
-      this.setState({ activeItem: nextProps.pathName })
+      this.setState({ activeItem: next })
     }
   }
 
