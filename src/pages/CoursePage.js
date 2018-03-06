@@ -9,14 +9,12 @@ import {
 import styled from 'styled-components'
 import { withUser } from 'hocs'
 
-const WideRail = styled(Rail)`
-  width: 100% !important;
-  height: 3000px !important;
+const Wrapper = styled.div`
+  height: 100vh !important;
 `
 
-const LongGrid = styled.div`
-  height: 3000px !important;
-  background-color: yellow;
+const WideRail = styled(Rail)`
+  width: 100% !important;
 `
 
 class CoursePage extends Component {
@@ -30,10 +28,10 @@ class CoursePage extends Component {
 
     return (
       <div ref={this.handleContextRef}>
-        <LongGrid>
+        <Wrapper>
           <WideRail>
             <MainMenuContainer />
-            <Sticky context={contextRef} style={{position: 'relative', zIndex: 9999}}>
+            <Sticky context={contextRef} style={{ position: 'relative', zIndex: 9999 }}>
               <CategoryTabContainer pathName={pathname} />
             </Sticky>
             <Switch>
@@ -48,7 +46,7 @@ class CoursePage extends Component {
               />
             </Switch>
           </WideRail>
-        </LongGrid>
+        </Wrapper>
       </div>
     )
   }
