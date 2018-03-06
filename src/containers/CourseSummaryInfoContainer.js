@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Loader } from 'semantic-ui-react'
-import styled from 'styled-components'
 import { CourseSummaryInfo } from 'components'
 import { loadCourse } from 'ducks/modules/detail'
-
-const LoaderBox = styled.div`
-  min-height:135px;
-  vertical-align: center;
-`
 
 class CourseSummaryInfoContainer extends Component {
   static defaultProps = {
@@ -20,12 +13,9 @@ class CourseSummaryInfoContainer extends Component {
   }
 
   render() {
-    const { isLoading, course, userClass } = this.props
+    const { course, userClass } = this.props
     return (
-      isLoading ?
-        // <div>로딩 중</div>
-        <LoaderBox><Loader active size="large">Loading</Loader></LoaderBox>
-        : <CourseSummaryInfo course={course} userClass={userClass} />
+      <CourseSummaryInfo course={course} userClass={userClass} />
     )
   }
 }

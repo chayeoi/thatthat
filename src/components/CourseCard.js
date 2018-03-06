@@ -51,14 +51,6 @@ const CourseName = styled.h3`
   font-weight: ${font.TITLE.weight};
 `
 
-const LikeCount = styled.div`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 12px;
-  color: ${color.GRAY5};
-`
-
 const UserFeedbackBox = styled.div`
   position: relative;
   margin-top: 5px;
@@ -92,7 +84,7 @@ const CourseCard = ({ course, userClass, render }) => {
   return (
     <Wrapper as="li" className="cardshadow">
       <Segment>
-        <Grid as={Link} to={`/course/${courseKey}/info`}>
+        <Grid as={Link} to={`/course/${courseKey}`}>
           <ImageGrid width={4}>
             <SquareImageBox>
               <CourseImage src={downloadURL} alt={courseName} />

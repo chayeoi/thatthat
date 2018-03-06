@@ -19,6 +19,7 @@ export default class DeleteReviewButton extends Component {
   }
 
   handleClick = () => this.props.onDelete()
+
   render() {
     return (
       <DeleteButton
@@ -26,6 +27,7 @@ export default class DeleteReviewButton extends Component {
         type="button"
         value="리뷰 삭제"
         title="리뷰 삭제"
+        onClick={this.handleClick}
       />
     )
   }

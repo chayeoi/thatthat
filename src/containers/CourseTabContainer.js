@@ -4,20 +4,8 @@ import { CourseTab } from 'components'
 
 const CourseTabContainer = ({ courseKey, pathName }) => {
   const tabs = [
-    {
-      name: '강의 정보',
-      link: {
-        as: Link,
-        to: `/course/${courseKey}/info`,
-      },
-    },
-    {
-      name: '강의 리뷰',
-      link: {
-        as: Link,
-        to: `/course/${courseKey}/review`,
-      },
-    },
+    { name: '강의 정보', link: { as: Link, to: `/course/${courseKey}/info` } },
+    { name: '강의 리뷰', link: { as: Link, to: `/course/${courseKey}/review` } },
   ]
 
   return (
