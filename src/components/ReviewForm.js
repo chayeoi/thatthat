@@ -42,9 +42,8 @@ const FormButton = styled.button`
   font-size: 1.2rem;
   font-weight: normal;
   text-align: right;
-  background-color: white;
-  &:hover {
-    color: ${color.MAIN_COLOR};
+  &:hover > i:before {
+    content: "\f1d8"  !important;
   }
 `
 
