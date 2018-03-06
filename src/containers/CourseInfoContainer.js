@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { CourseInfo } from 'components'
+import { withLoading } from 'hocs'
 import { loadCourseInfo } from 'ducks/modules/info'
 
+const CourseInfoWithLoading = withLoading(CourseInfo)
 class CourseInfoContainer extends Component {
   static defaultProps = {
+    isLoading: false,
     content: '',
     onMount: () => {},
   }
@@ -14,15 +17,16 @@ class CourseInfoContainer extends Component {
   }
 
   render() {
-    const { content } = this.props
+    const { onMount, ...props } = this.props
     return (
-      <CourseInfo content={content} />
+      <CourseInfoWithLoading {...props} />
     )
   }
 }
 
 export default connect(
   ({ info }) => ({
+    isLoading: info.isLoading,
     content: info.content,
   }),
   dispatch => ({
