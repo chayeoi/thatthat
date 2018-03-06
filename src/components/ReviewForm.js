@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Form, TextArea, Rating, Icon } from 'semantic-ui-react'
+import { Form, TextArea, Modal, Button, Rating, Icon } from 'semantic-ui-react'
 import * as color from '../constants/color'
 
 const Wrapper = styled.div`
@@ -13,12 +13,12 @@ const Wrapper = styled.div`
   background-color: white;
 `
 
-// const StyledRating = styled(Rating)`
-//   display: block !important;
-//   text-align: center;
-//   margin-top: 5px;
-//   font-size: 1rem !important;
-// `
+const StyledRating = styled(Rating)`
+  display: block !important;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1rem !important;
+`
 
 const MaxHeightTextArea = styled(TextArea)`
   display: inline-block;
@@ -57,6 +57,7 @@ export default class ReviewForm extends Component {
   state = {
     rating: 0,
     content: '',
+    open: false,
   }
 
   componentWillReceiveProps(nextProps) {
@@ -70,25 +71,32 @@ export default class ReviewForm extends Component {
     }
   }
 
-  handleRate = (e, { rating }) => this.setState({ rating })
-
   handleChange = (e, { value }) => this.setState({ content: value })
 
-  handleClick = () => this.state.content && this.props.onSubmit(this.state, this.props.courseKey)
+  handleClick = () => {
+    if (this.state.content) {
+      this.setState({ open: true })
+    }
+  }
+
+  handleClose = () => this.setState({ open: false })
+
+  handleRate = (e, { rating }) => this.setState({ rating })
+
+  handleSubmit = () => {
+    const { courseKey } = this.props
+    const { open, ...input } = this.state
+    this.setState({ open: false })
+    this.props.onSubmit(input, courseKey)
+  }
 
   render() {
-    const { rating, content } = this.state
+    const { rating, content, open } = this.state
     const { isCreating } = this.props
     return (
       <Wrapper>
         <Form loading={isCreating}>
-          {/* <StyledRating
-            icon="star"
-            rating={rating}
-            maxRating={5}
-            onRate={this.handleRate}
-          /> */}
-          <label htmlFor="comment" className="readable-hidden" >리뷰작성</label>
+          <label htmlFor="comment" className="readable-hidden">리뷰작성</label>
           <MaxHeightTextArea
             id="comment"
             rows={1}
@@ -98,7 +106,23 @@ export default class ReviewForm extends Component {
             autoHeight
             required
           />
-          <FormButton onClick={this.handleClick}><Icon name="send outline" /></FormButton>
+          <FormButton onClick={this.handleClick}>
+            <Icon name="send outline" />
+          </FormButton>
+          <Modal dimmer="inverted" open={open} onClose={this.handleClose}>
+            <Modal.Header content="리뷰 등록" />
+            <StyledRating
+              icon="star"
+              rating={rating}
+              maxRating={5}
+              onRate={this.handleRate}
+            />
+            <Modal.Content content="작성하신 내용으로 리뷰를 등록하시겠습니까?" />
+            <Modal.Actions>
+              <Button content="취소" onClick={this.handleClose} />
+              <Button content="등록" onClick={this.handleSubmit} />
+            </Modal.Actions>
+          </Modal>
         </Form>
       </Wrapper>
     )

@@ -55,7 +55,8 @@ export const loadMyLikeList = () => async (dispatch) => {
         ...course,
       }
     })
-    const likes = await Promise.all(pendingLikes)
+    const unsortedLikes = await Promise.all(pendingLikes)
+    const likes = unsortedLikes.reverse()
     dispatch(completeLoading(likes))
   } else {
     dispatch(completeLoading(null))
