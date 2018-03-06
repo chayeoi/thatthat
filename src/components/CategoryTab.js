@@ -30,19 +30,17 @@ export default class CategoryTab extends Component {
     const { activeItem } = this.state
     const { categories } = this.props
     return (
-      <div>
-        <TabBox pointing secondary widths={5}>
-          {categories.map(category => (
-            <TabItem
-              key={category.name}
-              name={category.name}
-              active={activeItem === category.link.to}
-              onClick={this.handleClick}
-              {...category.link}
-            />
-          ))}
-        </TabBox>
-      </div>
+      <TabBox pointing secondary widths={5}>
+        {categories.map(category => (
+          <TabItem
+            key={category.name}
+            name={category.name}
+            active={activeItem === category.link.to}
+            onClick={this.handleClick}
+            {...category.link}
+          />
+        ))}
+      </TabBox>
     )
   }
 }
