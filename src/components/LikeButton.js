@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 
 const Heart = styled(Rating)`
   font-size: 16px !important;
+  margin-left: 2px;
   &.ui.heart.rating .icon {
     width: auto !important;
   }
