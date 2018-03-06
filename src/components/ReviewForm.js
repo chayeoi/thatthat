@@ -79,6 +79,8 @@ export default class ReviewForm extends Component {
     }
   }
 
+  handleClose = () => this.setState({ open: false })
+
   handleRate = (e, { rating }) => this.setState({ rating })
 
   handleSubmit = () => {
@@ -108,14 +110,14 @@ export default class ReviewForm extends Component {
             <Icon name="send outline" />
           </FormButton>
           <Modal dimmer="inverted" open={open} onClose={this.handleClose}>
-            <Modal.Header content="강의 등록" />
+            <Modal.Header content="리뷰 등록" />
             <StyledRating
               icon="star"
               rating={rating}
               maxRating={5}
               onRate={this.handleRate}
             />
-            <Modal.Content content="작성하신 내용으로 강의를 등록하시겠습니까?" />
+            <Modal.Content content="작성하신 내용으로 리뷰를 등록하시겠습니까?" />
             <Modal.Actions>
               <Button content="취소" onClick={this.handleClose} />
               <Button content="등록" onClick={this.handleSubmit} />
