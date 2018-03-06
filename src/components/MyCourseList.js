@@ -9,15 +9,25 @@ const Wrapper = styled.ul`
   background-color: ${GRAY2};
 `
 
+const Total = styled.div`
+  padding: 0 .5rem .7rem;
+  & > em {
+    font-weight: bold;
+  }
+`
+
 const MyCourseList = ({ courses }) => (
   <React.Fragment>
-    {courses.length ? <div>총 {courses.length}개의 등록한 강의가 있습니다.</div> : null}
     <Wrapper>
+      {courses.length ?
+        <Total>총 <em>{courses.length}개</em>의 등록한 강의가 있습니다.</Total> :
+        <Total>등록한 강의가 없습니다.</Total>
+      }
       {courses ?
         courses.map(course => (
           <CourseCard key={course.courseKey} course={course} />
         ))
-        : <div>등록한 강의가 없습니다.</div>
+        : null
       }
     </Wrapper>
   </React.Fragment>
