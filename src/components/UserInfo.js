@@ -32,7 +32,7 @@ const ProfileImage = styled.img`
 
 const UserInfo = ({
   currentUser: {
-    // photoURL,
+    photoURL,
     displayName,
     email,
   },
@@ -41,7 +41,7 @@ const UserInfo = ({
   <Wrapper>
     {/* <Image src={photoURL} size="mini" circular /> */}
     <SquareImageBox>
-      <ProfileImage src="https://react.semantic-ui.com/assets/images/avatar/small/matt.jpg" />
+      <ProfileImage src={photoURL} />
     </SquareImageBox>
     <UserName>{displayName}</UserName>
     <div>{email}</div>
