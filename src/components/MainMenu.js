@@ -4,6 +4,7 @@ import { Menu } from 'semantic-ui-react'
 import { MAIN_COLOR } from '../constants/color'
 
 const Wrapper = styled.header`
+  width: 100%;
   background-color: ${MAIN_COLOR};
 `
 const MenuBox = styled(Menu)`
