@@ -4,8 +4,10 @@ import { Menu } from 'semantic-ui-react'
 import * as color from '../constants/color'
 
 const TabBox = styled(Menu)`
-  margin-top: .5rem;
+  width: 100%;
   height: 40px;
+  margin: 0 !important;
+  background-color: #fff !important;
 `
 
 const TabItem = styled(Menu.Item)`
@@ -38,19 +40,17 @@ export default class CourseTab extends Component {
     const { activeItem } = this.state
     const { tabs } = this.props
     return (
-      <div>
-        <TabBox pointing secondary widths={2}>
-          {tabs.map(tab => (
-            <TabItem
-              key={tab.name}
-              name={tab.name}
-              active={activeItem === tab.link.to}
-              onClick={this.handleTabClick}
-              {...tab.link}
-            />
-          ))}
-        </TabBox>
-      </div>
+      <TabBox pointing secondary widths={2}>
+        {tabs.map(tab => (
+          <TabItem
+            key={tab.name}
+            name={tab.name}
+            active={activeItem === tab.link.to}
+            onClick={this.handleTabClick}
+            {...tab.link}
+          />
+        ))}
+      </TabBox>
     )
   }
 }

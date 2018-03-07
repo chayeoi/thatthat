@@ -4,8 +4,10 @@ import { Menu } from 'semantic-ui-react'
 import * as color from '../constants/color'
 
 const TabBox = styled(Menu)`
+  width: 100%;
   height: 40px;
-  margin-top: 20px !important;
+  margin: 0 !important;
+  background-color: #fff !important;
 `
 
 const TabItem = styled(Menu.Item)`
