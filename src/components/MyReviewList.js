@@ -19,7 +19,7 @@ const Total = styled.div`
 const MyReviewList = ({ reviews }) => (
   <React.Fragment>
     <Wrapper>
-      {reviews.length ?
+      {reviews !== null ?
         <Total>총 <em>{reviews.length}개</em>의 리뷰가 있습니다.</Total> :
         <Total>등록한 리뷰가 없습니다.</Total>
       }
