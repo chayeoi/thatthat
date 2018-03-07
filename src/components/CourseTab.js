@@ -3,10 +3,20 @@ import styled from 'styled-components'
 import { Menu } from 'semantic-ui-react'
 import * as color from '../constants/color'
 
-const TabBox = styled(Menu)`
+const Wrapper = styled.div`
   width: 100%;
+  background-color: #fff !important;
+  border-bottom: 2px solid ${color.GRAY3};
+`
+
+const CenterBox = styled.div`
+  max-width: 768px;
+  margin: 0 auto !important;
+`
+
+const TabBox = styled(Menu)`
   height: 40px;
-  margin: 0 !important;
+  border: none !important;
   background-color: #fff !important;
 `
 
@@ -40,17 +50,21 @@ export default class CourseTab extends Component {
     const { activeItem } = this.state
     const { tabs } = this.props
     return (
-      <TabBox pointing secondary widths={2}>
-        {tabs.map(tab => (
-          <TabItem
-            key={tab.name}
-            name={tab.name}
-            active={activeItem === tab.link.to}
-            onClick={this.handleTabClick}
-            {...tab.link}
-          />
-        ))}
-      </TabBox>
+      <Wrapper>
+        <CenterBox>
+          <TabBox pointing secondary widths={2}>
+            {tabs.map(tab => (
+              <TabItem
+                key={tab.name}
+                name={tab.name}
+                active={activeItem === tab.link.to}
+                onClick={this.handleTabClick}
+                {...tab.link}
+              />
+            ))}
+          </TabBox>
+        </CenterBox>
+      </Wrapper>
     )
   }
 }
