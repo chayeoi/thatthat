@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { Rail, Sticky } from 'semantic-ui-react'
+import { Sticky } from 'semantic-ui-react'
 import {
   MainMenuContainer,
   CategoryTabContainer,
