@@ -10,6 +10,7 @@ import info from './info'
 import review from './review'
 import registering from './registering'
 import label from './label'
+import footer from './footer'
 
 export {
   auth,
@@ -24,4 +25,5 @@ export {
   review,
   registering,
   label,
+  footer,
 }
