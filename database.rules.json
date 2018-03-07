@@ -20,14 +20,14 @@
     },
     "myLikes": {
       "$uid": {
-        ".read": "$uid != auth.uid",
-        ".write": "$uid != auth.uid"
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
       }
     },
     "myReviews": {
       "$uid": {
-        ".read": "$uid != auth.uid",
-        ".write": "$uid != auth.uid"
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
       }
     },
     "registeringReq": {
