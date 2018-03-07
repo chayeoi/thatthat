@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import styled from 'styled-components'
 import { Sticky } from 'semantic-ui-react'
 import {
   MainMenuContainer,
   CategoryTabContainer,
   CourseListContainer,
 } from 'containers'
-import styled from 'styled-components'
 import { withUser } from 'hocs'
+import * as color from '../constants/color'
 
 const WideRail = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ const WideRail = styled.div`
   min-height: 100vh !important;
   position: relative;
   top: 0;
+  background-color: ${color.GRAY2};
 `
 
 class CoursePage extends Component {
@@ -30,7 +32,7 @@ class CoursePage extends Component {
       <div ref={this.handleContextRef}>
         <WideRail className="rail">
           <MainMenuContainer />
-          <Sticky context={contextRef} style={{ position: 'relative', zIndex: 9999 }}>
+          <Sticky context={contextRef} style={{ position: 'relative', zIndex: 10 }}>
             <CategoryTabContainer pathName={pathname} />
           </Sticky>
           <Switch>
