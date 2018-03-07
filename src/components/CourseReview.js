@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { ReviewCard } from 'components'
-import { GRAY2 } from '../constants/color'
 
 const Wrapper = styled.ul`
-  padding: 1rem;
-  min-height: 100vh;
-  background-color: ${GRAY2};
 `
 
 const CourseReview = ({ reviews, buttonRender, formRender }) => (

@@ -131,7 +131,6 @@ export default class CourseForm extends Component {
     } = this.state
     const { isCreating, errorMessage } = this.props
     return (
-      <React.Fragment>
         <Wrapper>
           <Form loading={isCreating}>
             <CourseInput id="courseName" name="courseName" value={courseName} label="강의명" onChange={this.handleChange} />
@@ -169,7 +168,6 @@ export default class CourseForm extends Component {
             )
           }
         </Wrapper>
-      </React.Fragment>
     )
   }
 }

@@ -40,19 +40,6 @@ export default class MyPageTab extends Component {
     const { activeItem } = this.state
     const { tabs } = this.props
     return (
-      <div>
-        <TabBox pointing secondary widths={2}>
-          {tabs.map(tab => (
-            <TabItem
-              key={tab.name}
-              name={tab.name}
-              active={activeItem === tab.link.to}
-              onClick={this.handleClick}
-              {...tab.link}
-            />
-          ))}
-        </TabBox>
-      </div>
     )
   }
 }
