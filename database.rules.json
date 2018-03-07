@@ -1,6 +1,50 @@
 {
   "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null"
+    "category": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "courseInfo": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "courses": {
+      ".read": "true",
+      ".write": "auth != null"
+    },
+    "myCourses": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "myLikes": {
+      "$uid": {
+        ".read": "$uid != auth.uid",
+        ".write": "$uid != auth.uid"
+      }
+    },
+    "myReviews": {
+      "$uid": {
+        ".read": "$uid != auth.uid",
+        ".write": "$uid != auth.uid"
+      }
+    },
+    "registeringReq": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "reviewInfo": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "reviews": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "users": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
   }
 }
