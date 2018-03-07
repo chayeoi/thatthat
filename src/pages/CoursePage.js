@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { Rail, Sticky } from 'semantic-ui-react'
+import { Sticky } from 'semantic-ui-react'
 import {
   MainMenuContainer,
   CategoryTabContainer,
@@ -9,12 +9,12 @@ import {
 import styled from 'styled-components'
 import { withUser } from 'hocs'
 
-const Wrapper = styled.div`
-  height: 100vh !important;
-`
-
-const WideRail = styled(Rail)`
-  width: 100% !important;
+const WideRail = styled.div`
+  width: 100%;
+  height: 100% !important;
+  min-height: 100vh !important;
+  position: relative;
+  top: 0;
 `
 
 class CoursePage extends Component {
@@ -28,25 +28,23 @@ class CoursePage extends Component {
 
     return (
       <div ref={this.handleContextRef}>
-        <Wrapper>
-          <WideRail>
-            <MainMenuContainer />
-            <Sticky context={contextRef} style={{ position: 'relative', zIndex: 9999 }}>
-              <CategoryTabContainer pathName={pathname} />
-            </Sticky>
-            <Switch>
-              <Route
-                exact
-                path="/courses"
-                render={({ match }) => <CourseListContainer userClass={userClass} match={match} />}
-              />
-              <Route
-                path="/courses/:category"
-                render={({ match }) => <CourseListContainer userClass={userClass} match={match} />}
-              />
-            </Switch>
-          </WideRail>
-        </Wrapper>
+        <WideRail className="rail">
+          <MainMenuContainer />
+          <Sticky context={contextRef} style={{ position: 'relative', zIndex: 9999 }}>
+            <CategoryTabContainer pathName={pathname} />
+          </Sticky>
+          <Switch>
+            <Route
+              exact
+              path="/courses"
+              render={({ match }) => <CourseListContainer userClass={userClass} match={match} />}
+            />
+            <Route
+              path="/courses/:category"
+              render={({ match }) => <CourseListContainer userClass={userClass} match={match} />}
+            />
+          </Switch>
+        </WideRail>
       </div>
     )
   }
