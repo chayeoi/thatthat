@@ -12,7 +12,6 @@ import {
   CoursePage,
   MyPage,
   RegisteringPage,
-  AboutPage,
   NotFoundPage,
   CourseDetailPage,
 } from 'pages'
@@ -29,7 +28,6 @@ class App extends Component {
             <Route path="/course/:courseKey" component={CourseDetailPage} />
             <Route path="/mypage" component={MyPage} />
             <Route path="/registering" component={RegisteringPage} />
-            <Route path="/about" component={AboutPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Router>

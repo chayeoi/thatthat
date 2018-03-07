@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect, Switch, Route } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import { Sticky } from 'semantic-ui-react'
 import {
@@ -43,32 +44,37 @@ class CourseDetailPage extends Component {
     const { userClass, match: { params: { courseKey } }, location: { pathname } } = this.props
 
     return (
-      <div ref={this.handleContextRef}>
-        <WideRail>
-          <Top className="top">
-            <MainMenuContainer />
-            <CourseSummaryInfoContainer courseKey={courseKey} />
-            <Sticky context={contextRef} style={{ position: 'relative', zIndex: 10 }}>
-              <CourseTabContainer courseKey={courseKey} pathName={pathname} />
-            </Sticky>
-          </Top>
-          <Switch>
-            <Route
-              exact
-              path="/course/:courseKey"
-              render={() => <Redirect to={`/course/${courseKey}/info`} />}
-            />
-            <Route
-              path="/course/:courseKey/info"
-              component={CourseInfoContainer}
-            />
-            <Route
-              path="/course/:courseKey/review"
-              render={({ match }) => <CourseReviewContainer userClass={userClass} match={match} />}
-            />
-          </Switch>
-        </WideRail>
-      </div>
+      <React.Fragment>
+        <Helmet>
+          <title>IT 학원 강의 리뷰 플랫폼, 댓댓 - 강의 정보</title>
+        </Helmet>
+        <div ref={this.handleContextRef}>
+          <WideRail>
+            <Top className="top">
+              <MainMenuContainer />
+              <CourseSummaryInfoContainer courseKey={courseKey} />
+              <Sticky context={contextRef} style={{ position: 'relative', zIndex: 10 }}>
+                <CourseTabContainer courseKey={courseKey} pathName={pathname} />
+              </Sticky>
+            </Top>
+            <Switch>
+              <Route
+                exact
+                path="/course/:courseKey"
+                render={() => <Redirect to={`/course/${courseKey}/info`} />}
+              />
+              <Route
+                path="/course/:courseKey/info"
+                component={CourseInfoContainer}
+              />
+              <Route
+                path="/course/:courseKey/review"
+                render={({ match }) => <CourseReviewContainer userClass={userClass} match={match} />}
+              />
+            </Switch>
+          </WideRail>
+        </div>
+      </React.Fragment>
     )
   }
 }

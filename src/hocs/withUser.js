@@ -38,7 +38,7 @@ const withUser = WrappedComponent => (
       const { isLoading, userClass, redirectToLogin } = this.props
       return (
         <React.Fragment>
-          {isLoading && <Loader />}
+          {isLoading && <Loader active />}
           {redirectToLogin && <Redirect to="/login" />}
           {userClass && <WrappedComponent {...this.props} />}
         </React.Fragment>

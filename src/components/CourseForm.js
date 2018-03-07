@@ -13,7 +13,7 @@ const categories = [
   { key: 'programming', value: 'programming', text: '프로그래밍' },
   { key: 'design', value: 'design', text: '디자인' },
   { key: 'planMaking', value: 'planMaking', text: '기획' },
-  { key: 'marketing', value: 'marketing', text: '마케팅' },
+  { key: 'visualArts', value: 'visualArts', text: '영상' },
 ]
 
 const Wrapper = styled.div`

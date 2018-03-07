@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import {
   Grid,
-  Icon,
   Rating,
 } from 'semantic-ui-react'
 import * as color from '../constants/color'
@@ -87,7 +86,7 @@ const CourseSummaryInfo = ({ course }) => {
           <CourseName>{courseName}</CourseName>
           <div>
             <ReviewCount>리뷰 {reviewCount}</ReviewCount>
-            <Rating defaultRating={ratingAvg} maxRating={5} disabled />
+            <Rating rating={ratingAvg} maxRating={5} disabled />
           </div>
         </InfoGrid>
       </CenterBox>

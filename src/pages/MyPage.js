@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import { Sticky } from 'semantic-ui-react'
 import {
@@ -33,7 +34,6 @@ const CenterBox = styled.div`
   margin: 0 auto;
 `
 
-
 class MyPage extends Component {
   state = {}
 
@@ -44,21 +44,26 @@ class MyPage extends Component {
     const { userClass, location: { pathname } } = this.props
 
     return (
-      <div ref={this.handleContextRef}>
-        <WideRail>
-          <MainMenuContainer />
-          <User>
-            <CenterBox>
-              <UserInfoContainer userClass={userClass} />
-              <LogoutButtonContainer />
-            </CenterBox>
-          </User>
-          <Sticky context={contextRef} style={{ position: 'relative', zIndex: 10 }}>
-            <MyPageTabContainer userClass={userClass} pathName={pathname} />
-          </Sticky>
-          {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}
-        </WideRail>
-      </div>
+      <React.Fragment>
+        <Helmet>
+          <title>IT 학원 강의 리뷰 플랫폼, 댓댓 - 마이페이지</title>
+        </Helmet>
+        <div ref={this.handleContextRef}>
+          <WideRail>
+            <MainMenuContainer />
+            <User>
+              <CenterBox>
+                <UserInfoContainer userClass={userClass} />
+                <LogoutButtonContainer />
+              </CenterBox>
+            </User>
+            <Sticky context={contextRef} style={{ position: 'relative', zIndex: 10 }}>
+              <MyPageTabContainer userClass={userClass} pathName={pathname} />
+            </Sticky>
+            {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}
+          </WideRail>
+        </div>
+      </React.Fragment>
     )
   }
 }

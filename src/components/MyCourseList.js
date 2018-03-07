@@ -19,7 +19,7 @@ const Total = styled.div`
 const MyCourseList = ({ courses }) => (
   <React.Fragment>
     <Wrapper>
-      {courses.length ?
+      {courses !== null ?
         <Total>총 <em>{courses.length}개</em>의 등록한 강의가 있습니다.</Total> :
         <Total>등록한 강의가 없습니다.</Total>
       }

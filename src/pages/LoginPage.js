@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { initializeUser } from 'ducks/modules/user'
-import { Grid, Header } from 'semantic-ui-react'
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
-import {
-  LoginButtonContainer,
-  FooterContainer,
-} from 'containers'
-import { loginBg } from 'assets/images'
+import { Grid, Header } from 'semantic-ui-react'
+import { LoginButtonContainer, FooterContainer } from 'containers'
+import { initializeUser } from 'ducks/modules/user'
+import { firstItem, secondItem, thirdItem } from 'assets/images'
 import { FONT_COLOR } from 'constants/color'
 
 const Wrapper = styled.div`
@@ -23,16 +21,36 @@ const Wrapper = styled.div`
     background-color: #000;
     opacity: 0.2;
   }
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: #fff url(${loginBg}) no-repeat;
-    background-size: cover;
-  }
+`
+
+const itemStyle = `
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+`
+
+const FirstItem = styled.div`
+  background: papayawhip url(${firstItem}) no-repeat;
+  ${itemStyle}
+  opacity: ${props => (props.active === 'one' ? 1 : 0)};
+  transition: opacity 1s;
+`
+
+const SecondItem = styled.div`
+  background: olivedrab url(${secondItem}) no-repeat;
+  ${itemStyle}
+  opacity: ${props => (props.active === 'two' ? 1 : 0)};
+  transition: opacity 1s;
+`
+
+const ThirdItem = styled.div`
+  background: goldenrod url(${thirdItem}) no-repeat;
+  ${itemStyle}
+  opacity: ${props => (props.active === 'three' ? 1 : 0)};
+  transition: opacity 1s;
 `
 
 const ContentWrapper = styled.div`
@@ -57,22 +75,48 @@ const TopMarginedGrid = styled(Grid)`
 `
 
 class LoginPage extends Component {
-  componentDidMount() {
-    this.props.onMount()
+  state = {
+    active: 'one',
   }
 
+  componentDidMount() {
+    this.props.onMount()
+    this.timerID = setInterval(() => this.fade(), 3000)
+  }
+
+  comonentWillUnmount() {
+    clearInterval(this.timerID)
+  }
+
+  fade = () => this.setState((prevState) => {
+    if (prevState.active === 'one') {
+      return {
+        active: 'two',
+      }
+    } else if (prevState.active === 'two') {
+      return {
+        active: 'three',
+      }
+    }
+    return {
+      active: 'one',
+    }
+  })
+
   render() {
+    const { active } = this.state
     return (
       <Wrapper>
+        <Helmet>
+          <title>IT 학원 강의 리뷰 플랫폼, 댓댓 - 로그인</title>
+        </Helmet>
+        <FirstItem active={active} />
+        <SecondItem active={active} />
+        <ThirdItem active={active} />
         <ContentWrapper>
           <header>
             <MainHeader as="h1" content="THATTHAT" textAlign="center" />
             <SubHeader as="h2" content="IT 학원 강의 리뷰 플랫폼, 댓댓" textAlign="center" />
-            <div>
-              프로그래밍, 디자인, 마케팅, 영상
-              237개의 강의가 당신을 기다리고 있습니다.
-              당신의 재능을 찾아보세요!
-            </div>
           </header>
           <TopMarginedGrid centered container>
             <Grid.Column>
