@@ -5,9 +5,16 @@ const Wrapper = styled.div`
   padding: 2em;
 `
 
+const CenterBox = styled.div`
+  max-width: 768px;
+  margin: 0 auto !important;
+`
+
 const CourseInfo = ({ content }) => (
   <Wrapper>
-    {content}
+    <CenterBox>
+      {content}
+    </CenterBox>
   </Wrapper>
 )
 
