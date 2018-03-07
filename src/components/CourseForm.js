@@ -16,10 +16,14 @@ const categories = [
   { key: 'visualArts', value: 'visualArts', text: '영상' },
 ]
 
-const Wrapper = styled.ul`
-  padding: 1.2rem 1rem;
-  min-height: 100vh;
-  background-color: ${color.GRAY2};
+const Wrapper = styled.div`
+  padding: 1.5rem 1rem;
+  height: 100%;
+`
+
+const CenterBox = styled.div`
+  margin: 0 auto;
+  max-width: 768px;
 `
 
 const CourseInput = styled(Form.Input)`
@@ -131,8 +135,8 @@ export default class CourseForm extends Component {
     } = this.state
     const { isCreating, errorMessage } = this.props
     return (
-      <React.Fragment>
-        <Wrapper>
+      <Wrapper>
+        <CenterBox>
           <Form loading={isCreating}>
             <CourseInput id="courseName" name="courseName" value={courseName} label="강의명" onChange={this.handleChange} />
             <CourseCategoryLabel htmlFor="courseCategory">강의 분류</CourseCategoryLabel>
@@ -168,8 +172,8 @@ export default class CourseForm extends Component {
               </Message>
             )
           }
-        </Wrapper>
-      </React.Fragment>
+        </CenterBox>
+      </Wrapper>
     )
   }
 }

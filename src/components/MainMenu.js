@@ -4,12 +4,17 @@ import { Menu } from 'semantic-ui-react'
 import { MAIN_COLOR } from '../constants/color'
 
 const Wrapper = styled.header`
+  width: 100%;
   background-color: ${MAIN_COLOR};
 `
+
 const MenuBox = styled(Menu)`
+  max-width: 768px;
   height: 44px !important;
+  margin: 0 auto !important;
   background-color: transparent !important;
-  `
+`
+
 const Logo = styled.h1`
   font-weight: 900;
   font-size: 22px;

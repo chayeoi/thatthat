@@ -8,14 +8,17 @@ import * as color from '../constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled.div`
-  position: relative;
-  padding: 1rem;
-  margin-top: .5rem;
-  min-height: 135px !important;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  `
+const CenterBox = styled.div`
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
 `
-
-const ImageGrid = styled(Grid.Column)`
-  padding-right: 0 !important;
+const ImageGrid = styled.div`
+  width: 25%;
 `
 
 const SquareImageBox = styled.div`
@@ -33,9 +36,12 @@ const CourseImage = styled.img`
   object-fit: cover;
 `
 
-const InfoGrid = styled(Grid.Column)`
-  position: static !important;
-  padding-left: 1.5rem !important;
+const InfoGrid = styled.div`
+  width: 75%;
+  display: flex;
+  padding-left: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const OrganizationName = styled.h4`
@@ -48,10 +54,7 @@ const CourseName = styled.h3`
   color: ${font.TITLE.color};
   font-size: ${font.TITLE.size};
   font-weight: ${font.TITLE.weight};
-`
-
-const UserFeedbackBox = styled.div`
-  margin-top: 5px;
+  line-height: 2.5rem;
 `
 
 const ReviewCount = styled.div`
@@ -60,12 +63,6 @@ const ReviewCount = styled.div`
   font-weight: bold;
   font-size: 12px;
   padding-right: 10px;
-`
-
-const StyledRating = styled(Rating)`
-  &.active::before {
-    color: #f8ba00;
-  }
 `
 
 const CourseSummaryInfo = ({ course }) => {
@@ -77,22 +74,22 @@ const CourseSummaryInfo = ({ course }) => {
     downloadURL,
   } = course
   return (
-    <Wrapper>
-      <Grid>
-        <ImageGrid width={4}>
+    <Wrapper className="Wrapper">
+      <CenterBox>
+        <ImageGrid className="imagebox">
           <SquareImageBox>
             <CourseImage src={downloadURL} size="small" alt={`${courseName} 대표 이미지`} />
           </SquareImageBox>
         </ImageGrid>
-        <InfoGrid width={12} verticalAlign="middle">
+        <InfoGrid className="infobox">
           <OrganizationName>{organization}</OrganizationName>
           <CourseName>{courseName}</CourseName>
-          <UserFeedbackBox>
+          <div>
             <ReviewCount>리뷰 {reviewCount}</ReviewCount>
-            <StyledRating rating={ratingAvg} maxRating={5} disabled />
-          </UserFeedbackBox>
+            <Rating rating={ratingAvg} maxRating={5} disabled />
+          </div>
         </InfoGrid>
-      </Grid>
+      </CenterBox>
     </Wrapper>
   )
 }

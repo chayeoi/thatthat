@@ -15,8 +15,8 @@ const Wrapper = styled.div`
 const StyledRating = styled(Rating)`
   display: block !important;
   text-align: center;
-  margin-top: 5px;
-  font-size: 1rem !important;
+  padding: 2rem 0 1rem;
+  font-size: 2rem !important;
 `
 
 const MaxHeightTextArea = styled(TextArea)`
