@@ -140,7 +140,7 @@ export default class CourseForm extends Component {
               id="courseCategory"
               name="category"
               value={category}
-              placeholder="프로그래밍"
+              placeholder="카테고리를 선택해주세요"
               labeled
               fluid
               search
