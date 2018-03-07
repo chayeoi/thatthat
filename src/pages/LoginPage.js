@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { initializeUser } from 'ducks/modules/user'
-import { Grid, Header } from 'semantic-ui-react'
 import styled from 'styled-components'
+import { Grid, Header } from 'semantic-ui-react'
 import { LoginButtonContainer, FooterContainer } from 'containers'
+import { initializeUser } from 'ducks/modules/user'
 import { firstItem, secondItem, thirdItem } from 'assets/images'
 import { FONT_COLOR } from 'constants/color'
 
