@@ -5,19 +5,21 @@ import {
   Icon,
   Rating,
 } from 'semantic-ui-react'
-import { LikeButton } from 'components'
 import * as color from '../constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled.div`
-  position: relative;
-  padding: 1rem;
-  margin-top: .5rem;
-  min-height: 135px !important;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  `
+const CenterBox = styled.div`
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
 `
-
-const ImageGrid = styled(Grid.Column)`
-  padding-right: 0 !important;
+const ImageGrid = styled.div`
+  width: 25%;
 `
 
 const SquareImageBox = styled.div`
@@ -35,9 +37,12 @@ const CourseImage = styled.img`
   object-fit: cover;
 `
 
-const InfoGrid = styled(Grid.Column)`
-  position: static !important;
-  padding-left: 1.5rem !important;
+const InfoGrid = styled.div`
+  width: 75%;
+  display: flex;
+  padding-left: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const OrganizationName = styled.h4`
@@ -50,24 +55,7 @@ const CourseName = styled.h3`
   color: ${font.TITLE.color};
   font-size: ${font.TITLE.size};
   font-weight: ${font.TITLE.weight};
-`
-
-const LikeCount = styled.div`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 10px;
-  color: ${color.GRAY5};
-`
-
-const LikeIcon = styled(Icon)`
-  font-size: 16px !important;
-  width: auto !important;
-  margin: 0 !important;
-`
-
-const UserFeedbackBox = styled.div`
-  margin-top: 5px;
+  line-height: 2.5rem;
 `
 
 const ReviewCount = styled.div`
@@ -78,46 +66,31 @@ const ReviewCount = styled.div`
   padding-right: 10px;
 `
 
-const StyledRating = styled(Rating)`
-  &.active::before {
-    color: #f8ba00;
-  }
-`
-
 const CourseSummaryInfo = ({ course }) => {
   const {
-    courseKey,
     organization,
     courseName,
-    likeCount,
     reviewCount,
     ratingAvg,
     downloadURL,
-    userClass,
   } = course
   return (
-    <Wrapper>
-      <Grid>
-        <ImageGrid width={4}>
+    <Wrapper className="Wrapper">
+      <CenterBox>
+        <ImageGrid className="imagebox">
           <SquareImageBox>
             <CourseImage src={downloadURL} size="small" alt={`${courseName} 대표 이미지`} />
           </SquareImageBox>
         </ImageGrid>
-        <InfoGrid width={12} verticalAlign="middle">
+        <InfoGrid className="infobox">
           <OrganizationName>{organization}</OrganizationName>
           <CourseName>{courseName}</CourseName>
-          <LikeButton likeCount={likeCount} />
-          {/* 유저 인증 등급 hocs 완성 후 사용할 코드 */}
-          {/* {userClass === 'reviewer' ?
-            <LikeButton /> :
-            <LikeCount title={`좋아요 ${likeCount}개`} >{likeCount} <LikeIcon name="empty heart" /></LikeCount>
-          } */}
-          <UserFeedbackBox>
+          <div>
             <ReviewCount>리뷰 {reviewCount}</ReviewCount>
-            <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
-          </UserFeedbackBox>
+            <Rating defaultRating={ratingAvg} maxRating={5} disabled />
+          </div>
         </InfoGrid>
-      </Grid>
+      </CenterBox>
     </Wrapper>
   )
 }
