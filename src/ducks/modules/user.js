@@ -70,7 +70,7 @@ export const requestAuthentication = () => async (dispatch) => {
   const { currentUser } = firebase.auth()
   if (currentUser) {
     const reviewerPromise = firebase.database().ref(`users/reviewers/${currentUser.uid}`).once('value')
-    const academyPromise = firebase.database().ref(`users/reviewers/${currentUser.uid}`).once('value')
+    const academyPromise = firebase.database().ref(`users/academies/${currentUser.uid}`).once('value')
     const [
       reviewerSnapshot,
       academySnapshot,
