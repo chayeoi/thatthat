@@ -2,10 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {
   Grid,
-  Icon,
   Rating,
 } from 'semantic-ui-react'
-import { LikeButton } from 'components'
 import * as color from '../constants/color'
 import * as font from '../constants/font'
 
@@ -52,20 +50,6 @@ const CourseName = styled.h3`
   font-weight: ${font.TITLE.weight};
 `
 
-const LikeCount = styled.div`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 10px;
-  color: ${color.GRAY5};
-`
-
-const LikeIcon = styled(Icon)`
-  font-size: 16px !important;
-  width: auto !important;
-  margin: 0 !important;
-`
-
 const UserFeedbackBox = styled.div`
   margin-top: 5px;
 `
@@ -86,14 +70,11 @@ const StyledRating = styled(Rating)`
 
 const CourseSummaryInfo = ({ course }) => {
   const {
-    courseKey,
     organization,
     courseName,
-    likeCount,
     reviewCount,
     ratingAvg,
     downloadURL,
-    userClass,
   } = course
   return (
     <Wrapper>
@@ -106,15 +87,9 @@ const CourseSummaryInfo = ({ course }) => {
         <InfoGrid width={12} verticalAlign="middle">
           <OrganizationName>{organization}</OrganizationName>
           <CourseName>{courseName}</CourseName>
-          <LikeButton likeCount={likeCount} />
-          {/* 유저 인증 등급 hocs 완성 후 사용할 코드 */}
-          {/* {userClass === 'reviewer' ?
-            <LikeButton /> :
-            <LikeCount title={`좋아요 ${likeCount}개`} >{likeCount} <LikeIcon name="empty heart" /></LikeCount>
-          } */}
           <UserFeedbackBox>
             <ReviewCount>리뷰 {reviewCount}</ReviewCount>
-            <StyledRating defaultRating={ratingAvg} maxRating={5} disabled />
+            <StyledRating rating={ratingAvg} maxRating={5} disabled />
           </UserFeedbackBox>
         </InfoGrid>
       </Grid>

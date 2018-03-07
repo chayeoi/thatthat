@@ -69,12 +69,23 @@ export const requestAuthentication = () => async (dispatch) => {
   dispatch(isLoading())
   const { currentUser } = firebase.auth()
   if (currentUser) {
-    const snapshot = await firebase.database().ref(`users/reviewers/${currentUser.uid}`).once('value')
-    const reviewer = snapshot.val()
+    const reviewerPromise = firebase.database().ref(`users/reviewers/${currentUser.uid}`).once('value')
+    const academyPromise = firebase.database().ref(`users/academies/${currentUser.uid}`).once('value')
+    const [
+      reviewerSnapshot,
+      academySnapshot,
+    ] = await Promise.all([
+      reviewerPromise,
+      academyPromise,
+    ])
+    const reviewer = reviewerSnapshot.val()
+    const academy = academySnapshot.val()
     if (reviewer) {
       dispatch(authenticateAsReviewer())
-    } else {
+    } else if (academy) {
       dispatch(authenticateAsAcademy())
+    } else {
+      dispatch(authenticateAsReviewer())
     }
   } else {
     const unsubscribe = firebase.auth().onAuthStateChanged(async (user) => {

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import {
   MainMenuContainer,
   UserInfoContainer,
@@ -11,6 +12,9 @@ import { withUser } from 'hocs'
 
 const MyPage = ({ userClass = '', location: { pathname } }) => (
   <React.Fragment>
+    <Helmet>
+      <title>IT 학원 강의 리뷰 플랫폼, 댓댓 - 마이페이지</title>
+    </Helmet>
     <MainMenuContainer />
     <UserInfoContainer userClass={userClass} />
     <LogoutButtonContainer />

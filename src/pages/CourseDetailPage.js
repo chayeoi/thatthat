@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect, Switch, Route } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import {
   MainMenuContainer,
   CourseSummaryInfoContainer,
@@ -19,6 +20,9 @@ class CourseDetailPage extends Component {
     const { userClass, match: { params: { courseKey } }, location: { pathname } } = this.props
     return (
       <React.Fragment>
+        <Helmet>
+          <title>IT 학원 강의 리뷰 플랫폼, 댓댓 - 강의 정보</title>
+        </Helmet>
         <MainMenuContainer />
         <CourseSummaryInfoContainer courseKey={courseKey} />
         <CourseTabContainer courseKey={courseKey} pathName={pathname} />

@@ -17,7 +17,7 @@ const Total = styled.div`
 
 const MyLikeList = ({ likes }) => (
   <Wrapper>
-    {likes.length ?
+    {likes !== null ?
       <Total>총 <em>{likes.length}개</em>의 관심 강의가 있습니다.</Total> :
       <Total>관심 강의가 없습니다.</Total>
     }

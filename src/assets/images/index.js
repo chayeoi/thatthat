@@ -1,3 +1,6 @@
-import loginBg from './loginBg.jpg'
+import firstItem from './first-item.jpg'
+import secondItem from './second-item.jpg'
+import thirdItem from './third-item.jpg'
 
-export { loginBg }
+
+export { firstItem, secondItem, thirdItem }

@@ -8,8 +8,10 @@ class CourseSummaryInfoContainer extends Component {
     course: {},
     onMount: () => {},
   }
+
   componentDidMount() {
-    this.props.onMount()
+    const { courseKey } = this.props
+    this.props.onMount(courseKey)
   }
 
   render() {
@@ -25,7 +27,7 @@ export default connect(
     isLoading: detail.isLoading,
     course: detail.course,
   }),
-  (dispatch, ownProps) => ({
-    onMount: () => dispatch(loadCourse(ownProps.courseKey)),
+  dispatch => ({
+    onMount: courseKey => dispatch(loadCourse(courseKey)),
   }),
 )(CourseSummaryInfoContainer)
