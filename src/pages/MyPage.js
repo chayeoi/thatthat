@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
+import styled from 'styled-components'
+import { Sticky } from 'semantic-ui-react'
 import {
   MainMenuContainer,
   UserInfoContainer,
@@ -8,15 +10,57 @@ import {
   AcademyRoute,
 } from 'containers'
 import { withUser } from 'hocs'
+import * as color from '../constants/color'
 
-const MyPage = ({ userClass = '', location: { pathname } }) => (
-  <React.Fragment>
-    <MainMenuContainer />
-    <UserInfoContainer userClass={userClass} />
-    <LogoutButtonContainer />
-    <MyPageTabContainer userClass={userClass} pathName={pathname} />
-    {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}
-  </React.Fragment>
-)
+const WideRail = styled.div`
+  width: 100%;
+  height: 100% !important;
+  min-height: 100vh !important;
+  top: 0;
+  background-color: ${color.GRAY2};
+`
+
+const User = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem 2rem;
+  background-color: #fff;
+`
+
+const CenterBox = styled.div`
+  max-width: 768px;
+  margin: 0 auto;
+`
+
+
+class MyPage extends Component {
+  state = {}
+
+  handleContextRef = contextRef => this.setState({ contextRef })
+
+  render() {
+    const { contextRef } = this.state
+    const { userClass, location: { pathname } } = this.props
+
+    return (
+      <div ref={this.handleContextRef}>
+        <WideRail>
+          <MainMenuContainer />
+          <User>
+            <CenterBox>
+              <UserInfoContainer userClass={userClass} />
+              <LogoutButtonContainer />
+            </CenterBox>
+          </User>
+          <Sticky context={contextRef} style={{ position: 'relative', zIndex: 10 }}>
+            <MyPageTabContainer userClass={userClass} pathName={pathname} />
+          </Sticky>
+          {userClass === 'reviewer' ? <ReviewerRoute /> : <AcademyRoute />}
+        </WideRail>
+      </div>
+    )
+  }
+}
 
 export default withUser(MyPage)
