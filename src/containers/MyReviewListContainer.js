@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { MyReviewList } from 'components'
+import { withLoading } from 'hocs'
 import { loadMyReviewList } from 'ducks/modules/myReview'
 
+const MyReviewListWithLoading = withLoading(MyReviewList)
 class MyReviewListContainer extends Component {
   static defaultProps = {
+    isLoading: false,
     reviews: [],
     onMount: () => {},
   }
@@ -14,15 +17,16 @@ class MyReviewListContainer extends Component {
   }
 
   render() {
-    const { reviews } = this.props
+    const { onMount, ...props } = this.props
     return (
-      <MyReviewList reviews={reviews} />
+      <MyReviewListWithLoading {...props} />
     )
   }
 }
 
 export default connect(
   ({ myReview }) => ({
+    isLoading: myReview.isLoading,
     reviews: myReview.reviews,
   }),
   dispatch => ({

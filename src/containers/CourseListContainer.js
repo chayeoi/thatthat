@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 import { CourseList } from 'components'
 import { LikeButtonContainer } from 'containers'
 import { loadCourseList } from 'ducks/modules/category'
+import { withLoading } from 'hocs'
 
+const CourseListWithLoading = withLoading(CourseList)
 class CourseListContainer extends Component {
   static defaultProps = {
     courses: [],
@@ -26,12 +28,14 @@ class CourseListContainer extends Component {
 
   render() {
     const {
+      isLoading,
       courses,
       userClass,
       match: { params: { category } },
     } = this.props
     return (
-      <CourseList
+      <CourseListWithLoading
+        isLoading={isLoading}
         courses={courses}
         userClass={userClass}
         render={props => <LikeButtonContainer category={category} {...props} />}
@@ -42,6 +46,7 @@ class CourseListContainer extends Component {
 
 export default connect(
   ({ category }) => ({
+    isLoading: category.isLoading,
     courses: category.courses,
   }),
   dispatch => ({
