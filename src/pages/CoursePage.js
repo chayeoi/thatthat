@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import { Sticky } from 'semantic-ui-react'
 import {
   MainMenuContainer,
@@ -28,6 +29,9 @@ class CoursePage extends Component {
 
     return (
       <div ref={this.handleContextRef}>
+        <Helmet>
+          <title>IT 학원 강의 리뷰 플랫폼, 댓댓 - 강의 목록</title>
+        </Helmet>
         <WideRail className="rail">
           <MainMenuContainer />
           <Sticky context={contextRef} style={{ position: 'relative', zIndex: 9999 }}>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import { Grid, Header } from 'semantic-ui-react'
 import { LoginButtonContainer, FooterContainer } from 'containers'
@@ -106,6 +107,9 @@ class LoginPage extends Component {
     const { active } = this.state
     return (
       <Wrapper>
+        <Helmet>
+          <title>IT 학원 강의 리뷰 플랫폼, 댓댓 - 로그인</title>
+        </Helmet>
         <FirstItem active={active} />
         <SecondItem active={active} />
         <ThirdItem active={active} />
