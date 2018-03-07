@@ -1,5 +1,46 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Form, Modal, Message, Button } from 'semantic-ui-react'
+import * as color from '../constants/color'
+
+const Wrapper = styled.div`
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background-color: ${color.GRAY2};
+`
+
+const ManagerContact = styled.div`
+  float: right;
+  margin-top: 20px;
+  font-weight: 700;
+`
+
+const CourseInput = styled(Form.Input)`
+  margin-bottom: 12px;
+  caret-color: ${color.MAIN_COLOR};
+  & label {
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #495057 !important;
+  }
+  & input {
+    border-top: 1px solid ${color.GRAY4} !important;
+    border-left: 1px solid ${color.GRAY4} !important;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+`
+
+const FormButton = styled(Button)`
+  width: 100%;
+  margin-top: 10px !important;
+  color: white !important;
+  background-color: ${color.GRAY6} !important;
+  font-weight: 500 !important;
+  &:hover {
+    background-color: ${color.GRAY7} !important;
+  }
+`
 
 export default class RegisterForm extends Component {
   static defaultProps = {
@@ -40,22 +81,26 @@ export default class RegisterForm extends Component {
     const { organization, image, open } = this.state
     const { isRegistering, errorMessage } = this.props
     return (
-      <div>
+      <Wrapper>
         <Form loading={isRegistering}>
-          <Form.Input
+          <div>
+            교육기관 회원 등급으로 전환하기 위해 교육기관명과 사업자 등록증을 첨부해주시면 검토후 24시간안에 담당자께 연락드리겠습니다.
+          </div>
+          <ManagerContact>홍지수 매니저 02-341-1512</ManagerContact>
+          <CourseInput
             name="organization"
             value={organization}
             label="기관명"
             onChange={this.handleChange}
           />
-          <Form.Input
+          <CourseInput
             type="file"
             name="image"
             files={image}
             label="사업자 등록증"
             onChange={this.handleChange}
           />
-          <Button content="등록" onClick={this.handleClick} />
+          <FormButton content="교육기관 등록" onClick={this.handleClick} />
           <Modal dimmer="inverted" open={open} onClose={this.handleClose}>
             <Modal.Header content="교육기관 등록" />
             <Modal.Content content="교육기관으로 등록하시겠습니까?" />
@@ -73,7 +118,7 @@ export default class RegisterForm extends Component {
             </Message>
           )
         }
-      </div>
+      </Wrapper>
     )
   }
 }

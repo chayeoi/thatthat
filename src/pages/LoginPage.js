@@ -68,6 +68,11 @@ class LoginPage extends Component {
           <header>
             <MainHeader as="h1" content="THATTHAT" textAlign="center" />
             <SubHeader as="h2" content="IT 학원 강의 리뷰 플랫폼, 댓댓" textAlign="center" />
+            <div>
+              프로그래밍, 디자인, 마케팅, 영상
+              237개의 강의가 당신을 기다리고 있습니다.
+              당신의 재능을 찾아보세요!
+            </div>
           </header>
           <TopMarginedGrid centered container>
             <Grid.Column>

@@ -4,6 +4,7 @@ import { Menu } from 'semantic-ui-react'
 import * as color from '../constants/color'
 
 const TabBox = styled(Menu)`
+  background-color: #fff !important;
   height: 40px;
 `
 
@@ -29,19 +30,17 @@ export default class CategoryTab extends Component {
     const { activeItem } = this.state
     const { categories } = this.props
     return (
-      <div>
-        <TabBox pointing secondary widths={5}>
-          {categories.map(category => (
-            <TabItem
-              key={category.name}
-              name={category.name}
-              active={activeItem === category.link.to}
-              onClick={this.handleClick}
-              {...category.link}
-            />
-          ))}
-        </TabBox>
-      </div>
+      <TabBox pointing secondary widths={5}>
+        {categories.map(category => (
+          <TabItem
+            key={category.name}
+            name={category.name}
+            active={activeItem === category.link.to}
+            onClick={this.handleClick}
+            {...category.link}
+          />
+        ))}
+      </TabBox>
     )
   }
 }

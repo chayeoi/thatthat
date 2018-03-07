@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import * as moment from 'moment'
+import 'moment/locale/ko'
 import styled from 'styled-components'
 import { Segment, Comment, Rating } from 'semantic-ui-react'
 import * as font from '../constants/font'
@@ -60,7 +62,7 @@ const MyReviewCard = ({ review }) => {
         <OrganizationName>{organization}</OrganizationName>
         <CommentContent>
           <StyledRating defaultRating={rating} maxRating={5} disabled />
-          <Comment.Metadata>{createdAt}</Comment.Metadata>
+          <Comment.Metadata>{moment(createdAt).locale('ko').fromNow()}</Comment.Metadata>
           <CommentText>{content}</CommentText>
         </CommentContent>
       </CommentBox>
