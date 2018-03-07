@@ -2,15 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import { MAIN_COLOR } from '../constants/color'
 
+const Wrapper = styled.div`
+  width: 100%;
+  background-color: #fff !important;
+`
+
 const RoundedButton = styled.button`
   display: block;
-  margin: 0 auto;
+  padding: .2rem 1.5rem; 
+  margin: 1rem auto 0;
   font-weight: bold;
   color: ${MAIN_COLOR};
   border: 1.5px solid ${MAIN_COLOR};
   border-radius: 1.5rem;
-  padding: .2rem 1.5rem;
-  margin-top: 15px;
   &:hover {
     background-color: ${MAIN_COLOR};
     color: white;
@@ -22,7 +26,9 @@ const RoundedButton = styled.button`
 `
 
 const LogoutButton = ({ onLogout }) => (
-  <RoundedButton onClick={onLogout} className="icon-off" >로그아웃</RoundedButton>
+  <Wrapper>
+    <RoundedButton onClick={onLogout} className="icon-off" >로그아웃</RoundedButton>
+  </Wrapper>
 )
 
 export default LogoutButton
