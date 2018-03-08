@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Image } from 'semantic-ui-react'
-import * as font from '../constants/font'
+import { TITLE, SUB_TITLE } from 'constants/font'
 
 const CenterBox = styled.div`
   display: flex;
@@ -11,13 +11,13 @@ const CenterBox = styled.div`
 `
 
 const UserName = styled.div`
-  color: ${font.TITLE.color};
-  font-size: ${font.TITLE.size};
-  font-weight: ${font.TITLE.weight};
+  color: ${TITLE.color};
+  font-size: ${TITLE.size};
+  font-weight: ${TITLE.weight};
 `
 
 const UserEmail = styled.div`
-  color: ${font.SUB_TITLE.color};
+  color: ${SUB_TITLE.color};
 `
 const UserInfo = ({
   currentUser: {

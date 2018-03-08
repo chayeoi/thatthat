@@ -4,7 +4,7 @@ import {
   Rating,
 } from 'semantic-ui-react'
 import { MAIN_COLOR, GRAY6 } from 'constants/color'
-import * as font from '../constants/font'
+import { TITLE } from 'constants/font'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -50,9 +50,9 @@ const OrganizationName = styled.h4`
 `
 
 const CourseName = styled.h3`
-  color: ${font.TITLE.color};
-  font-size: ${font.TITLE.size};
-  font-weight: ${font.TITLE.weight};
+  color: ${TITLE.color};
+  font-size: ${TITLE.size};
+  font-weight: ${TITLE.weight};
   line-height: 2.5rem;
 `
 

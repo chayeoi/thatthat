@@ -4,7 +4,7 @@ import * as moment from 'moment'
 import 'moment/locale/ko'
 import styled from 'styled-components'
 import { Segment, Comment, Rating } from 'semantic-ui-react'
-import * as font from '../constants/font'
+import { TITLE, SUB_TITLE } from 'constants/font'
 
 const Wrapper = styled(Segment)`
   padding: 1rem 1.5rem !important;
@@ -12,17 +12,17 @@ const Wrapper = styled(Segment)`
 `
 
 const CourseName = styled.h3`
-  color: ${font.TITLE.color};
+  color: ${TITLE.color};
   font-size: 18px;
-  font-weight: ${font.TITLE.weight};
+  font-weight: ${TITLE.weight};
   display: inline-block;
   padding-right: 10px;
 `
 
 const OrganizationName = styled.h4`
-  color: ${font.SUB_TITLE.color};
-  font-size: ${font.SUB_TITLE.size};
-  font-weight: ${font.SUB_TITLE.weight};
+  color: ${SUB_TITLE.color};
+  font-size: ${SUB_TITLE.size};
+  font-weight: ${SUB_TITLE.weight};
   display: inline-block;
 `
 
