@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import {
-  Grid,
   Rating,
 } from 'semantic-ui-react'
 import * as color from '../constants/color'
