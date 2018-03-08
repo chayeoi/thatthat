@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { CourseCard } from 'components'
-import { GRAY2 } from '../constants/color'
+import { GRAY2 } from 'constants/color'
 
 const Wrapper = styled.ul`
   padding: 1rem 1rem;

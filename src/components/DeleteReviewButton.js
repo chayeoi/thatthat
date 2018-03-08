@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { GRAY5, GRAY9 } from '../constants/color'
+import { GRAY5, GRAY9 } from 'constants/color'
 
 const DeleteButton = styled.button`
   position: absolute;

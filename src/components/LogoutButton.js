@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MAIN_COLOR } from '../constants/color'
+import { MAIN_COLOR } from 'constants/color'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 const RoundedButton = styled.button`
   display: block;
-  padding: .2rem 1.5rem; 
+  padding: .2rem 1.5rem;
   margin: 1rem auto 0;
   font-weight: bold;
   color: ${MAIN_COLOR};
