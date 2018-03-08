@@ -74,6 +74,14 @@ firebase database:set / sample.json
 npm start
 ```
 
+### Storybook
+
+Storybook은 .env 파일의 환경 변수 설정을 읽지 못하므로 절대 경로 import를 인식하려면 직접 OS 환경 변수를 설정할 필요가 있다. 터미널에 다음과 같이 입력하여 스토리북을 실행한다.
+
+```bash
+export NODE_PATH=src & npm run storybook
+```
+
 ## Documentation
 
 ### Coding Convention
