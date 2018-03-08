@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {
   Rating,
 } from 'semantic-ui-react'
-import * as color from '../constants/color'
+import { MAIN_COLOR, GRAY6 } from 'constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled.div`
@@ -44,7 +44,7 @@ const InfoGrid = styled.div`
 `
 
 const OrganizationName = styled.h4`
-  color: ${color.GRAY6};
+  color: ${GRAY6};
   font-size: 13px;
   font-weight: bold;
 `
@@ -58,7 +58,7 @@ const CourseName = styled.h3`
 
 const ReviewCount = styled.div`
   display: inline-block;
-  color: ${color.MAIN_COLOR};
+  color: ${MAIN_COLOR};
   font-weight: bold;
   font-size: 12px;
   padding-right: 10px;

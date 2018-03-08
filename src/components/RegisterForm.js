@@ -1,12 +1,23 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Form, Modal, Message, Button } from 'semantic-ui-react'
-import * as color from '../constants/color'
+import {
+  Form,
+  Modal,
+  Message,
+  Button,
+} from 'semantic-ui-react'
+import {
+  MAIN_COLOR,
+  GRAY2,
+  GRAY4,
+  GRAY6,
+  GRAY7,
+} from 'constants/color'
 
 const Wrapper = styled.div`
   padding: 2rem 1rem;
   min-height: 100vh;
-  background-color: ${color.GRAY2};
+  background-color: ${GRAY2};
 `
 
 const ManagerContact = styled.div`
@@ -17,15 +28,15 @@ const ManagerContact = styled.div`
 
 const CourseInput = styled(Form.Input)`
   margin-bottom: 12px;
-  caret-color: ${color.MAIN_COLOR};
+  caret-color: ${MAIN_COLOR};
   & label {
     font-size: 13px;
     margin-bottom: 4px;
     color: #495057 !important;
   }
   & input {
-    border-top: 1px solid ${color.GRAY4} !important;
-    border-left: 1px solid ${color.GRAY4} !important;
+    border-top: 1px solid ${GRAY4} !important;
+    border-left: 1px solid ${GRAY4} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -35,10 +46,10 @@ const FormButton = styled(Button)`
   width: 100%;
   margin-top: 10px !important;
   color: white !important;
-  background-color: ${color.GRAY6} !important;
+  background-color: ${GRAY6} !important;
   font-weight: 500 !important;
   &:hover {
-    background-color: ${color.GRAY7} !important;
+    background-color: ${GRAY7} !important;
   }
 `
 

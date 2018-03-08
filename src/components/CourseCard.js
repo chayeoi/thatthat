@@ -7,7 +7,7 @@ import {
   Rating,
 } from 'semantic-ui-react'
 import { RecentReview } from 'components'
-import * as color from '../constants/color'
+import { MAIN_COLOR } from 'constants/color'
 import * as font from '../constants/font'
 
 const Wrapper = styled(Segment.Group)`
@@ -58,7 +58,7 @@ const UserFeedbackBox = styled.div`
 
 const ReviewCount = styled.div`
   display: inline-block;
-  color: ${color.MAIN_COLOR};
+  color: ${MAIN_COLOR};
   font-weight: bold;
   font-size: 12px;
   padding-right: 10px;
