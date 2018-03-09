@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Icon } from 'semantic-ui-react'
-import { GRAY4 } from 'constants/color'
+import { GRAY } from 'constants/color'
 
 const StyledLabel = styled.div`
   position: absolute;
@@ -9,9 +9,9 @@ const StyledLabel = styled.div`
   right: 1rem;
   font-size: 12px !important;
   font-weight: bold !important;
-  color: ${GRAY4} !important;
+  color: ${GRAY} !important;
   padding: .2rem .5rem !important;
-  border: 1.5px solid ${GRAY4} !important;
+  border: 1.5px solid ${GRAY} !important;
   border-radius: 3px !important;
   background-color: #fff !important;
   cursor: default;

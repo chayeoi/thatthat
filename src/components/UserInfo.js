@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Image } from 'semantic-ui-react'
-import { TITLE, SUB_TITLE } from 'constants/font'
+import { DEEPER_GRAY } from 'constants/color'
+import { TITLE } from 'constants/font'
 
 const CenterBox = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ const UserName = styled.div`
 `
 
 const UserEmail = styled.div`
-  color: ${SUB_TITLE.color};
+  color: ${DEEPER_GRAY};
 `
 const UserInfo = ({
   currentUser: {

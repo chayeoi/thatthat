@@ -9,7 +9,7 @@ import {
   CourseListContainer,
 } from 'containers'
 import { withUser } from 'hocs'
-import { GRAY2 } from 'constants/color'
+import { LIGHTER_GRAY } from 'constants/color'
 
 const WideRail = styled.div`
   width: 100%;
@@ -17,7 +17,7 @@ const WideRail = styled.div`
   min-height: 100vh !important;
   position: relative;
   top: 0;
-  background-color: ${GRAY2};
+  background-color: ${LIGHTER_GRAY};
 `
 
 class CoursePage extends Component {

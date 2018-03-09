@@ -9,9 +9,9 @@ import {
 } from 'semantic-ui-react'
 import {
   MAIN_COLOR,
-  GRAY4,
-  GRAY6,
-  GRAY7,
+  GRAY,
+  DEEPER_GRAY,
+  LIGHT_BLACK,
 } from 'constants/color'
 
 const categories = [
@@ -40,8 +40,8 @@ const CourseInput = styled(Form.Input)`
     color: #495057 !important;
   }
   & input {
-    border-top: 1px solid ${GRAY4} !important;
-    border-left: 1px solid ${GRAY4} !important;
+    border-top: 1px solid ${GRAY} !important;
+    border-left: 1px solid ${GRAY} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -60,8 +60,8 @@ const CourseCategory = styled(Dropdown)`
   border-color: white;
   caret-color: ${MAIN_COLOR};
   & input {
-    border-top: 1px solid ${GRAY4} !important;
-    border-left: 1px solid ${GRAY4} !important;
+    border-top: 1px solid ${GRAY} !important;
+    border-left: 1px solid ${GRAY} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -76,8 +76,8 @@ const CourseDesc = styled(Form.TextArea)`
     color: #495057 !important;
   }
   & textarea {
-    border-top: 1px solid ${GRAY4} !important;
-    border-left: 1px solid ${GRAY4} !important;
+    border-top: 1px solid ${GRAY} !important;
+    border-left: 1px solid ${GRAY} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -86,10 +86,10 @@ const CourseDesc = styled(Form.TextArea)`
 const FormButton = styled(Button)`
   width: 100%;
   color: white !important;
-  background-color: ${GRAY6} !important;
+  background-color: ${DEEPER_GRAY} !important;
   font-weight: 500 !important;
   &:hover {
-    background-color: ${GRAY7} !important;
+    background-color: ${LIGHT_BLACK} !important;
   }
 `
 

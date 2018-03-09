@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Rating } from 'semantic-ui-react'
-import { MAIN_COLOR, GRAY5 } from 'constants/color'
+import { MAIN_COLOR, DEEP_GRAY } from 'constants/color'
 
 const Wrapper = styled.div`
   position: absolute;
@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   right: 1rem;
   text-align: right;
   font-size: 10px;
-  color: ${GRAY5};
+  color: ${DEEP_GRAY};
   &:hover {
     color: ${MAIN_COLOR} !important;
   }

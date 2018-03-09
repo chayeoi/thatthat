@@ -3,19 +3,16 @@ export const SUB_COLOR = '#00b5ad'
 export const FONT_COLOR = '#fff'
 
 // Background Color
-export const GRAY0 = '#f8f9fa'
-export const GRAY1 = '#f1f3f5'
-export const GRAY2 = '#e9ecef'
-export const GRAY3 = '#dee2e6'
+export const LIGHTER_GRAY = '#e9ecef'
+export const LIGHT_GRAY = '#dee2e6'
 
-// NonActive Text Color
-export const GRAY4 = '#ced4da'
-export const GRAY5 = '#adb5bd'
-export const GRAY6 = '#868e96'
+// Non-active Text Color
+export const GRAY = '#ced4da'
+export const DEEP_GRAY = '#adb5bd'
+export const DEEPER_GRAY = '#868e96'
 
 // Basic Text Color
-export const GRAY7 = '#495057'
-export const GRAY8 = '#343a40'
+export const LIGHT_BLACK = '#495057'
 
 // Title Color
-export const GRAY9 = '#212529'
+export const BLACK = '#212529'

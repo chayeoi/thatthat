@@ -8,16 +8,16 @@ import {
 } from 'semantic-ui-react'
 import {
   MAIN_COLOR,
-  GRAY2,
-  GRAY4,
-  GRAY6,
-  GRAY7,
+  LIGHTER_GRAY,
+  GRAY,
+  DEEPER_GRAY,
+  LIGHT_BLACK,
 } from 'constants/color'
 
 const Wrapper = styled.div`
   padding: 2rem 1rem;
   min-height: 100vh;
-  background-color: ${GRAY2};
+  background-color: ${LIGHTER_GRAY};
 `
 
 const ManagerContact = styled.div`
@@ -35,8 +35,8 @@ const CourseInput = styled(Form.Input)`
     color: #495057 !important;
   }
   & input {
-    border-top: 1px solid ${GRAY4} !important;
-    border-left: 1px solid ${GRAY4} !important;
+    border-top: 1px solid ${GRAY} !important;
+    border-left: 1px solid ${GRAY} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -46,10 +46,10 @@ const FormButton = styled(Button)`
   width: 100%;
   margin-top: 10px !important;
   color: white !important;
-  background-color: ${GRAY6} !important;
+  background-color: ${DEEPER_GRAY} !important;
   font-weight: 500 !important;
   &:hover {
-    background-color: ${GRAY7} !important;
+    background-color: ${LIGHT_BLACK} !important;
   }
 `
 
