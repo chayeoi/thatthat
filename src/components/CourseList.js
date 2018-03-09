@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { CourseCard } from 'components'
-import * as color from '../constants/color'
 
 const Wrapper = styled.ul`
   padding: 1em;

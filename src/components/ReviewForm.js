@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Form, TextArea, Modal, Button, Rating, Icon } from 'semantic-ui-react'
-import * as color from '../constants/color'
+import { MAIN_COLOR } from 'constants/color'
 
 const Wrapper = styled.div`
   position: fixed;
@@ -27,7 +27,7 @@ const MaxHeightTextArea = styled(TextArea)`
   border: none !important;
   border-radius: 1.5rem !important;
   background-color: #fff;
-  caret-color: ${color.MAIN_COLOR};
+  caret-color: ${MAIN_COLOR};
 `
 
 const FormButton = styled.button`

@@ -7,8 +7,8 @@ import {
   Rating,
 } from 'semantic-ui-react'
 import { RecentReview } from 'components'
-import * as color from '../constants/color'
-import * as font from '../constants/font'
+import { MAIN_COLOR } from 'constants/color'
+import { TITLE, SUB_TITLE } from 'constants/font'
 
 const Wrapper = styled(Segment.Group)`
   margin: 0 0 .7rem !important;
@@ -40,15 +40,15 @@ const InfoGrid = styled(Grid.Column)`
 `
 
 const OrganizationName = styled.h4`
-  color: ${font.SUB_TITLE.color};
-  font-size: ${font.SUB_TITLE.size};
-  font-weight: ${font.SUB_TITLE.weight};
+  color: ${SUB_TITLE.color};
+  font-size: ${SUB_TITLE.size};
+  font-weight: ${SUB_TITLE.weight};
 `
 
 const CourseName = styled.h3`
-  color: ${font.TITLE.color};
-  font-size: ${font.TITLE.size};
-  font-weight: ${font.TITLE.weight};
+  color: ${TITLE.color};
+  font-size: ${TITLE.size};
+  font-weight: ${TITLE.weight};
 `
 
 const UserFeedbackBox = styled.div`
@@ -58,7 +58,7 @@ const UserFeedbackBox = styled.div`
 
 const ReviewCount = styled.div`
   display: inline-block;
-  color: ${color.MAIN_COLOR};
+  color: ${MAIN_COLOR};
   font-weight: bold;
   font-size: 12px;
   padding-right: 10px;

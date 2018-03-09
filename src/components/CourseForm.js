@@ -7,7 +7,12 @@ import {
   Button,
   Modal,
 } from 'semantic-ui-react'
-import * as color from '../constants/color'
+import {
+  MAIN_COLOR,
+  GRAY4,
+  GRAY6,
+  GRAY7,
+} from 'constants/color'
 
 const categories = [
   { key: 'programming', value: 'programming', text: '프로그래밍' },
@@ -28,15 +33,15 @@ const CenterBox = styled.div`
 
 const CourseInput = styled(Form.Input)`
   margin-bottom: 12px;
-  caret-color: ${color.MAIN_COLOR};
+  caret-color: ${MAIN_COLOR};
   & label {
     font-size: 13px;
     margin-bottom: 4px;
     color: #495057 !important;
   }
   & input {
-    border-top: 1px solid ${color.GRAY4} !important;
-    border-left: 1px solid ${color.GRAY4} !important;
+    border-top: 1px solid ${GRAY4} !important;
+    border-left: 1px solid ${GRAY4} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -53,10 +58,10 @@ const CourseCategoryLabel = styled.label`
 const CourseCategory = styled(Dropdown)`
   margin-bottom: 1rem;
   border-color: white;
-  caret-color: ${color.MAIN_COLOR};
+  caret-color: ${MAIN_COLOR};
   & input {
-    border-top: 1px solid ${color.GRAY4} !important;
-    border-left: 1px solid ${color.GRAY4} !important;
+    border-top: 1px solid ${GRAY4} !important;
+    border-left: 1px solid ${GRAY4} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -64,15 +69,15 @@ const CourseCategory = styled(Dropdown)`
 
 const CourseDesc = styled(Form.TextArea)`
   border-radius: 1.5rem !important;
-  caret-color: ${color.MAIN_COLOR};
+  caret-color: ${MAIN_COLOR};
   & label {
     font-size: 13px;
     margin-bottom: 4px;
     color: #495057 !important;
   }
   & textarea {
-    border-top: 1px solid ${color.GRAY4} !important;
-    border-left: 1px solid ${color.GRAY4} !important;
+    border-top: 1px solid ${GRAY4} !important;
+    border-left: 1px solid ${GRAY4} !important;
     border-right: none !important;
     border-bottom: none !important;
   }
@@ -81,10 +86,10 @@ const CourseDesc = styled(Form.TextArea)`
 const FormButton = styled(Button)`
   width: 100%;
   color: white !important;
-  background-color: ${color.GRAY6} !important;
+  background-color: ${GRAY6} !important;
   font-weight: 500 !important;
   &:hover {
-    background-color: ${color.GRAY7} !important;
+    background-color: ${GRAY7} !important;
   }
 `
 

@@ -11,14 +11,14 @@ import {
   AcademyRoute,
 } from 'containers'
 import { withUser } from 'hocs'
-import * as color from '../constants/color'
+import { GRAY2 } from 'constants/color'
 
 const WideRail = styled.div`
   width: 100%;
   height: 100% !important;
   min-height: 100vh !important;
   top: 0;
-  background-color: ${color.GRAY2};
+  background-color: ${GRAY2};
 `
 
 const User = styled.div`
