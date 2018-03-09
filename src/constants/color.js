@@ -8,7 +8,7 @@ export const GRAY1 = '#f1f3f5'
 export const GRAY2 = '#e9ecef'
 export const GRAY3 = '#dee2e6'
 
-// NonActive Text Color
+// Non-active Text Color
 export const GRAY4 = '#ced4da'
 export const GRAY5 = '#adb5bd'
 export const GRAY6 = '#868e96'
