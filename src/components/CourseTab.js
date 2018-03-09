@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Menu } from 'semantic-ui-react'
-import { MAIN_COLOR, GRAY3, GRAY6 } from 'constants/color'
+import { MAIN_COLOR, LIGHT_GRAY, DEEPER_GRAY } from 'constants/color'
 
 const Wrapper = styled.div`
   width: 100%;
   background-color: #fff !important;
-  border-bottom: 2px solid ${GRAY3};
+  border-bottom: 2px solid ${LIGHT_GRAY};
 `
 
 const CenterBox = styled.div`
@@ -21,7 +21,7 @@ const TabBox = styled(Menu)`
 `
 
 const TabItem = styled(Menu.Item)`
-  color: ${GRAY6} !important;
+  color: ${DEEPER_GRAY} !important;
   border: 0;
   &.active {
     color: ${MAIN_COLOR} !important;

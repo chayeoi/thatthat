@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { CourseCard } from 'components'
-import { GRAY2 } from 'constants/color'
+import { LIGHTER_GRAY } from 'constants/color'
 
 const Wrapper = styled.ul`
   padding: 1rem 1rem;
   min-height: 100vh;
-  background-color: ${GRAY2};
+  background-color: ${LIGHTER_GRAY};
 `
 
 const Total = styled.div`

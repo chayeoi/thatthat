@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {
   Rating,
 } from 'semantic-ui-react'
-import { MAIN_COLOR, GRAY6 } from 'constants/color'
+import { MAIN_COLOR, DEEPER_GRAY } from 'constants/color'
 import { TITLE } from 'constants/font'
 
 const Wrapper = styled.div`
@@ -44,7 +44,7 @@ const InfoGrid = styled.div`
 `
 
 const OrganizationName = styled.h4`
-  color: ${GRAY6};
+  color: ${DEEPER_GRAY};
   font-size: 13px;
   font-weight: bold;
 `
