@@ -30,6 +30,10 @@ const TabItem = styled(Menu.Item)`
 `
 
 export default class CourseTab extends Component {
+  static defaultProps = {
+    pathName: '',
+    tabs: [],
+  }
   state = {
     activeItem: this.props.pathName,
   }
