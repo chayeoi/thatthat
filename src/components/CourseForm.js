@@ -143,7 +143,13 @@ export default class CourseForm extends Component {
       <Wrapper>
         <CenterBox>
           <Form loading={isCreating}>
-            <CourseInput id="courseName" name="courseName" value={courseName} label="강의명" onChange={this.handleChange} />
+            <CourseInput
+              id="courseName"
+              name="courseName"
+              value={courseName}
+              label="강의명"
+              onChange={this.handleChange}
+            />
             <CourseCategoryLabel htmlFor="courseCategory">강의 분류</CourseCategoryLabel>
             <CourseCategory
               id="courseCategory"
@@ -157,8 +163,23 @@ export default class CourseForm extends Component {
               options={categories}
               onChange={this.handleChange}
             />
-            <CourseInput id="courseImage" type="file" name="image" files={image} label="강의 사진" onChange={this.handleChange} fluid />
-            <CourseDesc id="courseDesc" name="content" value={content} label="강의 소개" onChange={this.handleChange} rows="3" />
+            <CourseInput
+              id="courseImage"
+              type="file"
+              name="image"
+              files={image}
+              label="강의 사진"
+              onChange={this.handleChange}
+              fluid
+            />
+            <CourseDesc
+              id="courseDesc"
+              name="content"
+              value={content}
+              label="강의 소개"
+              onChange={this.handleChange}
+              rows="3"
+            />
             <FormButton content="등록하기" onClick={this.handleClick} />
             <Modal dimmer="inverted" open={open} onClose={this.handleClose}>
               <Modal.Header content="강의 등록" />
