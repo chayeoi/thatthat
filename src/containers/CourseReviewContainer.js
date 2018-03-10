@@ -11,6 +11,12 @@ import { loadCourseReview } from 'ducks/modules/review'
 const CourseReviewWithLoading = withLoading(CourseReview)
 class CourseReviewContainer extends Component {
   static defaultProps = {
+    isLoading: false,
+    reviews: [],
+    currentUserId: '',
+    userClass: '',
+    completeCreating: false,
+    completeDeleting: false,
     onMount: () => {},
   }
 

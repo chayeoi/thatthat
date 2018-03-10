@@ -166,7 +166,12 @@ export const createReview = (input, courseKey) => async (dispatch) => {
   }
 }
 
-export const DeleteReview = (uid, reviewKey, courseKey, rating) => async (dispatch) => {
+export const DeleteReview = ({
+  uid,
+  reviewKey,
+  courseKey,
+  rating,
+}) => async (dispatch) => {
   dispatch(isDeleting())
   const categorySnapshot = await firebase.database().ref(`category/${courseKey}`).once('value')
   const category = categorySnapshot.val()

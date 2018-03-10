@@ -1,8 +1,8 @@
 import React from 'react'
+import styled from 'styled-components'
+import { Comment } from 'semantic-ui-react'
 import * as moment from 'moment'
 import 'moment/locale/ko'
-import { Comment } from 'semantic-ui-react'
-import styled from 'styled-components'
 
 const Name = styled(Comment.Author)`
   display: inline-block !important;

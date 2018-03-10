@@ -5,6 +5,9 @@ import { loadCourse } from 'ducks/modules/detail'
 
 class CourseSummaryInfoContainer extends Component {
   static defaultProps = {
+    courseKey: '',
+    userClass: '',
+    isLoading: false,
     course: {},
     onMount: () => {},
   }

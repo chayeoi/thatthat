@@ -1,8 +1,8 @@
 import React from 'react'
+import styled from 'styled-components'
+import { Segment, Comment, Rating } from 'semantic-ui-react'
 import * as moment from 'moment'
 import 'moment/locale/ko'
-import { Segment, Comment, Rating } from 'semantic-ui-react'
-import styled from 'styled-components'
 
 const Wrapper = styled(Segment)`
   margin: 0 0 .7rem !important;

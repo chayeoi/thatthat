@@ -5,6 +5,14 @@ import { CourseForm } from 'components'
 import { createCourse } from 'ducks/modules/form'
 
 class CourseFormContainer extends Component {
+  static defaultProps = {
+    isCreating: false,
+    completeCreating: false,
+    courseKey: '',
+    errorMessage: '',
+    onSubmit: () => {},
+  }
+
   render() {
     const { completeCreating, courseKey, ...rest } = this.props
     return (

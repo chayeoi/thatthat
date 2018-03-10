@@ -6,6 +6,10 @@ import { registerAsAcademy, initializeRegistering } from 'ducks/modules/register
 
 class RegisterFormContainer extends Component {
   static defaultProps = {
+    isRegistering: false,
+    completeRegistering: false,
+    errorMessage: '',
+    onSubmit: () => {},
     onMount: () => {},
   }
 

@@ -11,6 +11,8 @@ const link = {
 
 class UserLabelContainer extends Component {
   static defaultProps = {
+    isLoading: false,
+    isPending: false,
     userClass: '',
     onMount: () => {},
   }
