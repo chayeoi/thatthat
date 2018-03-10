@@ -8,7 +8,9 @@ import { withLoading } from 'hocs'
 const CourseListWithLoading = withLoading(CourseList)
 class CourseListContainer extends Component {
   static defaultProps = {
+    isLoading: false,
     courses: [],
+    userClass: '',
     onMount: () => {},
   }
 

@@ -11,6 +11,9 @@ import {
 class LoginButtonContainer extends Component {
   static defaultProps = {
     redirectToMain: false,
+    onFacebookLogin: () => {},
+    onTwitterLogin: () => {},
+    onGoogleLogin: () => {},
   }
   render() {
     const { redirectToMain, ...rest } = this.props

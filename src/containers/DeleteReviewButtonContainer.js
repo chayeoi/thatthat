@@ -4,6 +4,10 @@ import { DeleteReviewButton } from 'components'
 import { DeleteReview } from 'ducks/modules/review'
 
 class DeleteReviewButtonContainer extends Component {
+  static defaultProps = {
+    onDelete: () => {},
+  }
+
   render() {
     const { onDelete } = this.props
     return (
@@ -20,6 +24,11 @@ export default connect(
     courseKey,
     rating,
   }) => ({
-    onDelete: () => dispatch(DeleteReview(uid, reviewKey, courseKey, rating)),
+    onDelete: () => dispatch(DeleteReview({
+      uid,
+      reviewKey,
+      courseKey,
+      rating,
+    })),
   }),
 )(DeleteReviewButtonContainer)

@@ -3,14 +3,8 @@ import { Link } from 'react-router-dom'
 import { MainMenu } from 'components'
 
 const links = {
-  home: {
-    as: Link,
-    to: '/',
-  },
-  myPage: {
-    as: Link,
-    to: '/mypage',
-  },
+  home: { as: Link, to: '/' },
+  myPage: { as: Link, to: '/mypage' },
 }
 
 const MainMenuContainer = () => (

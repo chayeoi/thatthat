@@ -6,6 +6,7 @@ import { toggleMyLike } from 'ducks/modules/category'
 class LikeButtonContainer extends Component {
   static defaultProps = {
     likeCount: 0,
+    onLike: () => {},
   }
 
   render() {
