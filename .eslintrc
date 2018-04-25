@@ -5,6 +5,7 @@
     "node": true,
     "jest": true
   },
+  "settings": { "import/resolver": { "node": { "paths": ["src"] } } },
   "extends": "airbnb",
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
