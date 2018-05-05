@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  Rating,
-} from 'semantic-ui-react'
+import { Rating } from 'semantic-ui-react'
 import { MAIN_COLOR, DEEPER_GRAY } from 'constants/color'
 import { TITLE } from 'constants/font'
 
