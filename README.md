@@ -1,23 +1,30 @@
 # 학원 강의 리뷰 플랫폼, 댓댓
 
+## Link
+
+* [Kanban Board](https://github.com/YeonBong/thatthat/projects/1)
+* [Wiki](https://github.com/YeonBong/thatthat/wiki)
+* [Issues](https://github.com/YeonBong/thatthat/issues)
+* [Pull requests](https://github.com/YeonBong/thatthat/pulls)
+
 ## About
 
 댓댓은 학원 강의 리뷰 플랫폼으로, 댓댓 서비스에 회원 가입 후 교육 기관으로 인증하면 학원 강의 정보를 등록할 수 있고 일반 회원들은 해당 학원 강의에 대한 리뷰 및 문의를 남길 수 있다.
 
 ## Tech Stack
 
-- React
-- Redux
-- React Router
-- Firebase
-- Semantic UI React
-- Styled Components
+* React
+* Redux
+* React Router
+* Firebase
+* Semantic UI React
+* Styled Components
 
 ## Getting Started
 
 ### Requirements
 
-- Node 8^
+* Node 8^
 
 ### Installation
 
@@ -86,11 +93,11 @@ export NODE_PATH=src & npm run storybook
 
 ### Coding Convention
 
-- [코딩 컨벤션](https://github.com/YeonBong/thatthat/wiki/Coding-Convention)
+* [코딩 컨벤션](https://github.com/YeonBong/thatthat/wiki/Coding-Convention)
 
 ### Rules for Collaboration
 
-- [Git & Github](https://github.com/YeonBong/thatthat/wiki/Rules-for-Collaboration-(Git))
+* [Git & Github](https://github.com/YeonBong/thatthat/wiki/Rules-for-Collaboration-(Git))
 
 ### Firebase Datebase Structure
-- [Firebase 데이터베이스 구조](https://github.com/YeonBong/thatthat/wiki/Database)
+* [Firebase 데이터베이스 구조](https://github.com/YeonBong/thatthat/wiki/Database)
