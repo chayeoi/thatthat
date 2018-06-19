@@ -5,7 +5,7 @@ import {
   CourseFormContainer,
 } from 'containers'
 
-const ReviewerRoute = () => (
+const AcademyRoute = () => (
   <React.Fragment>
     <Route exact path="/mypage" render={() => <Redirect to="/mypage/courses" />} />
     <Route path="/mypage/courses" component={MyCourseListContainer} />
@@ -13,4 +13,4 @@ const ReviewerRoute = () => (
   </React.Fragment>
 )
 
-export default ReviewerRoute
+export default AcademyRoute
